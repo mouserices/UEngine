@@ -1,0 +1,19 @@
+using GraphProcessor;
+
+namespace UEngine.NP.Editor
+{
+    [NodeMenuItem("NPBehave行为树/Decorator/BlackboardCondition", typeof (NPBehaveGraph))]
+    [NodeMenuItem("NPBehave行为树/Decorator/BlackboardCondition", typeof (SkillGraph))]
+    public class NP_BlackboardConditionNode: NP_DecoratorNodeBase
+    {
+        public override string name => "黑板条件结点";
+
+        public NP_BlackboardConditionNodeData NP_BlackboardConditionNodeData =
+                new NP_BlackboardConditionNodeData { NodeType = NodeType.Decorator, NodeDes = "黑板条件结点" };
+
+        public override NP_NodeDataBase NP_GetNodeData()
+        {
+            return NP_BlackboardConditionNodeData;
+        }
+    }
+}
