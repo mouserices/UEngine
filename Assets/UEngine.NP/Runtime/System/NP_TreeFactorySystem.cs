@@ -32,7 +32,7 @@ namespace UEngine.NP
             GameObject o = new GameObject();
             o.name = $"~{npTreeName}";
             var npBehaveStateSearcher = o.AddComponent<GraphDebugger>();
-            npBehaveStateSearcher.InstanceID = npDataSupportorBase.InstanceID;
+            npBehaveStateSearcher.NpBehaveName = npTreeName;
 #endif
 
             foreach (var nodeDateBase in npDataSupportorBase.NP_DataSupportorDic)

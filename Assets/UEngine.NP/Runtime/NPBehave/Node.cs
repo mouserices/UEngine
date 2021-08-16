@@ -79,8 +79,12 @@ namespace NPBehave
         }
         
 #if UNITY_EDITOR
-        public bool Excuted = false;
-        public float ExcutedTime = 0;
+        public float DebugLastStopRequestAt = 0.0f;
+        public float DebugLastStoppedAt = 0.0f;
+        public int DebugNumStartCalls = 0;
+        public int DebugNumStopCalls = 0;
+        public int DebugNumStoppedCalls = 0;
+        public bool DebugLastResult = false;
 #endif
 
         public void Start()
@@ -89,8 +93,8 @@ namespace NPBehave
             Debug.Assert(this.currentState == State.INACTIVE, "can only start inactive nodes");
             this.currentState = State.ACTIVE;
 #if UNITY_EDITOR
-            Excuted = true;
-            ExcutedTime = Time.time;
+            RootNode.TotalNumStartCalls++;
+            this.DebugNumStartCalls++;
 #endif
             DoStart();
         }
@@ -103,7 +107,11 @@ namespace NPBehave
             // Assert.AreEqual(this.currentState, State.ACTIVE, "can only stop active nodes, tried to stop " + this.Name + "! PATH: " + GetPath());
             Debug.Assert(this.currentState == State.ACTIVE, "can only stop active nodes, tried to stop");
             this.currentState = State.STOP_REQUESTED;
-            
+#if UNITY_EDITOR
+            RootNode.TotalNumStopCalls++;
+            this.DebugLastStopRequestAt = UnityEngine.Time.time;
+            this.DebugNumStopCalls++;
+#endif
             DoCancel();
         }
 
@@ -126,7 +134,12 @@ namespace NPBehave
                 "Called 'Stopped' while in state INACTIVE, something is wrong!");
             this.currentState = State.INACTIVE;
             
-
+#if UNITY_EDITOR
+            RootNode.TotalNumStoppedCalls++;
+            this.DebugNumStoppedCalls++;
+            this.DebugLastStoppedAt = UnityEngine.Time.time;
+            DebugLastResult = success;
+#endif
             
             if (this.ParentNode != null)
             {

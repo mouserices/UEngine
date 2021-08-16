@@ -17,13 +17,13 @@ namespace UEngine.NP
 
             var gameObject = ResKit.Load<GameObject>("NP_TreeDataConfig");
             var npTreeDataConfig = gameObject.GetComponent<NP_TreeDataConfig>();
-            foreach (var npTreeData in npTreeDataConfig.NP_TreeDatas)
+            foreach (var npTreeData in npTreeDataConfig.NP_TreeDatasToBytes)
             {
                 if (!npTreeDataComponent.NpDataSupportorBases.ContainsKey(npTreeData.Key))
-                {
-                    NP_DataSupportorBase npDataSupportorBase =
-                        BsonSerializer.Deserialize<NP_DataSupportorBase>(npTreeData.Value.bytes);
-                    npTreeDataComponent.NpDataSupportorBases.Add(npTreeData.Key, npDataSupportorBase);
+                { NP_DataSupportorBase npDataSupportorBase =
+                                         BsonSerializer.Deserialize<NP_DataSupportorBase>(npTreeData.Value.bytes);
+                                     npTreeDataComponent.NpDataSupportorBases.Add(npTreeData.Key, npDataSupportorBase);
+                   
                 }
             }
         }

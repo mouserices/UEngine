@@ -31,10 +31,11 @@ namespace GraphProcessor
 			RegisterCallback<MouseDownEvent>(OnMouseDown);
 		}
 
-		public void EnableFlowPoint(Action finish = null)
+		public void EnableFlowPoint(Action finish = null,Func<bool> isConditionMet = null)
 		{
 			flowPoint = new FlowPoint();
 			flowPoint.Finish = finish;
+			flowPoint.IsConditionMet = isConditionMet;
 			this.AddManipulator(flowPoint);
 		}
 
@@ -94,6 +95,7 @@ namespace GraphProcessor
 		VisualElement point { get; set; }
 
 		public Action Finish;
+		public Func<bool> IsConditionMet;
 
 		protected override void RegisterCallbacksOnTarget()
 		{
@@ -107,7 +109,15 @@ namespace GraphProcessor
 
 				target.schedule.Execute(() =>
 				{
-					UpdateCapPoint(edge, (float)(EditorApplication.timeSinceStartup % 1 / 1));
+					if (IsConditionMet())
+					{
+						UpdateCapPoint(edge, (float)(EditorApplication.timeSinceStartup % 1 / 1));
+					}
+					else
+					{
+						point.style.left = 0;
+						point.style.top = 0;
+					}
 				}).Until(() => point == null);
 			}
 		}

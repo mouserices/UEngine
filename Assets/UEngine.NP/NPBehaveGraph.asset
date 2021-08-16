@@ -27,7 +27,7 @@ MonoBehaviour:
         mscorlib
     - Name: 
       Entry: 12
-      Data: 7
+      Data: 4
     - Name: 
       Entry: 7
       Data: 1|UEngine.NP.Editor.NP_RootNode, Assembly-CSharp-Editor
@@ -36,7 +36,7 @@ MonoBehaviour:
       Data: 
     - Name: GUID
       Entry: 1
-      Data: 917f627e-cc1d-447c-816d-293b550ea91e
+      Data: 2d47c1c7-f2ea-4c54-9b43-094af80a1e89
     - Name: computeOrder
       Entry: 3
       Data: 0
@@ -45,10 +45,10 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 174.071533
+      Data: 345
     - Name: 
       Entry: 4
-      Data: 208.681442
+      Data: 40
     - Name: 
       Entry: 4
       Data: 134.5
@@ -75,7 +75,7 @@ MonoBehaviour:
       Data: 2|UEngine.NP.NP_RootNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106753491402759
+      Data: 106765418102792
     - Name: NodeType
       Entry: 3
       Data: 1
@@ -87,7 +87,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 3
-      Data: 106753491402758
+      Data: 106765418102791
     - Name: 
       Entry: 13
       Data: 
@@ -114,7 +114,7 @@ MonoBehaviour:
       Data: 
     - Name: GUID
       Entry: 1
-      Data: a86fe261-998f-457b-bf6a-eea2c399d44f
+      Data: a529a8a7-242a-449b-82a1-6c37854fcd3c
     - Name: computeOrder
       Entry: 3
       Data: 1
@@ -123,10 +123,10 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 174.071533
+      Data: 345
     - Name: 
       Entry: 4
-      Data: 339.681427
+      Data: 176
     - Name: 
       Entry: 4
       Data: 110.5
@@ -156,7 +156,7 @@ MonoBehaviour:
       Data: 5|UEngine.NP.NP_SequenceNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106753491402758
+      Data: 106765418102791
     - Name: NodeType
       Entry: 3
       Data: 0
@@ -168,10 +168,10 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 3
-      Data: 106753491402756
+      Data: 106765418102790
     - Name: 
       Entry: 3
-      Data: 106753491402757
+      Data: 106765418102789
     - Name: 
       Entry: 13
       Data: 
@@ -195,7 +195,7 @@ MonoBehaviour:
       Data: 
     - Name: GUID
       Entry: 1
-      Data: 41c20c10-1fa7-4571-a14f-dab5b14052d3
+      Data: eb77d54c-cf67-4aba-90cf-74c5d79f0fc0
     - Name: computeOrder
       Entry: 3
       Data: 2
@@ -204,10 +204,10 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: -44.9284363
+      Data: 237.5
     - Name: 
       Entry: 4
-      Data: 483.181458
+      Data: 311
     - Name: 
       Entry: 4
       Data: 107.5
@@ -234,7 +234,7 @@ MonoBehaviour:
       Data: 8|UEngine.NP.NP_ActionNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106753491402756
+      Data: 106765418102790
     - Name: NodeType
       Entry: 3
       Data: 2
@@ -251,8 +251,8 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: NodeDes
-      Entry: 1
-      Data: log2
+      Entry: 6
+      Data: 
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 10|UEngine.NP.NP_LogAction, Assembly-CSharp
@@ -276,7 +276,7 @@ MonoBehaviour:
       Data: 
     - Name: LogInfo
       Entry: 1
-      Data: "\u6211\u662Flog2"
+      Data: 111
     - Name: 
       Entry: 8
       Data: 
@@ -288,139 +288,31 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 11|UEngine.NP.Editor.NP_BlackboardConditionNode, Assembly-CSharp-Editor
+      Data: 11|UEngine.NP.Editor.NP_LogActionNode, Assembly-CSharp-Editor
     - Name: nodeCustomName
       Entry: 6
       Data: 
     - Name: GUID
       Entry: 1
-      Data: f93b4710-5315-4f5b-afb9-6f973f0aff44
+      Data: 1e992aee-e9d3-43fc-9946-3ff60671e425
     - Name: computeOrder
       Entry: 3
-      Data: 4
+      Data: 3
     - Name: position
       Entry: 7
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 383.071533
+      Data: 494
     - Name: 
       Entry: 4
-      Data: 632.681458
+      Data: 317
     - Name: 
       Entry: 4
-      Data: 134.5
+      Data: 100
     - Name: 
       Entry: 4
-      Data: 84
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: expanded
-      Entry: 5
-      Data: false
-    - Name: debug
-      Entry: 5
-      Data: false
-    - Name: nodeLock
-      Entry: 5
-      Data: false
-    - Name: PrevNode
-      Entry: 6
-      Data: 
-    - Name: NextNode
-      Entry: 6
-      Data: 
-    - Name: NP_BlackboardConditionNodeData
-      Entry: 7
-      Data: 12|UEngine.NP.NP_BlackboardConditionNodeData, Assembly-CSharp
-    - Name: id
-      Entry: 3
-      Data: 106753491402754
-    - Name: NodeType
-      Entry: 3
-      Data: 1
-    - Name: LinkedIds
-      Entry: 7
-      Data: 13|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 3
-      Data: 106753491402753
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: NodeDes
-      Entry: 1
-      Data: "\u9ED1\u677F\u6761\u4EF6\u7ED3\u70B9"
-    - Name: Ope
-      Entry: 3
-      Data: 2
-    - Name: Stop
-      Entry: 3
-      Data: 4
-    - Name: NPBalckBoardRelationData
-      Entry: 7
-      Data: 14|UEngine.NP.NP_BlackBoardRelationData, Assembly-CSharp
-    - Name: BBKey
-      Entry: 1
-      Data: isInit
-    - Name: NP_BBValueType
-      Entry: 1
-      Data: System.Boolean
-    - Name: WriteOrCompareToBB
-      Entry: 5
-      Data: true
-    - Name: NP_BBValue
-      Entry: 7
-      Data: 15|UEngine.NP.NP_BBValue_Bool, Assembly-CSharp
-    - Name: Value
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 16|UEngine.NP.Editor.NP_LogActionNode, Assembly-CSharp-Editor
-    - Name: nodeCustomName
-      Entry: 6
-      Data: 
-    - Name: GUID
-      Entry: 1
-      Data: cd991635-b0da-4c4f-8327-e7a15f23c9f1
-    - Name: computeOrder
-      Entry: 3
-      Data: 5
-    - Name: position
-      Entry: 7
-      Data: UnityEngine.Rect, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 359.5715
-    - Name: 
-      Entry: 4
-      Data: 772.681458
-    - Name: 
-      Entry: 4
-      Data: 107.5
-    - Name: 
-      Entry: 4
-      Data: 76
+      Data: 100
     - Name: 
       Entry: 8
       Data: 
@@ -438,16 +330,16 @@ MonoBehaviour:
       Data: 
     - Name: NP_ActionNodeData
       Entry: 7
-      Data: 17|UEngine.NP.NP_ActionNodeData, Assembly-CSharp
+      Data: 12|UEngine.NP.NP_ActionNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106753491402753
+      Data: 106765418102789
     - Name: NodeType
       Entry: 3
       Data: 2
     - Name: LinkedIds
       Entry: 7
-      Data: 18|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+      Data: 13|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
@@ -462,7 +354,7 @@ MonoBehaviour:
       Data: 
     - Name: NpClassForStoreAction
       Entry: 7
-      Data: 19|UEngine.NP.NP_LogAction, Assembly-CSharp
+      Data: 14|UEngine.NP.NP_LogAction, Assembly-CSharp
     - Name: Unitid
       Entry: 3
       Data: 0
@@ -483,208 +375,7 @@ MonoBehaviour:
       Data: 
     - Name: LogInfo
       Entry: 1
-      Data: "\u6211\u8FDB\u884C\u4E86\u521D\u59CB\u5316"
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 20|UEngine.NP.Editor.NP_SequenceNode, Assembly-CSharp-Editor
-    - Name: nodeCustomName
-      Entry: 6
-      Data: 
-    - Name: GUID
-      Entry: 1
-      Data: 4c83c1ff-85a1-4f84-a040-fafb34bf4100
-    - Name: computeOrder
-      Entry: 3
-      Data: 3
-    - Name: position
-      Entry: 7
-      Data: UnityEngine.Rect, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 489.571564
-    - Name: 
-      Entry: 4
-      Data: 483.181458
-    - Name: 
-      Entry: 4
-      Data: 110.5
-    - Name: 
-      Entry: 4
-      Data: 84
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: expanded
-      Entry: 5
-      Data: false
-    - Name: debug
-      Entry: 5
-      Data: false
-    - Name: nodeLock
-      Entry: 5
-      Data: false
-    - Name: PrevNode
-      Entry: 6
-      Data: 
-    - Name: NextNode
-      Entry: 6
-      Data: 
-    - Name: NP_SequenceNodeData
-      Entry: 7
-      Data: 21|UEngine.NP.NP_SequenceNodeData, Assembly-CSharp
-    - Name: id
-      Entry: 3
-      Data: 106753491402757
-    - Name: NodeType
-      Entry: 3
-      Data: 0
-    - Name: LinkedIds
-      Entry: 7
-      Data: 22|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 3
-      Data: 106753491402754
-    - Name: 
-      Entry: 3
-      Data: 106753491402755
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: NodeDes
-      Entry: 1
-      Data: "\u5E8F\u5217\u7EC4\u5408\u5668"
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 23|UEngine.NP.Editor.NP_ChangeBlackValueActionNode, Assembly-CSharp-Editor
-    - Name: nodeCustomName
-      Entry: 6
-      Data: 
-    - Name: GUID
-      Entry: 1
-      Data: bb0e6440-c204-40d4-9e9a-e3b0604a46db
-    - Name: computeOrder
-      Entry: 3
-      Data: 6
-    - Name: position
-      Entry: 7
-      Data: UnityEngine.Rect, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 600.071655
-    - Name: 
-      Entry: 4
-      Data: 632.681458
-    - Name: 
-      Entry: 4
-      Data: 122.5
-    - Name: 
-      Entry: 4
-      Data: 76
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: expanded
-      Entry: 5
-      Data: false
-    - Name: debug
-      Entry: 5
-      Data: false
-    - Name: nodeLock
-      Entry: 5
-      Data: false
-    - Name: PrevNode
-      Entry: 6
-      Data: 
-    - Name: NP_ActionNodeData
-      Entry: 7
-      Data: 24|UEngine.NP.NP_ActionNodeData, Assembly-CSharp
-    - Name: id
-      Entry: 3
-      Data: 106753491402755
-    - Name: NodeType
-      Entry: 3
-      Data: 2
-    - Name: LinkedIds
-      Entry: 7
-      Data: 25|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: NodeDes
-      Entry: 6
-      Data: 
-    - Name: NpClassForStoreAction
-      Entry: 7
-      Data: 26|UEngine.NP.NP_ChangeBlackValueAction, Assembly-CSharp
-    - Name: Unitid
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: BelongtoRuntimeTree
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
-    - Name: NPBalckBoardRelationData
-      Entry: 7
-      Data: 27|UEngine.NP.NP_BlackBoardRelationData, Assembly-CSharp
-    - Name: BBKey
-      Entry: 1
-      Data: isInit
-    - Name: NP_BBValueType
-      Entry: 1
-      Data: System.Boolean
-    - Name: WriteOrCompareToBB
-      Entry: 5
-      Data: true
-    - Name: NP_BBValue
-      Entry: 7
-      Data: 28|UEngine.NP.NP_BBValue_Bool, Assembly-CSharp
-    - Name: Value
-      Entry: 5
-      Data: true
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 222
     - Name: 
       Entry: 8
       Data: 
@@ -702,7 +393,7 @@ MonoBehaviour:
       Data: 
     - Name: groups
       Entry: 7
-      Data: 29|System.Collections.Generic.List`1[[GraphProcessor.Group, com.alelievr.NodeGraphProcessor.Runtime]],
+      Data: 15|System.Collections.Generic.List`1[[GraphProcessor.Group, com.alelievr.NodeGraphProcessor.Runtime]],
         mscorlib
     - Name: 
       Entry: 12
@@ -715,45 +406,33 @@ MonoBehaviour:
       Data: 
     - Name: NpDataSupportor
       Entry: 7
-      Data: 30|UEngine.NP.NP_DataSupportorBase, Assembly-CSharp
+      Data: 16|UEngine.NP.NP_DataSupportorBase, Assembly-CSharp
     - Name: InstanceID
       Entry: 3
-      Data: 17622
+      Data: -14870
     - Name: NPBehaveTreeDataId
       Entry: 3
-      Data: 106753491402759
+      Data: 106765418102792
     - Name: NP_DataSupportorDic
       Entry: 7
-      Data: 31|System.Collections.Generic.Dictionary`2[[System.Int64, mscorlib],[UEngine.NP.NP_NodeDataBase,
+      Data: 17|System.Collections.Generic.Dictionary`2[[System.Int64, mscorlib],[UEngine.NP.NP_NodeDataBase,
         Assembly-CSharp]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 32|System.Collections.Generic.GenericEqualityComparer`1[[System.Int64,
+      Data: 18|System.Collections.Generic.GenericEqualityComparer`1[[System.Int64,
         mscorlib]], mscorlib
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 12
-      Data: 7
+      Data: 4
     - Name: 
       Entry: 7
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106753491402753
-    - Name: $v
-      Entry: 9
-      Data: 17
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 106753491402754
+      Data: 106765418102789
     - Name: $v
       Entry: 9
       Data: 12
@@ -765,19 +444,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106753491402755
-    - Name: $v
-      Entry: 9
-      Data: 24
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 106753491402756
+      Data: 106765418102790
     - Name: $v
       Entry: 9
       Data: 8
@@ -789,19 +456,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106753491402757
-    - Name: $v
-      Entry: 9
-      Data: 21
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 106753491402758
+      Data: 106765418102791
     - Name: $v
       Entry: 9
       Data: 5
@@ -813,7 +468,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106753491402759
+      Data: 106765418102792
     - Name: $v
       Entry: 9
       Data: 2
@@ -828,72 +483,18 @@ MonoBehaviour:
       Data: 
     - Name: NP_BBValueManager
       Entry: 7
-      Data: 33|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UEngine.NP.ANP_BBValue,
+      Data: 19|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UEngine.NP.ANP_BBValue,
         Assembly-CSharp]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 34|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+      Data: 20|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
         mscorlib]], mscorlib
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: speed
-    - Name: $v
-      Entry: 7
-      Data: 35|UEngine.NP.NP_BBValue_Float, Assembly-CSharp
-    - Name: Value
-      Entry: 4
-      Data: 20
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: time
-    - Name: $v
-      Entry: 7
-      Data: 36|UEngine.NP.NP_BBValue_String, Assembly-CSharp
-    - Name: Value
-      Entry: 1
-      Data: fdsggg123
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: isInit
-    - Name: $v
-      Entry: 7
-      Data: 37|UEngine.NP.NP_BBValue_Bool, Assembly-CSharp
-    - Name: Value
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -905,210 +506,77 @@ MonoBehaviour:
       Data: 
     - Name: NpDataSupportor1
       Entry: 7
-      Data: 38|UEngine.NP.NP_DataSupportorBase, Assembly-CSharp
+      Data: 21|UEngine.NP.NP_DataSupportorBase, Assembly-CSharp
     - Name: InstanceID
       Entry: 3
-      Data: 17676
+      Data: -14870
     - Name: NPBehaveTreeDataId
       Entry: 3
-      Data: 106748602941445
+      Data: 106765401325624
     - Name: NP_DataSupportorDic
       Entry: 7
-      Data: 39|System.Collections.Generic.Dictionary`2[[System.Int64, mscorlib],[UEngine.NP.NP_NodeDataBase,
+      Data: 22|System.Collections.Generic.Dictionary`2[[System.Int64, mscorlib],[UEngine.NP.NP_NodeDataBase,
         Assembly-CSharp]], mscorlib
     - Name: comparer
-      Entry: 7
-      Data: 40|System.Collections.Generic.GenericEqualityComparer`1[[System.Int64,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
+      Entry: 9
+      Data: 18
     - Name: 
       Entry: 12
-      Data: 5
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 106748602941441
-    - Name: $v
-      Entry: 7
-      Data: 41|UEngine.NP.NP_ActionNodeData, Assembly-CSharp
-    - Name: id
-      Entry: 3
-      Data: 106748602941441
-    - Name: NodeType
-      Entry: 3
-      Data: 2
-    - Name: LinkedIds
-      Entry: 7
-      Data: 42|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: NodeDes
-      Entry: 6
-      Data: 
-    - Name: NpClassForStoreAction
-      Entry: 7
-      Data: 43|UEngine.NP.NP_LogAction, Assembly-CSharp
-    - Name: Unitid
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: BelongtoRuntimeTree
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
-    - Name: LogInfo
-      Entry: 1
-      Data: "\u6211\u8FDB\u884C\u4E86\u521D\u59CB\u5316"
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 106748602941442
-    - Name: $v
-      Entry: 7
-      Data: 44|UEngine.NP.NP_ActionNodeData, Assembly-CSharp
-    - Name: id
-      Entry: 3
-      Data: 106748602941442
-    - Name: NodeType
-      Entry: 3
-      Data: 2
-    - Name: LinkedIds
-      Entry: 7
-      Data: 45|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: NodeDes
-      Entry: 6
-      Data: 
-    - Name: NpClassForStoreAction
-      Entry: 7
-      Data: 46|UEngine.NP.NP_LogAction, Assembly-CSharp
-    - Name: Unitid
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: BelongtoRuntimeTree
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
-    - Name: LogInfo
-      Entry: 1
-      Data: "\u6211\u662Flog2"
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 106748602941443
-    - Name: $v
-      Entry: 7
-      Data: 47|UEngine.NP.NP_BlackboardConditionNodeData, Assembly-CSharp
-    - Name: id
-      Entry: 3
-      Data: 106748602941443
-    - Name: NodeType
-      Entry: 3
-      Data: 1
-    - Name: LinkedIds
-      Entry: 7
-      Data: 48|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: NodeDes
-      Entry: 6
-      Data: 
-    - Name: Ope
-      Entry: 3
-      Data: 2
-    - Name: Stop
-      Entry: 3
       Data: 4
-    - Name: NPBalckBoardRelationData
+    - Name: 
       Entry: 7
-      Data: 49|UEngine.NP.NP_BlackBoardRelationData, Assembly-CSharp
-    - Name: BBKey
-      Entry: 1
-      Data: isInit
-    - Name: NP_BBValueType
-      Entry: 1
-      Data: System.Boolean
-    - Name: WriteOrCompareToBB
-      Entry: 5
-      Data: true
-    - Name: NP_BBValue
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 106765401325621
+    - Name: $v
       Entry: 7
-      Data: 50|UEngine.NP.NP_BBValue_Bool, Assembly-CSharp
-    - Name: Value
-      Entry: 5
-      Data: false
+      Data: 23|UEngine.NP.NP_ActionNodeData, Assembly-CSharp
+    - Name: id
+      Entry: 3
+      Data: 106765401325621
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 24|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
     - Name: 
       Entry: 8
       Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 25|UEngine.NP.NP_LogAction, Assembly-CSharp
+    - Name: Unitid
+      Entry: 3
+      Data: 0
+    - Name: Blackboard
+      Entry: 6
+      Data: 
+    - Name: BelongtoRuntimeTree
+      Entry: 6
+      Data: 
+    - Name: Action
+      Entry: 6
+      Data: 
+    - Name: Func1
+      Entry: 6
+      Data: 
+    - Name: Func2
+      Entry: 6
+      Data: 
+    - Name: LogInfo
+      Entry: 1
+      Data: 222
     - Name: 
       Entry: 8
       Data: 
@@ -1123,22 +591,91 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106748602941444
+      Data: 106765401325622
     - Name: $v
       Entry: 7
-      Data: 51|UEngine.NP.NP_SequenceNodeData, Assembly-CSharp
+      Data: 26|UEngine.NP.NP_ActionNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106748602941444
+      Data: 106765401325622
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 27|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 28|UEngine.NP.NP_LogAction, Assembly-CSharp
+    - Name: Unitid
+      Entry: 3
+      Data: 0
+    - Name: Blackboard
+      Entry: 6
+      Data: 
+    - Name: BelongtoRuntimeTree
+      Entry: 6
+      Data: 
+    - Name: Action
+      Entry: 6
+      Data: 
+    - Name: Func1
+      Entry: 6
+      Data: 
+    - Name: Func2
+      Entry: 6
+      Data: 
+    - Name: LogInfo
+      Entry: 1
+      Data: 111
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 106765401325623
+    - Name: $v
+      Entry: 7
+      Data: 29|UEngine.NP.NP_SequenceNodeData, Assembly-CSharp
+    - Name: id
+      Entry: 3
+      Data: 106765401325623
     - Name: NodeType
       Entry: 3
       Data: 0
     - Name: LinkedIds
       Entry: 7
-      Data: 52|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+      Data: 30|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 2
+    - Name: 
+      Entry: 3
+      Data: 106765401325622
+    - Name: 
+      Entry: 3
+      Data: 106765401325621
     - Name: 
       Entry: 13
       Data: 
@@ -1159,22 +696,25 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106748602941445
+      Data: 106765401325624
     - Name: $v
       Entry: 7
-      Data: 53|UEngine.NP.NP_RootNodeData, Assembly-CSharp
+      Data: 31|UEngine.NP.NP_RootNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106748602941445
+      Data: 106765401325624
     - Name: NodeType
       Entry: 3
       Data: 1
     - Name: LinkedIds
       Entry: 7
-      Data: 54|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+      Data: 32|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 3
+      Data: 106765401325623
     - Name: 
       Entry: 13
       Data: 
@@ -1201,72 +741,14 @@ MonoBehaviour:
       Data: 
     - Name: NP_BBValueManager
       Entry: 7
-      Data: 55|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UEngine.NP.ANP_BBValue,
+      Data: 33|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UEngine.NP.ANP_BBValue,
         Assembly-CSharp]], mscorlib
     - Name: comparer
-      Entry: 7
-      Data: 56|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: speed
-    - Name: $v
-      Entry: 7
-      Data: 57|UEngine.NP.NP_BBValue_Float, Assembly-CSharp
-    - Name: Value
-      Entry: 4
+      Entry: 9
       Data: 20
     - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: time
-    - Name: $v
-      Entry: 7
-      Data: 58|UEngine.NP.NP_BBValue_String, Assembly-CSharp
-    - Name: Value
-      Entry: 1
-      Data: fdsggg123
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: isInit
-    - Name: $v
-      Entry: 7
-      Data: 59|UEngine.NP.NP_BBValue_Bool, Assembly-CSharp
-    - Name: Value
-      Entry: 5
-      Data: false
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+      Entry: 12
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -1278,53 +760,17 @@ MonoBehaviour:
       Data: 
     - Name: NpBlackBoardDataManager
       Entry: 7
-      Data: 60|UEngine.NP.NP_BlackBoardDataManager, Assembly-CSharp
+      Data: 34|UEngine.NP.NP_BlackBoardDataManager, Assembly-CSharp
     - Name: BBValues
       Entry: 7
-      Data: 61|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UEngine.NP.ANP_BBValue,
+      Data: 35|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UEngine.NP.ANP_BBValue,
         Assembly-CSharp]], mscorlib
     - Name: comparer
       Entry: 9
-      Data: 34
+      Data: 20
     - Name: 
       Entry: 12
-      Data: 3
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: speed
-    - Name: $v
-      Entry: 9
-      Data: 35
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: time
-    - Name: $v
-      Entry: 9
-      Data: 36
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: isInit
-    - Name: $v
-      Entry: 9
-      Data: 37
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -1333,7 +779,7 @@ MonoBehaviour:
       Data: 
     - Name: EventValues
       Entry: 7
-      Data: 62|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+      Data: 36|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
@@ -1345,11 +791,11 @@ MonoBehaviour:
       Data: 
     - Name: Ids
       Entry: 7
-      Data: 63|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int64,
+      Data: 37|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int64,
         mscorlib]], mscorlib
     - Name: comparer
       Entry: 9
-      Data: 34
+      Data: 20
     - Name: 
       Entry: 12
       Data: 0
@@ -1364,50 +810,26 @@ MonoBehaviour:
       Data: 
   serializedNodes: []
   edges:
-  - GUID: 7f924117-67e2-4c22-ac79-9885449d1fba
+  - GUID: 20fad00c-cdef-4211-9d1b-2f8dd4209765
     owner: {fileID: 11400000}
-    inputNodeGUID: a86fe261-998f-457b-bf6a-eea2c399d44f
-    outputNodeGUID: 917f627e-cc1d-447c-816d-293b550ea91e
+    inputNodeGUID: a529a8a7-242a-449b-82a1-6c37854fcd3c
+    outputNodeGUID: 2d47c1c7-f2ea-4c54-9b43-094af80a1e89
     inputFieldName: PrevNode
     outputFieldName: NextNode
     inputPortIdentifier: 
     outputPortIdentifier: 
-  - GUID: 6156c0f0-c7fd-4ab3-ab96-5de65d46d168
+  - GUID: d20bc1d8-55ac-410d-89b6-0a23ef6a4a31
     owner: {fileID: 11400000}
-    inputNodeGUID: 41c20c10-1fa7-4571-a14f-dab5b14052d3
-    outputNodeGUID: a86fe261-998f-457b-bf6a-eea2c399d44f
+    inputNodeGUID: eb77d54c-cf67-4aba-90cf-74c5d79f0fc0
+    outputNodeGUID: a529a8a7-242a-449b-82a1-6c37854fcd3c
     inputFieldName: PrevNode
     outputFieldName: NextNode
     inputPortIdentifier: 
     outputPortIdentifier: 
-  - GUID: 2ce928ae-2b9e-439b-bf84-0e6b26bed88a
+  - GUID: 6a601203-0708-4046-9d57-148d3cb5f3d5
     owner: {fileID: 11400000}
-    inputNodeGUID: cd991635-b0da-4c4f-8327-e7a15f23c9f1
-    outputNodeGUID: f93b4710-5315-4f5b-afb9-6f973f0aff44
-    inputFieldName: PrevNode
-    outputFieldName: NextNode
-    inputPortIdentifier: 
-    outputPortIdentifier: 
-  - GUID: 109f32bb-1ad4-4717-87af-dc056777748f
-    owner: {fileID: 11400000}
-    inputNodeGUID: f93b4710-5315-4f5b-afb9-6f973f0aff44
-    outputNodeGUID: 4c83c1ff-85a1-4f84-a040-fafb34bf4100
-    inputFieldName: PrevNode
-    outputFieldName: NextNode
-    inputPortIdentifier: 
-    outputPortIdentifier: 
-  - GUID: 716386b1-917b-4d51-9f45-6011da1d0f7e
-    owner: {fileID: 11400000}
-    inputNodeGUID: 4c83c1ff-85a1-4f84-a040-fafb34bf4100
-    outputNodeGUID: a86fe261-998f-457b-bf6a-eea2c399d44f
-    inputFieldName: PrevNode
-    outputFieldName: NextNode
-    inputPortIdentifier: 
-    outputPortIdentifier: 
-  - GUID: 05bf470f-8cbf-405b-9921-254e3e967688
-    owner: {fileID: 11400000}
-    inputNodeGUID: bb0e6440-c204-40d4-9e9a-e3b0604a46db
-    outputNodeGUID: 4c83c1ff-85a1-4f84-a040-fafb34bf4100
+    inputNodeGUID: 1e992aee-e9d3-43fc-9946-3ff60671e425
+    outputNodeGUID: a529a8a7-242a-449b-82a1-6c37854fcd3c
     inputFieldName: PrevNode
     outputFieldName: NextNode
     inputPortIdentifier: 
@@ -1417,9 +839,9 @@ MonoBehaviour:
   exposedParameters: []
   serializedParameterList: []
   stickyNotes: []
-  position: {x: 280, y: -1, z: 0}
-  scale: {x: 0.57175326, y: 0.57175326, z: 1}
-  Name: test1
+  position: {x: 0, y: 12, z: 0}
+  scale: {x: 1, y: 1, z: 1}
+  Name: test
   SavePath: Assets/UEngine.NP/Resources
   references:
     version: 1

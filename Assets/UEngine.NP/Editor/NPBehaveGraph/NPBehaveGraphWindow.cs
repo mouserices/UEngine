@@ -1,4 +1,5 @@
-﻿using GraphProcessor;
+﻿using System.Collections.Generic;
+using GraphProcessor;
 using UEngine.NP;
 using UEngine.NP.Editor;
 using UnityEditor.Experimental.GraphView;
@@ -7,7 +8,7 @@ using UnityEditor.Experimental.GraphView;
 public class NPBehaveGraphWindow : UniversalGraphWindow
 {
     private GraphDebugger m_NpBehaveStateSearcher;
-    private bool enableFlowPoint = false;
+    private Dictionary<long, int> m_debugStartCalls;
 
     protected override void InitializeWindow(BaseGraph graph)
     {
@@ -20,22 +21,20 @@ public class NPBehaveGraphWindow : UniversalGraphWindow
         graphView.Add(m_ToolbarView);
 
         this.SetCurrentBlackBoardDataManager();
+
+        if (m_NpBehaveStateSearcher != null)
+        {
+            m_debugStartCalls = new Dictionary<long, int>();
+            graphView.initialized += () =>
+            {
+                EnalbeFlowPoint();
+            };
+        }
     }
 
     private void OnFocus()
     {
         SetCurrentBlackBoardDataManager();
-    }
-
-    protected override void Update()
-    {
-        base.Update();
-        //EnalbeFlowPoint();
-    }
-    
-    private void OnGUI()
-    {
-        //EnalbeFlowPoint();
     }
 
     private void SetCurrentBlackBoardDataManager()
@@ -57,22 +56,32 @@ public class NPBehaveGraphWindow : UniversalGraphWindow
         var graphViewEdgeViews = graphView.edgeViews;
         foreach (var edgeView in graphViewEdgeViews)
         {
-            if (!checkNodeStateRuntime(edgeView.input.node))
-            {
-                edgeView.DisalbeFlowPoint();
-                continue;
-            }
+            var npNodeView = (NP_NodeView) edgeView.input.node;
+            var npNodeBase = npNodeView.nodeTarget as NP_NodeBase;
+            var id = npNodeBase.NP_GetNodeData().id;
+            
             edgeView.EnableFlowPoint(() =>
             {
                 if (m_NpBehaveStateSearcher == null)
                 {
                     return;
                 }
-                var npNodeView = (NP_NodeView) edgeView.input.node;
-                var npNodeBase = npNodeView.nodeTarget as NP_NodeBase;
-                var id = npNodeBase.NP_GetNodeData().id;
-                m_NpBehaveStateSearcher.ResetNode(id);
-                
+
+                m_debugStartCalls[id] = m_NpBehaveStateSearcher.GetDebugNumStartCalls(id);
+
+            }, () =>
+            {
+                if (m_NpBehaveStateSearcher == null)
+                {
+                    return false;
+                }
+
+                if (!m_debugStartCalls.ContainsKey(id))
+                {
+                    m_debugStartCalls.Add(id,0);
+                }
+
+                return m_NpBehaveStateSearcher.CheckNeedEdge(id, m_debugStartCalls[id]);
             });
         }
     }
@@ -80,19 +89,5 @@ public class NPBehaveGraphWindow : UniversalGraphWindow
     public void SetGraphDebugger(GraphDebugger npBehaveStateSearcher)
     {
         m_NpBehaveStateSearcher = npBehaveStateSearcher;
-    }
-
-    private bool checkNodeStateRuntime(Node node)
-    {
-        if (m_NpBehaveStateSearcher == null)
-        {
-            return true;
-        }
-
-        var npNodeView = (NP_NodeView) node;
-        var npNodeBase = npNodeView.nodeTarget as NP_NodeBase;
-        var id = npNodeBase.NP_GetNodeData().id;
-
-        return m_NpBehaveStateSearcher.CheckNodeStateActive(id);
     }
 }

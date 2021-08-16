@@ -52,12 +52,5 @@ using UnityEngine;
                             (this.m_BaseGraph as NPBehaveGraph).NpBlackBoardDataManager;
                     Selection.activeObject = BlackboardInspector;
                 }, false);
-            
-            AddButton(new GUIContent("222", "打开Blackboard数据面板"),
-                () =>
-                {
-                    m_NpBehaveGraphWindow.EnalbeFlowPoint();
-                }, false);
-            
         }
     }

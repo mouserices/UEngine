@@ -29,6 +29,12 @@ namespace NPBehave
                 return clock;
             }
         }
+        
+#if UNITY_EDITOR
+        public int TotalNumStartCalls = 0;
+        public int TotalNumStopCalls = 0;
+        public int TotalNumStoppedCalls = 0;
+#endif
 
         public Root(Node mainNode) : base("Root", mainNode)
         {

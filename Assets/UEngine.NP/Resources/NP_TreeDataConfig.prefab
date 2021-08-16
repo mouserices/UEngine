@@ -46,8 +46,7 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 4900000, guid: e62b242c9832645b0aebfa6b0893a78c, type: 3}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -55,8 +54,8 @@ MonoBehaviour:
     SerializationNodes:
     - Name: NP_TreeDatas
       Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UnityEngine.TextAsset,
-        UnityEngine.CoreModule]], mscorlib
+      Data: 0|Unity.Cloud.Collaborate.Common.SerializableDictionary`2[[System.String,
+        mscorlib],[UEngine.NP.NP_TreeInfo, Assembly-CSharp]], Unity.CollabProxy.Editor
     - Name: comparer
       Entry: 7
       Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
@@ -66,19 +65,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: NPBehaveGraph
-    - Name: $v
-      Entry: 10
       Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: 
       Entry: 13
       Data: 

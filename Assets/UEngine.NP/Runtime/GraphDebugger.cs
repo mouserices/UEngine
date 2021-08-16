@@ -9,34 +9,35 @@ namespace UEngine.NP
 {
     public class GraphDebugger : MonoBehaviour
     {
-        private int instanceID;
+        private string npBehaveName;
 
-        public int InstanceID
+        public string NpBehaveName
         {
-            get => instanceID;
-            set => instanceID = value;
+            get => npBehaveName;
+            set => npBehaveName = value;
         }
 
         private Dictionary<long, Node> m_Nodes = new Dictionary<long, Node>();
+        
 
-        public bool CheckNodeStateActive(long id)
+        public bool CheckNeedEdge(long id,int num)
         {
             if (!m_Nodes.ContainsKey(id))
             {
                 return false;
             }
-
-            return m_Nodes[id].Excuted;
+            
+           return num < m_Nodes[id].DebugNumStartCalls;
         }
 
-        public void ResetNode(long id)
+        public int GetDebugNumStartCalls(long id)
         {
             if (!m_Nodes.ContainsKey(id))
             {
-                return;
+                return 0;
             }
 
-            m_Nodes[id].Excuted = false;
+            return m_Nodes[id].DebugNumStartCalls;
         }
 
         public void AddNode(long id, Node node)

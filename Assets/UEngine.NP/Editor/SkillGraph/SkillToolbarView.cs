@@ -29,7 +29,7 @@ using UnityEngine.UIElements;
             base.AddButtons();
             AddButton(new GUIContent("Show Edge Flow", "展示连线流向"), () =>
             {
-                _skillGraphWindow.EnalbeFlowPoint();
+                //_skillGraphWindow.EnalbeFlowPoint();
             });
         }
     }

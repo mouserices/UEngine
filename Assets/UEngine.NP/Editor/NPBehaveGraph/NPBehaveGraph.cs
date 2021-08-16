@@ -81,11 +81,9 @@ public class NPBehaveGraph : BaseGraph
         var npTreeDataConfig = loadAssetAtPath.GetComponent<NP_TreeDataConfig>();
         if (npTreeDataConfig != null)
         {
-            if (!npTreeDataConfig.NP_TreeDatas.ContainsKey(this.name))
-            {
-                var assetAtPath = AssetDatabase.LoadAssetAtPath<TextAsset>($"{SavePath}/{this.Name}.bytes");
-                npTreeDataConfig.NP_TreeDatas.Add(this.name, assetAtPath);
-            }
+            var assetAtPath = AssetDatabase.LoadAssetAtPath<TextAsset>($"{SavePath}/{this.Name}.bytes");
+            var assetPath = AssetDatabase.GetAssetPath(this);
+            npTreeDataConfig.AddConfig(this.name, assetAtPath, assetPath);
         }
     }
 
