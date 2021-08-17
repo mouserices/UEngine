@@ -1,8 +1,8 @@
 using GraphProcessor;
-using Plugins.Examples.Editor.BaseGraph;
 using UEngine.NP;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 [CustomEditor(typeof(GraphDebugger))]
@@ -14,7 +14,7 @@ public class GraphDebuggerEditor : Editor
     {
         var root = new VisualElement();
 
-        root.Add(new Button(() => OpenGraph(behaviour.NpBehaveName))
+        root.Add(new Button(() => OpenGraph(behaviour.NpBehaveName,behaviour.gameObject.scene))
         {
             text = "Open"
         });
@@ -22,15 +22,16 @@ public class GraphDebuggerEditor : Editor
         return root;
     }
 
-    public bool OpenGraph(string npBehaveName)
+    public bool OpenGraph(string npBehaveName,Scene scene)
     {
         var loadAssetAtPath =
             AssetDatabase.LoadAssetAtPath<GameObject>("Assets/UEngine.NP/Resources/NP_TreeDataConfig.prefab");
         var npTreeDataConfig = loadAssetAtPath.GetComponent<NP_TreeDataConfig>();
         var graphPath = npTreeDataConfig.NP_TreeDatasToGraphPath[npBehaveName];
 
-        BaseGraph atPath = AssetDatabase.LoadAssetAtPath<BaseGraph>(graphPath);
-        return InitializeGraph(atPath);
+        BaseGraph baseGraph = AssetDatabase.LoadAssetAtPath<BaseGraph>(graphPath);
+        baseGraph.LinkToScene(scene);
+        return InitializeGraph(baseGraph);
     }
 
     public bool InitializeGraph(BaseGraph baseGraph)
@@ -47,7 +48,6 @@ public class GraphDebuggerEditor : Editor
                 npBehaveGraphWindow.InitializeGraph(npBehaveGraph);
                 break;
             default:
-                EditorWindow.GetWindow<FallbackGraphWindow>().InitializeGraph(baseGraph);
                 break;
         }
 
