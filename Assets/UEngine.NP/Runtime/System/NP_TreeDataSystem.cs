@@ -15,13 +15,12 @@ namespace UEngine.NP
             ref var npTreeDataComponent = ref Game.MainEntity.Get<NP_TreeDataComponent>();
             npTreeDataComponent.NpDataSupportorBases = new Dictionary<string, NP_DataSupportorBase>();
 
-            var gameObject = ResKit.Load<GameObject>("NP_TreeDataConfig");
-            var npTreeDataConfig = gameObject.GetComponent<NP_TreeDataConfig>();
-            foreach (var npTreeData in npTreeDataConfig.NP_TreeDatasToBytes)
+            var npTreeDataConfig = ResKit.Load<NPBehaveConfigs>("NPBehaveConfigs");
+            foreach (var npTreeData in npTreeDataConfig.Configs)
             {
                 if (!npTreeDataComponent.NpDataSupportorBases.ContainsKey(npTreeData.Key))
                 { NP_DataSupportorBase npDataSupportorBase =
-                                         BsonSerializer.Deserialize<NP_DataSupportorBase>(npTreeData.Value.bytes);
+                                         BsonSerializer.Deserialize<NP_DataSupportorBase>(npTreeData.Value.TextAsset.bytes);
                                      npTreeDataComponent.NpDataSupportorBases.Add(npTreeData.Key, npDataSupportorBase);
                    
                 }

@@ -76,15 +76,13 @@ public class NPBehaveGraph : BaseGraph
 
         Debug.Log($"保存 {SavePath}/{this.Name}.bytes 成功");
         AssetDatabase.Refresh();
-        var loadAssetAtPath =
-            AssetDatabase.LoadAssetAtPath<GameObject>("Assets/UEngine.NP/Resources/NP_TreeDataConfig.prefab");
-        var npTreeDataConfig = loadAssetAtPath.GetComponent<NP_TreeDataConfig>();
-        if (npTreeDataConfig != null)
-        {
-            var assetAtPath = AssetDatabase.LoadAssetAtPath<TextAsset>($"{SavePath}/{this.Name}.bytes");
-            var assetPath = AssetDatabase.GetAssetPath(this);
-            npTreeDataConfig.AddConfig(this.name, assetAtPath, assetPath);
-        }
+        var npBehaveConfigs =
+            AssetDatabase.LoadAssetAtPath<NPBehaveConfigs>("Assets/UEngine.NP/Config/Resources/NPBehaveConfigs.asset");
+        var assetAtPath = AssetDatabase.LoadAssetAtPath<TextAsset>($"{SavePath}/{this.Name}.bytes");
+        var assetPath = AssetDatabase.GetAssetPath(this);
+        npBehaveConfigs.AddConfig(this.name, assetAtPath, assetPath);
+        AssetDatabase.Refresh();
+        AssetDatabase.SaveAssets();
     }
 
     [Button("测试反序列化", 25), GUIColor(0.4f, 0.8f, 1)]

@@ -75,7 +75,7 @@ MonoBehaviour:
       Data: 2|UEngine.NP.NP_RootNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106765418102792
+      Data: 106770864472068
     - Name: NodeType
       Entry: 3
       Data: 1
@@ -87,7 +87,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 3
-      Data: 106765418102791
+      Data: 106770864472067
     - Name: 
       Entry: 13
       Data: 
@@ -126,7 +126,7 @@ MonoBehaviour:
       Data: 345
     - Name: 
       Entry: 4
-      Data: 176
+      Data: 170
     - Name: 
       Entry: 4
       Data: 110.5
@@ -138,7 +138,7 @@ MonoBehaviour:
       Data: 
     - Name: expanded
       Entry: 5
-      Data: false
+      Data: true
     - Name: debug
       Entry: 5
       Data: false
@@ -156,7 +156,7 @@ MonoBehaviour:
       Data: 5|UEngine.NP.NP_SequenceNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106765418102791
+      Data: 106770864472067
     - Name: NodeType
       Entry: 3
       Data: 0
@@ -168,10 +168,10 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 3
-      Data: 106765418102790
+      Data: 106770864472065
     - Name: 
       Entry: 3
-      Data: 106765418102789
+      Data: 106770864472066
     - Name: 
       Entry: 13
       Data: 
@@ -204,16 +204,16 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 237.5
+      Data: 223.7
     - Name: 
       Entry: 4
-      Data: 311
+      Data: 327
     - Name: 
       Entry: 4
       Data: 107.5
     - Name: 
       Entry: 4
-      Data: 76
+      Data: 89.5
     - Name: 
       Entry: 8
       Data: 
@@ -234,7 +234,7 @@ MonoBehaviour:
       Data: 8|UEngine.NP.NP_ActionNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106765418102790
+      Data: 106770864472065
     - Name: NodeType
       Entry: 3
       Data: 2
@@ -303,16 +303,16 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 494
+      Data: 499.750031
     - Name: 
       Entry: 4
-      Data: 317
+      Data: 327
     - Name: 
       Entry: 4
-      Data: 100
+      Data: 107.5
     - Name: 
       Entry: 4
-      Data: 100
+      Data: 89.5
     - Name: 
       Entry: 8
       Data: 
@@ -333,7 +333,7 @@ MonoBehaviour:
       Data: 12|UEngine.NP.NP_ActionNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106765418102789
+      Data: 106770864472066
     - Name: NodeType
       Entry: 3
       Data: 2
@@ -409,10 +409,10 @@ MonoBehaviour:
       Data: 16|UEngine.NP.NP_DataSupportorBase, Assembly-CSharp
     - Name: InstanceID
       Entry: 3
-      Data: -14870
+      Data: 17712
     - Name: NPBehaveTreeDataId
       Entry: 3
-      Data: 106765418102792
+      Data: 106770864472068
     - Name: NP_DataSupportorDic
       Entry: 7
       Data: 17|System.Collections.Generic.Dictionary`2[[System.Int64, mscorlib],[UEngine.NP.NP_NodeDataBase,
@@ -432,19 +432,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106765418102789
-    - Name: $v
-      Entry: 9
-      Data: 12
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 106765418102790
+      Data: 106770864472065
     - Name: $v
       Entry: 9
       Data: 8
@@ -456,7 +444,19 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106765418102791
+      Data: 106770864472066
+    - Name: $v
+      Entry: 9
+      Data: 12
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 106770864472067
     - Name: $v
       Entry: 9
       Data: 5
@@ -468,7 +468,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106765418102792
+      Data: 106770864472068
     - Name: $v
       Entry: 9
       Data: 2
@@ -835,13 +835,33 @@ MonoBehaviour:
     inputPortIdentifier: 
     outputPortIdentifier: 
   stackNodes: []
-  pinnedElements: []
+  pinnedElements:
+  - position:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 150
+      height: 200
+    opened: 0
+    editorType:
+      serializedType: ConditionalProcessorView, NodeGraphProcessor.Examples, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - position:
+      serializedVersion: 2
+      x: 10
+      y: 74
+      width: 150
+      height: 200
+    opened: 0
+    editorType:
+      serializedType: GraphProcessor.ExposedParameterView, com.alelievr.NodeGraphProcessor.Editor,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   exposedParameters: []
   serializedParameterList: []
   stickyNotes: []
-  position: {x: 0, y: 12, z: 0}
-  scale: {x: 1, y: 1, z: 1}
-  Name: test
-  SavePath: Assets/UEngine.NP/Resources
+  position: {x: 75, y: 84, z: 0}
+  scale: {x: 0.8695652, y: 0.8695652, z: 1}
+  Name: behave001
+  SavePath: Assets/UEngine.NP/Config/Bytes
   references:
     version: 1

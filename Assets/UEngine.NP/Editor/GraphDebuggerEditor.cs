@@ -24,10 +24,9 @@ public class GraphDebuggerEditor : Editor
 
     public bool OpenGraph(string npBehaveName,Scene scene)
     {
-        var loadAssetAtPath =
-            AssetDatabase.LoadAssetAtPath<GameObject>("Assets/UEngine.NP/Resources/NP_TreeDataConfig.prefab");
-        var npTreeDataConfig = loadAssetAtPath.GetComponent<NP_TreeDataConfig>();
-        var graphPath = npTreeDataConfig.NP_TreeDatasToGraphPath[npBehaveName];
+        var npTreeDataConfig =
+            AssetDatabase.LoadAssetAtPath<NPBehaveConfigs>("Assets/UEngine.NP/Config/Resources/NPBehaveConfigs.asset");
+        var graphPath = npTreeDataConfig.Configs[npBehaveName].GraphPath;
 
         BaseGraph baseGraph = AssetDatabase.LoadAssetAtPath<BaseGraph>(graphPath);
         baseGraph.LinkToScene(scene);

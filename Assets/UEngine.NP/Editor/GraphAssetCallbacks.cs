@@ -5,6 +5,7 @@ using UnityEditor;
 using GraphProcessor;
 using UnityEditor.Callbacks;
 using System.IO;
+using UEngine.NP;
 using UEngine.NP.Editor;
 
 public class GraphAssetCallbacks
@@ -28,6 +29,13 @@ public class GraphAssetCallbacks
 	{
 		var graph = ScriptableObject.CreateInstance< SkillGraph >();
 		ProjectWindowUtil.CreateAsset(graph, "SkillGraph.asset");
+	}
+	
+	[MenuItem("Assets/Create/NPBehaveConfigs", false, 10)]
+	public static void CreateNPBehaveConfigs()
+	{
+		var graph = ScriptableObject.CreateInstance< NPBehaveConfigs >();
+		ProjectWindowUtil.CreateAsset(graph, "NPBehaveConfigs.asset");
 	}
 
 	[OnOpenAsset(0)]
