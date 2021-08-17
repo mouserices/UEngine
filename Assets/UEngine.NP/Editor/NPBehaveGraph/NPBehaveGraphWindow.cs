@@ -3,6 +3,7 @@ using GraphProcessor;
 using UEngine.NP;
 using UEngine.NP.Editor;
 using UnityEditor.Experimental.GraphView;
+using UnityEngine.UIElements;
 
 
 public class NPBehaveGraphWindow : UniversalGraphWindow
@@ -28,6 +29,7 @@ public class NPBehaveGraphWindow : UniversalGraphWindow
             graphView.initialized += () =>
             {
                 EnalbeFlowPoint();
+                UpdateNodeViewDebug();
             };
         }
     }
@@ -49,6 +51,30 @@ public class NPBehaveGraphWindow : UniversalGraphWindow
 
         NP_BlackBoardDataManager.CurrentEditedNP_BlackBoardDataManager =
             (this.graph as NPBehaveGraph).NpBlackBoardDataManager;
+    }
+
+    private void UpdateNodeViewDebug()
+    {
+        var graphViewNodeViews = graphView.nodeViews;
+        foreach (var nodeView in graphViewNodeViews)
+        {
+            var npNodeBase = nodeView.nodeTarget as NP_NodeBase;
+            var id = npNodeBase.NP_GetNodeData().id;
+
+            Label label = new Label();
+            nodeView.contentContainer.Add(label);
+
+            nodeView.schedule.Execute(() =>
+            {
+                if (m_NpBehaveStateSearcher == null)
+                {
+                    return;
+                }
+
+                var debugNumStartCalls = m_NpBehaveStateSearcher.GetDebugNumStartCalls(id);
+                label.text = debugNumStartCalls.ToString();
+            }).Every(100);
+        }
     }
 
     public void EnalbeFlowPoint()
