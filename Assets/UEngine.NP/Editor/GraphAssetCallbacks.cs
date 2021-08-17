@@ -5,7 +5,6 @@ using UnityEditor;
 using GraphProcessor;
 using UnityEditor.Callbacks;
 using System.IO;
-using Plugins.Examples.Editor.BaseGraph;
 using UEngine.NP.Editor;
 
 public class GraphAssetCallbacks
@@ -51,7 +50,6 @@ public class GraphAssetCallbacks
 				npBehaveGraphWindow.InitializeGraph(npBehaveGraph);
 				break;
 			default:
-				EditorWindow.GetWindow<FallbackGraphWindow>().InitializeGraph(baseGraph);
 				break;
 		}
 
