@@ -20,9 +20,9 @@ namespace UEngine.NP
             return this.m_BlackboardQueryNode;
         }
         
-        public override Decorator CreateDecoratorNode(Node node)
+        public override Decorator CreateDecoratorNode(Node node,NP_RuntimeTree npRuntimeTree)
         {
-            return base.CreateDecoratorNode(node);
+            return base.CreateDecoratorNode(node,npRuntimeTree);
         }
 
     }

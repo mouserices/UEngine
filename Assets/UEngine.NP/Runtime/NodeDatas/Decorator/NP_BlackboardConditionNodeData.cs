@@ -19,7 +19,7 @@ namespace UEngine.NP
 
         public NP_BlackBoardRelationData NPBalckBoardRelationData = new NP_BlackBoardRelationData() { WriteOrCompareToBB = true };
 
-        public override Decorator CreateDecoratorNode(Node node)
+        public override Decorator CreateDecoratorNode(Node node,NP_RuntimeTree npRuntimeTree)
         {
             this.m_BlackboardConditionNode = new BlackboardCondition(this.NPBalckBoardRelationData.BBKey,
                 this.Ope,

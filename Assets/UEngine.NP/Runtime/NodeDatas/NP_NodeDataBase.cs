@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using MongoDB.Bson.Serialization.Attributes;
 using NPBehave;
 using Sirenix.OdinInspector;
+using UEngine.NP.Unit;
 using UnityEngine;
 
 namespace UEngine.NP
@@ -61,7 +62,7 @@ namespace UEngine.NP
         /// <param name="runtimeTree">运行时归属的行为树</param>
         /// <param name="node">所装饰的结点</param>
         /// <returns></returns>
-        public virtual Decorator CreateDecoratorNode( Node node)
+        public virtual Decorator CreateDecoratorNode( Node node,NP_RuntimeTree npRuntimeTree)
         {
             return null;
         }
@@ -72,7 +73,7 @@ namespace UEngine.NP
         /// <param name="unitId">行为树归属的UnitID</param>
         /// <param name="runtimeTree">运行时归属的行为树</param>
         /// <returns></returns>
-        public virtual Task CreateTask(NP_RuntimeTree npRuntimeTree)
+        public virtual Task CreateTask(NP_RuntimeTree npRuntimeTree,BaseUnit baseUnit)
         {
             return null;
         }

@@ -1,7 +1,9 @@
+using System.Collections.Generic;
+
 namespace UEngine.NP.Component.Event
 {
     public struct RequestRunNpEvent
     {
-        public string NP_TreeName;
+        public List<string> NPBehaves;
     }
 }

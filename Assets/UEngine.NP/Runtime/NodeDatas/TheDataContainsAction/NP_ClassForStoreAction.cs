@@ -7,6 +7,7 @@
 using System;
 using NPBehave;
 using Sirenix.OdinInspector;
+using UEngine.NP.Unit;
 using Action = System.Action;
 
 
@@ -21,7 +22,7 @@ namespace UEngine.NP
         /// 归属的UnitID
         /// </summary>
         [HideInEditorMode]
-        public long Unitid;
+        public BaseUnit BaseUnit;
 
         public Blackboard Blackboard;
 

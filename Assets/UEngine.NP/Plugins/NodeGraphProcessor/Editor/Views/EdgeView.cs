@@ -96,6 +96,8 @@ namespace GraphProcessor
 
 		public Action Finish;
 		public Func<bool> IsConditionMet;
+		public float totalMoveTime = 2f;
+		public float curMoveTime = 0f;
 
 		protected override void RegisterCallbacksOnTarget()
 		{
@@ -107,16 +109,20 @@ namespace GraphProcessor
 				point.style.top = 0;
 				target.Add(point);
 
-				target.schedule.Execute(() =>
+				target.schedule.Execute((timeState) =>
 				{
 					if (IsConditionMet())
 					{
-						UpdateCapPoint(edge, (float)(EditorApplication.timeSinceStartup % 1 / 1));
-					}
-					else
-					{
-						point.style.left = 0;
-						point.style.top = 0;
+						curMoveTime += timeState.deltaTime / 1000f;
+						if (curMoveTime >= totalMoveTime)
+						{
+							curMoveTime = 0;
+							if (Finish != null)
+							{
+								Finish();
+							}
+						}
+						UpdateCapPoint(edge, curMoveTime / totalMoveTime);
 					}
 				}).Until(() => point == null);
 			}
@@ -140,16 +146,6 @@ namespace GraphProcessor
 			Vector2 v = Lerp(_edge.edgeControl.controlPoints, _t);
 			point.style.left = v.x;
 			point.style.top = v.y;
-
-			Vector2 lastPoint = _edge.edgeControl.controlPoints[_edge.edgeControl.controlPoints.Length - 1];
-			if (1- _t < 0.8f)
-			{
-				if (Finish != null)
-				{
-					Finish();
-					//Finish = null;
-				}
-			}
 		}
 
 		Vector2 Lerp(Vector2[] points, float t)

@@ -16,7 +16,7 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 4900000, guid: de5d91c3f2c704485b119594526321cf, type: 3}
+    - {fileID: 4900000, guid: 694d51e11124646409bdec61bb52ac8c, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -41,7 +41,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: NPBehaveGraph
+      Data: Client_Skill01
     - Name: $v
       Entry: 7
       Data: 2|UEngine.NP.NPBehaveConfig, Assembly-CSharp
@@ -50,7 +50,7 @@ MonoBehaviour:
       Data: 0
     - Name: GraphPath
       Entry: 1
-      Data: Assets/UEngine.NP/Config/Graph/NPBehaveGraph.asset
+      Data: Assets/UEngine.NP/Config/Graph/Client_Skill01.asset
     - Name: 
       Entry: 8
       Data: 

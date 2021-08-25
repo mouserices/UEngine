@@ -7,6 +7,7 @@
 using System.Collections.Generic;
 using NPBehave;
 using Sirenix.OdinInspector;
+using UEngine.NP.Unit;
 
 namespace UEngine.NP
 {
@@ -18,7 +19,7 @@ namespace UEngine.NP
         
         public NP_BlackBoardRelationData NPBalckBoardRelationData = new NP_BlackBoardRelationData();
         
-        public override Task CreateTask(NP_RuntimeTree npRuntimeTree)
+        public override Task CreateTask(NP_RuntimeTree npRuntimeTree,BaseUnit baseUnit)
         {
             this.m_WaitNode = new Wait(this.NPBalckBoardRelationData.BBKey);
             return this.m_WaitNode;

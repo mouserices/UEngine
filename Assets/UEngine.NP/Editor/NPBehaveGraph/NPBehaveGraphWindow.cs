@@ -3,6 +3,7 @@ using GraphProcessor;
 using UEngine.NP;
 using UEngine.NP.Editor;
 using UnityEditor.Experimental.GraphView;
+using UnityEngine;
 using UnityEngine.UIElements;
 
 
@@ -92,7 +93,6 @@ public class NPBehaveGraphWindow : UniversalGraphWindow
                 {
                     return;
                 }
-
                 m_debugStartCalls[id] = m_NpBehaveStateSearcher.GetDebugNumStartCalls(id);
 
             }, () =>
@@ -107,7 +107,9 @@ public class NPBehaveGraphWindow : UniversalGraphWindow
                     m_debugStartCalls.Add(id,0);
                 }
 
-                return m_NpBehaveStateSearcher.CheckNeedEdge(id, m_debugStartCalls[id]);
+                var checkNeedEdge = m_NpBehaveStateSearcher.CheckNeedEdge(id, m_debugStartCalls[id]);
+
+                return checkNeedEdge;
             });
         }
     }

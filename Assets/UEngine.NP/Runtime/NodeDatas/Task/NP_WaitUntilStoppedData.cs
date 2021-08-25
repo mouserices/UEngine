@@ -6,6 +6,7 @@
 
 using NPBehave;
 using Sirenix.OdinInspector;
+using UEngine.NP.Unit;
 
 namespace UEngine.NP
 {
@@ -13,6 +14,9 @@ namespace UEngine.NP
     [HideLabel]
     public class NP_WaitUntilStoppedData: NP_NodeDataBase
     {
+        [LabelText("当Stop时,成功还是失败,默认失败")]
+        public bool sucessWhenStopped = false;
+        
         [HideInEditorMode]
         private WaitUntilStopped m_WaitUntilStopped;
 
@@ -21,9 +25,9 @@ namespace UEngine.NP
             return this.m_WaitUntilStopped;
         }
 
-        public override Task CreateTask(NP_RuntimeTree npRuntimeTree)
+        public override Task CreateTask(NP_RuntimeTree npRuntimeTree,BaseUnit baseUnit)
         {
-            this.m_WaitUntilStopped = new WaitUntilStopped();
+            this.m_WaitUntilStopped = new WaitUntilStopped(sucessWhenStopped);
             return this.m_WaitUntilStopped;
         }
     }

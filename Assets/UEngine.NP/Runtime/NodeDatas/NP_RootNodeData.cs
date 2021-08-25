@@ -15,7 +15,7 @@ namespace UEngine.NP
         [HideInEditorMode]
         public Root m_Root;
 
-        public override Decorator CreateDecoratorNode(Node node)
+        public override Decorator CreateDecoratorNode(Node node,NP_RuntimeTree npRuntimeTree)
         {
             this.m_Root = new Root(node);
             return this.m_Root;

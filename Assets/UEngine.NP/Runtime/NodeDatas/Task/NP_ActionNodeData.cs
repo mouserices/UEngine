@@ -6,6 +6,7 @@
 
 using NPBehave;
 using Sirenix.OdinInspector;
+using UEngine.NP.Unit;
 
 namespace UEngine.NP
 {
@@ -17,8 +18,9 @@ namespace UEngine.NP
         
         public NP_ClassForStoreAction NpClassForStoreAction;
 
-        public override Task CreateTask(NP_RuntimeTree npRuntimeTree)
+        public override Task CreateTask(NP_RuntimeTree npRuntimeTree,BaseUnit baseUnit)
         {
+            this.NpClassForStoreAction.BaseUnit = baseUnit;
             this.NpClassForStoreAction.BelongtoRuntimeTree = npRuntimeTree;
             this.m_ActionNode = this.NpClassForStoreAction._CreateNPBehaveAction();
             return this.m_ActionNode;
