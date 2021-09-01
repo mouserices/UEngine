@@ -1,6 +1,7 @@
 using System;
 using Sirenix.OdinInspector;
 using UEngine.NP.FsmState;
+using UEngine.NP.Unit;
 
 namespace UEngine.NP
 {
@@ -22,7 +23,11 @@ namespace UEngine.NP
 
         public override Action GetActionToBeDone()
         {
-            this.Action = () => { BaseUnit.ChangeState(StateType,AnimClipName,Priority,DurationTime);};
+            this.Action = () =>
+            {
+                var entityWithUnit = Contexts.sharedInstance.game.GetEntityWithUnit(UnitID);
+                entityWithUnit.ReplaceStateEnter(new AttackStateParam(){AnimClipName = AnimClipName,DurationTime = DurationTime});
+            };
             return this.Action;
         }
     }

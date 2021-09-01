@@ -14,13 +14,21 @@ namespace UEngine.NP.FsmState
         public override void OnEnter()
         {
             base.OnEnter();
-            WaitDurationTime(this.DurationTime);
+            var attackStateParam = StateParam as AttackStateParam;
+            
+            //play anim
+            var gameEntity = entity as GameEntity;
+            gameEntity.ReplaceAnimation(attackStateParam.AnimClipName);
+
+            //wait to exist state;
+            WaitDurationTime(attackStateParam.DurationTime);
         }
 
         private async void WaitDurationTime(int durationTime)
         {
             await Task.Delay(durationTime,m_CancellationTokenSource.Token);
-            BaseUnit.RemoveState(FsmState.StateType.Attack);
+            var gameEntity = entity as GameEntity;
+            gameEntity.ReplaceStateExit(StateType.Attack);
         }
 
         public override void OnExist()

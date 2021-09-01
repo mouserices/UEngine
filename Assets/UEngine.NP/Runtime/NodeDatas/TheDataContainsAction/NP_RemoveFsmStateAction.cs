@@ -12,7 +12,11 @@ namespace UEngine.NP
         
         public override Action GetActionToBeDone()
         {
-            this.Action = () => { BaseUnit.RemoveState(StateType);};
+            this.Action = () =>
+            {
+                var entityWithUnit = Contexts.sharedInstance.game.GetEntityWithUnit(UnitID);
+                entityWithUnit.AddStateExit(StateType);
+            };
             return this.Action;
         }
     }

@@ -22,7 +22,7 @@ namespace UEngine.NP
         /// 归属的UnitID
         /// </summary>
         [HideInEditorMode]
-        public BaseUnit BaseUnit;
+        public long UnitID;
 
         public Blackboard Blackboard;
 

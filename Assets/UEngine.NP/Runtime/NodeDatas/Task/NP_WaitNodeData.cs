@@ -19,7 +19,7 @@ namespace UEngine.NP
         
         public NP_BlackBoardRelationData NPBalckBoardRelationData = new NP_BlackBoardRelationData();
         
-        public override Task CreateTask(NP_RuntimeTree npRuntimeTree,BaseUnit baseUnit)
+        public override Task CreateTask(NP_RuntimeTree npRuntimeTree,long unitID)
         {
             this.m_WaitNode = new Wait(this.NPBalckBoardRelationData.BBKey);
             return this.m_WaitNode;

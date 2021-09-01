@@ -1,4 +1,5 @@
 ﻿using Animancer;
+using UEngine.NP.Features.FsmState;
 using UEngine.NP.FsmState;
 using UEngine.NP.Unit;
 using UnityEngine;
@@ -103,7 +104,6 @@ namespace StarterAssets
 
         private bool _hasAnimator;
 
-        private AnimancerComponent _animancerComponent;
         [SerializeField] private AnimationClip _idleClip;
         [SerializeField] private AnimationClip _walkClip;
 
@@ -113,11 +113,6 @@ namespace StarterAssets
             if (_mainCamera == null)
             {
                 _mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
-            }
-
-            if (_animancerComponent == null)
-            {
-                _animancerComponent = this.GetComponent<AnimancerComponent>();
             }
         }
 
@@ -132,8 +127,6 @@ namespace StarterAssets
             // reset our timeouts on start
             _jumpTimeoutDelta = JumpTimeout;
             _fallTimeoutDelta = FallTimeout;
-
-            _animancerComponent.Play(_idleClip);
         }
 
         private void Update()
@@ -241,7 +234,7 @@ namespace StarterAssets
                     RotationSmoothTime);
 
                 // rotate to face input direction relative to camera position
-                if (GetComponent<BaseUnit>().CheckState(StateType.Walk))
+                if (Contexts.sharedInstance.game.mainPlayerEntity.CheckState(StateType.Walk))
                 {
                     transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
                 }
@@ -251,7 +244,7 @@ namespace StarterAssets
             Vector3 targetDirection = Quaternion.Euler(0.0f, _targetRotation, 0.0f) * Vector3.forward;
 
             // move the player
-            if (GetComponent<BaseUnit>().CheckState(StateType.Walk))
+            if (Contexts.sharedInstance.game.mainPlayerEntity.CheckState(StateType.Walk))
             {
                 _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) +
                                  new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
@@ -266,11 +259,18 @@ namespace StarterAssets
                 if (_speed <= 0)
                 {
                     //_animancerComponent.Play(_idleClip, 0.25f);
-                    GetComponent<BaseUnit>().ChangeState(StateType.IDLE,"Avatar17_Idle");
+                    if (!Contexts.sharedInstance.game.mainPlayerEntity.CheckState(StateType.IDLE))
+                    {
+                        Contexts.sharedInstance.game.mainPlayerEntity.ReplaceStateEnter(new IdleStateParam(){AnimClipName = "Avatar17_Idle"});
+                    }
                 }
                 else
                 {
-                    GetComponent<BaseUnit>().ChangeState(StateType.Walk,"Avatar17_Walk");
+                    if (!Contexts.sharedInstance.game.mainPlayerEntity.CheckState(StateType.Walk))
+                    {
+                        Contexts.sharedInstance.game.mainPlayerEntity.ReplaceStateEnter(new WalkStateParam(){AnimClipName = "Avatar17_Walk"});
+                    }
+                    
                     // _animancerComponent.Play(_walkClip, 0.25f).Events.OnEnd = () =>
                     // {
                     //     if (_speed <= 0)

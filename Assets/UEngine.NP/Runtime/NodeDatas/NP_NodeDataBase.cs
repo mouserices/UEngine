@@ -73,7 +73,7 @@ namespace UEngine.NP
         /// <param name="unitId">行为树归属的UnitID</param>
         /// <param name="runtimeTree">运行时归属的行为树</param>
         /// <returns></returns>
-        public virtual Task CreateTask(NP_RuntimeTree npRuntimeTree,BaseUnit baseUnit)
+        public virtual Task CreateTask(NP_RuntimeTree npRuntimeTree,long unitID)
         {
             return null;
         }

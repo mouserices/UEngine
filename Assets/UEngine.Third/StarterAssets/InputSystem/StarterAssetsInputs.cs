@@ -60,7 +60,8 @@ namespace StarterAssets
 		public void OnKeyboard_E(InputValue value)
 		{
 			KeyboardEInput(value.isPressed);
-			//Debug.Log($"{Time.frameCount}: {value.isPressed}");
+			var gameEntity = Contexts.sharedInstance.game.CreateEntity();
+			gameEntity.AddInput(KeyCode.E);
 		}
 #else
 	// old input sys if we do decide to have it (most likely wont)...
