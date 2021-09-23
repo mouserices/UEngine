@@ -8,7 +8,7 @@ namespace UEngine.NP.FsmState
     {
         public StateType StateType;
         public int Priority;
-        public IStateParam StateParam;
+        public StateParam StateParam;
         
         private IEntity _entity;
         public IEntity entity => this._entity;

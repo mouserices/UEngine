@@ -10,8 +10,12 @@ public sealed class GameEventSystems : Feature {
 
     public GameEventSystems(Contexts contexts) {
         Add(new AnimationEventSystem(contexts)); // priority: 0
+        Add(new BoxColliderEventSystem(contexts)); // priority: 0
         Add(new DestroyedEventSystem(contexts)); // priority: 0
+        Add(new LayerEventSystem(contexts)); // priority: 0
+        Add(new ParentEventSystem(contexts)); // priority: 0
         Add(new PositionEventSystem(contexts)); // priority: 0
         Add(new RotationEventSystem(contexts)); // priority: 0
+        Add(new ScaleEventSystem(contexts)); // priority: 0
     }
 }

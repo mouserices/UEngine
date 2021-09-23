@@ -16,12 +16,14 @@ namespace UEngine.NP
     public class NP_WaitNodeData : NP_NodeDataBase
     {
         [HideInEditorMode] private Wait m_WaitNode;
-        
-        public NP_BlackBoardRelationData NPBalckBoardRelationData = new NP_BlackBoardRelationData();
-        
-        public override Task CreateTask(NP_RuntimeTree npRuntimeTree,long unitID)
+
+        //public NP_BlackBoardRelationData NPBalckBoardRelationData = new NP_BlackBoardRelationData();
+        public float Second;
+        public float Speed;
+
+        public override Task CreateTask(Skill npRuntimeTree, long unitID)
         {
-            this.m_WaitNode = new Wait(this.NPBalckBoardRelationData.BBKey);
+            this.m_WaitNode = new Wait(Second / Speed);
             return this.m_WaitNode;
         }
 

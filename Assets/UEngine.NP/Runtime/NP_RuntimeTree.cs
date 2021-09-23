@@ -1,9 +1,11 @@
 using NPBehave;
 
-namespace UEngine.NP
+
+public class Skill
 {
-    public class NP_RuntimeTree
-    {
-        public Blackboard Blackboard;
-    }
+    public int ID;
+    public Root Root;
+    public string NPBehaveName;
+    public Blackboard Blackboard;
+    public long UnitID;
 }

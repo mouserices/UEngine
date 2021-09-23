@@ -6,5 +6,5 @@ using UEngine.NP;
 [Game][Unique]
 public class BehaveTreeDataComponent : IComponent
 {
-    public Dictionary<string, NP_DataSupportorBase> BehaveTreeDatas;
+    public Dictionary<string, NP_DataSupportorBase> NameToBehaveTreeDatas;
 }

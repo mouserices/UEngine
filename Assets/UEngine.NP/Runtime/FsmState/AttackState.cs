@@ -18,17 +18,16 @@ namespace UEngine.NP.FsmState
             
             //play anim
             var gameEntity = entity as GameEntity;
-            gameEntity.ReplaceAnimation(attackStateParam.AnimClipName);
-
-            //wait to exist state;
-            WaitDurationTime(attackStateParam.DurationTime);
+            gameEntity.ReplaceAnimation(attackStateParam.AnimClipName,attackStateParam.Speed, () =>
+            {
+                gameEntity.ReplaceStateExit(StateType.Attack);
+                attackStateParam.OnAttackComplete?.Invoke();
+            });
         }
 
         private async void WaitDurationTime(int durationTime)
         {
             await Task.Delay(durationTime,m_CancellationTokenSource.Token);
-            var gameEntity = entity as GameEntity;
-            gameEntity.ReplaceStateExit(StateType.Attack);
         }
 
         public override void OnExist()

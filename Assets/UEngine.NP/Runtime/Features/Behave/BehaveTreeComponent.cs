@@ -4,8 +4,8 @@ using Entitas;
 using Entitas.VisualDebugging.Unity;
 using NPBehave;
 
-[Game,DontDrawComponent]
-public class BehaveTreeComponent : IComponent
+[Game,RemoteAgent,DontDrawComponent]
+public class SkillContainerComponent : IComponent
 {
-    public List<Root> BehaveTreeRoots;
+    public List<Skill> Skills;
 }

@@ -58,6 +58,7 @@ public class NPBehaveGraph : BaseGraph
         this.NpDataSupportor.InstanceID = this.GetInstanceID();
         this.AutoSetNP_NodeData(this.NpDataSupportor);
         this.AutoSetNP_BBDatas(this.NpDataSupportor);
+        this.AutoSetNP_BuffDatas(this.NpDataSupportor);
     }
 
     [Button("保存行为树信息为二进制文件", 25), GUIColor(0.4f, 0.8f, 1)]
@@ -253,13 +254,25 @@ public class NPBehaveGraph : BaseGraph
         }
     }
 
-    // public IEnumerable<Type> GetConfigTypes()
-    // {
-    //     var q = typeof (Init).Assembly.GetTypes()
-    //             .Where(x => !x.IsAbstract)
-    //             .Where(x => !x.IsGenericTypeDefinition)
-    //             .Where(x => typeof (IConfig).IsAssignableFrom(x));
-    //
-    //     return q;
-    // }
+    private void AutoSetNP_BuffDatas(NP_DataSupportorBase npDataSupportorBase)
+    {
+        if (npDataSupportorBase == null)
+        {
+            return;
+        }
+        
+        foreach (var node in this.nodes)
+        {
+            if (node is NP_BuffNodeBase buffNode)
+            {
+                var nodeData = buffNode.GetBuffNodeData();
+                if (!npDataSupportorBase.NP_BuffDatas.ContainsKey(nodeData.VtdId.Value))
+                {
+                    npDataSupportorBase.NP_BuffDatas.Add(nodeData.VtdId.Value,nodeData);
+                }
+                
+                buffNode.AutoAddLinkedBuffs();
+            }
+        }
+    }
 }

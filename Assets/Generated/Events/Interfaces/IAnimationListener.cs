@@ -7,5 +7,5 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 public interface IAnimationListener {
-    void OnAnimation(GameEntity entity, string animClipName);
+    void OnAnimation(GameEntity entity, string animClipName, float speed, System.Action onEnd);
 }

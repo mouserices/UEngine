@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6598637534502780918}
   - component: {fileID: 5311235972670127799}
-  m_Layer: 23
+  m_Layer: 8
   m_Name: Avatar93_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -311,6 +311,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1422568365911704653}
   - component: {fileID: 971941150515555680}
+  - component: {fileID: -1551416763353304402}
+  - component: {fileID: 209213435497647223}
   m_Layer: 8
   m_Name: Avatar93
   m_TagString: Untagged
@@ -357,6 +359,36 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &-1551416763353304402
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196249872037728428}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.71
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.38, z: 0}
+--- !u!54 &209213435497647223
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196249872037728428}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2320828268310644631
 GameObject:
   m_ObjectHideFlags: 0

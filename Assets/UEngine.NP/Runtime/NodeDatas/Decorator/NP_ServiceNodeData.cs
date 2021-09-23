@@ -20,9 +20,9 @@ namespace UEngine.NP
             return this.m_Service;
         }
 
-        public override Decorator CreateDecoratorNode(Node node,NP_RuntimeTree npRuntimeTree)
+        public override Decorator CreateDecoratorNode(Node node,Skill npRuntimeTree)
         {
-            NpClassForStoreAction.BelongtoRuntimeTree = npRuntimeTree;
+            NpClassForStoreAction.Skill = npRuntimeTree;
             this.m_Service = new Service(interval, this.NpClassForStoreAction.GetActionToBeDone(), node);
             return this.m_Service;
         }

@@ -30,7 +30,7 @@ public sealed class AnimationEventSystem : Entitas.ReactiveSystem<GameEntity> {
             _listenerBuffer.Clear();
             _listenerBuffer.AddRange(e.animationListener.value);
             foreach (var listener in _listenerBuffer) {
-                listener.OnAnimation(e, component.AnimClipName);
+                listener.OnAnimation(e, component.AnimClipName, component.Speed, component.OnEnd);
             }
         }
     }

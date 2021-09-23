@@ -24,14 +24,31 @@ public class ProcessInputSystem : ReactiveSystem<GameEntity>
         var inputKeyCode = singleEntity.input.KeyCode;
 
         var gameMainPlayerEntity = m_Contexts.game.mainPlayerEntity;
-        var behaveTreeComponent = gameMainPlayerEntity.behaveTree;
-
-        foreach (var root in behaveTreeComponent.BehaveTreeRoots)
+        var inputKeyKeyCodes = gameMainPlayerEntity.inputKey.KeyCodes;
+        int num;
+        if (!inputKeyKeyCodes.TryGetValue(inputKeyCode,out num))
         {
-            if (inputKeyCode == KeyCode.E)
+            inputKeyKeyCodes.Add(inputKeyCode,0);
+        }
+
+        inputKeyKeyCodes[inputKeyCode] = num + 1;
+        if (inputKeyCode == KeyCode.E)
+        {
+            if (gameMainPlayerEntity.hasCombo)
             {
-                root.blackboard.Set<bool>("KeyboardInput_E",true);
+                Debug.Log("hasCombo");
+                gameMainPlayerEntity.combo.PressedCount = gameMainPlayerEntity.combo.PressedCount + 1;
             }
         }
+
+        // var skills = gameMainPlayerEntity.skillContainer.Skills;
+        //
+        // foreach (var skill in skills)
+        // {
+        //     if (inputKeyCode == KeyCode.E)
+        //     {
+        //         skill.Blackboard.Set<bool>("KeyboardInput_E",true);
+        //     }
+        // }
     }
 }

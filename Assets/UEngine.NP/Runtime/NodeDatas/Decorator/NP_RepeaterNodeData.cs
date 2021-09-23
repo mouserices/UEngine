@@ -19,7 +19,7 @@ namespace UEngine.NP
             return this.m_Repeater;
         }
         
-        public override Decorator CreateDecoratorNode(Node node,NP_RuntimeTree npRuntimeTree)
+        public override Decorator CreateDecoratorNode(Node node,Skill npRuntimeTree)
         {
             this.m_Repeater = new Repeater(node);
             return this.m_Repeater;

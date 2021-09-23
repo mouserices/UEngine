@@ -25,7 +25,7 @@ namespace UEngine.NP
             return this.m_WaitUntilStopped;
         }
 
-        public override Task CreateTask(NP_RuntimeTree npRuntimeTree,long unitID)
+        public override Task CreateTask(Skill npRuntimeTree,long unitID)
         {
             this.m_WaitUntilStopped = new WaitUntilStopped(sucessWhenStopped);
             return this.m_WaitUntilStopped;

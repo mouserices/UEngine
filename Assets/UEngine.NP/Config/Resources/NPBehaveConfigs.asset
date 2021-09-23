@@ -17,6 +17,9 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 4900000, guid: 694d51e11124646409bdec61bb52ac8c, type: 3}
+    - {fileID: 4900000, guid: 02d5790028ee84139bf72fdd32860e0f, type: 3}
+    - {fileID: 4900000, guid: 7ff6db94b9f4f4bf19cdbb3913d3281f, type: 3}
+    - {fileID: 4900000, guid: 762a16b8716e740c7a9cf9d687114967, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -35,7 +38,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 4
     - Name: 
       Entry: 7
       Data: 
@@ -51,6 +54,69 @@ MonoBehaviour:
     - Name: GraphPath
       Entry: 1
       Data: Assets/UEngine.NP/Config/Graph/Client_Skill01.asset
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Server_Skill01
+    - Name: $v
+      Entry: 7
+      Data: 3|UEngine.NP.NPBehaveConfig, Assembly-CSharp
+    - Name: TextAsset
+      Entry: 10
+      Data: 1
+    - Name: GraphPath
+      Entry: 1
+      Data: Assets/UEngine.NP/Config/Graph/Server_Skill01.asset
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Server_Skill02
+    - Name: $v
+      Entry: 7
+      Data: 4|UEngine.NP.NPBehaveConfig, Assembly-CSharp
+    - Name: TextAsset
+      Entry: 10
+      Data: 2
+    - Name: GraphPath
+      Entry: 1
+      Data: Assets/UEngine.NP/Config/Graph/Server_Skill02.asset
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Client_Skill02
+    - Name: $v
+      Entry: 7
+      Data: 5|UEngine.NP.NPBehaveConfig, Assembly-CSharp
+    - Name: TextAsset
+      Entry: 10
+      Data: 3
+    - Name: GraphPath
+      Entry: 1
+      Data: Assets/UEngine.NP/Config/Graph/Client_Skill02.asset
     - Name: 
       Entry: 8
       Data: 

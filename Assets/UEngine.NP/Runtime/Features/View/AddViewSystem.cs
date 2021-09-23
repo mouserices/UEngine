@@ -27,9 +27,9 @@ public sealed class AddViewSystem : ReactiveSystem<GameEntity>
 
     IView instantiateView(GameEntity entity)
     {
-        var prefab = Resources.Load<GameObject>(entity.asset.value);
-        var gameObject = Object.Instantiate(prefab, _parent);
-       
+        var gameObject = string.IsNullOrEmpty(entity.asset.value)
+            ? new GameObject()
+            : Object.Instantiate(Resources.Load<GameObject>(entity.asset.value), _parent);
 
         if (entity.hasMainPlayer && entity.hasUnit)
         {
@@ -38,14 +38,16 @@ public sealed class AddViewSystem : ReactiveSystem<GameEntity>
                 gameObject = CreateMainPlayerParent(gameObject);
             }
         }
+
         gameObject.AddComponent<AnimancerComponent>();
         var view = gameObject.GetComponent<View>();
         if (view == null)
         {
             view = gameObject.AddComponent<View>();
         }
+
         view.Link(entity);
-        
+
         return view;
     }
 
@@ -58,7 +60,7 @@ public sealed class AddViewSystem : ReactiveSystem<GameEntity>
         gameObject.transform.localPosition = Vector3.zero;
         gameObject.transform.localRotation = Quaternion.identity;
         gameObject.transform.localScale = Vector3.one;
-        
+
         return parent;
     }
 }

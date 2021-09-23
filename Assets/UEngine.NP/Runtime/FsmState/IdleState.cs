@@ -8,7 +8,7 @@ namespace UEngine.NP.FsmState
     {
         public override StateType GetConflictStates()
         {
-            return StateType.Attack;
+            return StateType.Attack | StateType.Combo;
         }
         
         public override void OnEnter()
@@ -18,7 +18,7 @@ namespace UEngine.NP.FsmState
             
             //play anim
             var gameEntity = entity as GameEntity;
-            gameEntity.ReplaceAnimation(idleStateParam.AnimClipName);
+            gameEntity.ReplaceAnimation(idleStateParam.AnimClipName,1,null);
         }
     }
 }

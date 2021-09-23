@@ -1,11 +1,5 @@
 using UEngine.NP.FsmState;
 
-public class WalkStateParam : IStateParam
+public class WalkStateParam : StateParam
 {
-    public string AnimClipName;
-
-    public StateType GetStateType()
-    {
-        return StateType.Walk;
-    }
 }

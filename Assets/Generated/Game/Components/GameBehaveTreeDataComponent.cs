@@ -12,22 +12,22 @@ public partial class GameContext {
     public BehaveTreeDataComponent behaveTreeData { get { return behaveTreeDataEntity.behaveTreeData; } }
     public bool hasBehaveTreeData { get { return behaveTreeDataEntity != null; } }
 
-    public GameEntity SetBehaveTreeData(System.Collections.Generic.Dictionary<string, UEngine.NP.NP_DataSupportorBase> newBehaveTreeDatas) {
+    public GameEntity SetBehaveTreeData(System.Collections.Generic.Dictionary<string, UEngine.NP.NP_DataSupportorBase> newNameToBehaveTreeDatas) {
         if (hasBehaveTreeData) {
             throw new Entitas.EntitasException("Could not set BehaveTreeData!\n" + this + " already has an entity with BehaveTreeDataComponent!",
                 "You should check if the context already has a behaveTreeDataEntity before setting it or use context.ReplaceBehaveTreeData().");
         }
         var entity = CreateEntity();
-        entity.AddBehaveTreeData(newBehaveTreeDatas);
+        entity.AddBehaveTreeData(newNameToBehaveTreeDatas);
         return entity;
     }
 
-    public void ReplaceBehaveTreeData(System.Collections.Generic.Dictionary<string, UEngine.NP.NP_DataSupportorBase> newBehaveTreeDatas) {
+    public void ReplaceBehaveTreeData(System.Collections.Generic.Dictionary<string, UEngine.NP.NP_DataSupportorBase> newNameToBehaveTreeDatas) {
         var entity = behaveTreeDataEntity;
         if (entity == null) {
-            entity = SetBehaveTreeData(newBehaveTreeDatas);
+            entity = SetBehaveTreeData(newNameToBehaveTreeDatas);
         } else {
-            entity.ReplaceBehaveTreeData(newBehaveTreeDatas);
+            entity.ReplaceBehaveTreeData(newNameToBehaveTreeDatas);
         }
     }
 
@@ -49,17 +49,17 @@ public partial class GameEntity {
     public BehaveTreeDataComponent behaveTreeData { get { return (BehaveTreeDataComponent)GetComponent(GameComponentsLookup.BehaveTreeData); } }
     public bool hasBehaveTreeData { get { return HasComponent(GameComponentsLookup.BehaveTreeData); } }
 
-    public void AddBehaveTreeData(System.Collections.Generic.Dictionary<string, UEngine.NP.NP_DataSupportorBase> newBehaveTreeDatas) {
+    public void AddBehaveTreeData(System.Collections.Generic.Dictionary<string, UEngine.NP.NP_DataSupportorBase> newNameToBehaveTreeDatas) {
         var index = GameComponentsLookup.BehaveTreeData;
         var component = (BehaveTreeDataComponent)CreateComponent(index, typeof(BehaveTreeDataComponent));
-        component.BehaveTreeDatas = newBehaveTreeDatas;
+        component.NameToBehaveTreeDatas = newNameToBehaveTreeDatas;
         AddComponent(index, component);
     }
 
-    public void ReplaceBehaveTreeData(System.Collections.Generic.Dictionary<string, UEngine.NP.NP_DataSupportorBase> newBehaveTreeDatas) {
+    public void ReplaceBehaveTreeData(System.Collections.Generic.Dictionary<string, UEngine.NP.NP_DataSupportorBase> newNameToBehaveTreeDatas) {
         var index = GameComponentsLookup.BehaveTreeData;
         var component = (BehaveTreeDataComponent)CreateComponent(index, typeof(BehaveTreeDataComponent));
-        component.BehaveTreeDatas = newBehaveTreeDatas;
+        component.NameToBehaveTreeDatas = newNameToBehaveTreeDatas;
         ReplaceComponent(index, component);
     }
 

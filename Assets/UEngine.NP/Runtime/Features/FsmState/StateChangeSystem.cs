@@ -31,7 +31,7 @@ public class StateChangeSystem : ReactiveSystem<GameEntity>
 
     private void ChangeState(GameEntity entity)
     {
-        var stateType = entity.stateEnter.StateParam.GetStateType();
+        var stateType = entity.stateEnter.StateParam.StateType;
 
         var firstState = entity.state.FsmStateBases.First;
 
@@ -118,6 +118,12 @@ public class StateChangeSystem : ReactiveSystem<GameEntity>
                 break;
             case StateType.Attack:
                 state = new AttackState();
+                break;
+            case StateType.Patrol:
+                state = new PatrolState();
+                break;
+            case StateType.Combo:
+                state = new ComboState();
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(stateType), stateType, null);

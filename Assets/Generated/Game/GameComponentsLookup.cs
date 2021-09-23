@@ -10,46 +10,100 @@ public static class GameComponentsLookup {
 
     public const int Animation = 0;
     public const int AnimationListener = 1;
-    public const int Asset = 2;
-    public const int BehaveTree = 3;
+    public const int AP_AttackSucceed = 2;
+    public const int Asset = 3;
     public const int BehaveTreeData = 4;
     public const int BehaveTreeLoad = 5;
-    public const int Destroyed = 6;
-    public const int DestroyedListener = 7;
-    public const int Input = 8;
-    public const int MainPlayer = 9;
-    public const int Position2 = 10;
-    public const int Position = 11;
-    public const int PositionListener = 12;
-    public const int Rotation = 13;
-    public const int RotationListener = 14;
-    public const int State = 15;
-    public const int StateEnter = 16;
-    public const int StateExit = 17;
-    public const int Unit = 18;
-    public const int View = 19;
+    public const int BindBlackBoardKeyToHitTargets = 6;
+    public const int BoxCollider = 7;
+    public const int BoxColliderListener = 8;
+    public const int Bullet = 9;
+    public const int Combo = 10;
+    public const int Damage = 11;
+    public const int Destroyed = 12;
+    public const int DestroyedListener = 13;
+    public const int HitSucceed = 14;
+    public const int HitTarget = 15;
+    public const int HP = 16;
+    public const int Input = 17;
+    public const int InputKey = 18;
+    public const int InputKeyRefenercedTimer = 19;
+    public const int Layer = 20;
+    public const int LayerListener = 21;
+    public const int Life = 22;
+    public const int MainPlayer = 23;
+    public const int Mirror = 24;
+    public const int Name = 25;
+    public const int Parent = 26;
+    public const int ParentListener = 27;
+    public const int Patrol = 28;
+    public const int PatrolPaths = 29;
+    public const int Position2 = 30;
+    public const int Position = 31;
+    public const int PositionListener = 32;
+    public const int RequestPath = 33;
+    public const int Rotation = 34;
+    public const int RotationListener = 35;
+    public const int Scale = 36;
+    public const int ScaleListener = 37;
+    public const int ScanedUnitID = 38;
+    public const int SkillContainer = 39;
+    public const int State = 40;
+    public const int StateEnter = 41;
+    public const int StateExit = 42;
+    public const int TimerCompleteAction = 43;
+    public const int Timer = 44;
+    public const int Unit = 45;
+    public const int View = 46;
 
-    public const int TotalComponents = 20;
+    public const int TotalComponents = 47;
 
     public static readonly string[] componentNames = {
         "Animation",
         "AnimationListener",
+        "AP_AttackSucceed",
         "Asset",
-        "BehaveTree",
         "BehaveTreeData",
         "BehaveTreeLoad",
+        "BindBlackBoardKeyToHitTargets",
+        "BoxCollider",
+        "BoxColliderListener",
+        "Bullet",
+        "Combo",
+        "Damage",
         "Destroyed",
         "DestroyedListener",
+        "HitSucceed",
+        "HitTarget",
+        "HP",
         "Input",
+        "InputKey",
+        "InputKeyRefenercedTimer",
+        "Layer",
+        "LayerListener",
+        "Life",
         "MainPlayer",
+        "Mirror",
+        "Name",
+        "Parent",
+        "ParentListener",
+        "Patrol",
+        "PatrolPaths",
         "Position2",
         "Position",
         "PositionListener",
+        "RequestPath",
         "Rotation",
         "RotationListener",
+        "Scale",
+        "ScaleListener",
+        "ScanedUnitID",
+        "SkillContainer",
         "State",
         "StateEnter",
         "StateExit",
+        "TimerCompleteAction",
+        "Timer",
         "Unit",
         "View"
     };
@@ -57,22 +111,49 @@ public static class GameComponentsLookup {
     public static readonly System.Type[] componentTypes = {
         typeof(AnimationComponent),
         typeof(AnimationListenerComponent),
+        typeof(AP_AttackSucceedComponent),
         typeof(AssetComponent),
-        typeof(BehaveTreeComponent),
         typeof(BehaveTreeDataComponent),
         typeof(BehaveTreeLoadComponent),
+        typeof(BindBlackBoardKeyToHitTargetsComponent),
+        typeof(BoxColliderComponent),
+        typeof(BoxColliderListenerComponent),
+        typeof(BulletComponent),
+        typeof(ComboComponent),
+        typeof(DamageComponent),
         typeof(DestroyedComponent),
         typeof(DestroyedListenerComponent),
+        typeof(HitSucceedComponent),
+        typeof(HitTargetComponent),
+        typeof(HPComponent),
         typeof(InputComponent),
+        typeof(InputKeyComponent),
+        typeof(InputKeyRefenercedTimerComponent),
+        typeof(LayerComponent),
+        typeof(LayerListenerComponent),
+        typeof(LifeComponent),
         typeof(MainPlayerComponent),
+        typeof(MirrorComponent),
+        typeof(NameComponent),
+        typeof(ParentComponent),
+        typeof(ParentListenerComponent),
+        typeof(PatrolComponent),
+        typeof(PatrolPathsComponent),
         typeof(Position2Component),
         typeof(PositionComponent),
         typeof(PositionListenerComponent),
+        typeof(RequestPath),
         typeof(RotationComponent),
         typeof(RotationListenerComponent),
+        typeof(ScaleComponent),
+        typeof(ScaleListenerComponent),
+        typeof(ScanedUnitIDComponent),
+        typeof(SkillContainerComponent),
         typeof(StateComponent),
         typeof(StateEnterComponent),
         typeof(StateExitComponent),
+        typeof(TimerCompleteActionComponent),
+        typeof(TimerComponent),
         typeof(UnitComponent),
         typeof(ViewComponent)
     };

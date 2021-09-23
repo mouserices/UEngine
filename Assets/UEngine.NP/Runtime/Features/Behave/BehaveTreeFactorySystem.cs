@@ -8,11 +8,11 @@ using Exception = System.Exception;
 
 namespace UEngine.NP
 {
-    public class BehaveTreeFactorySystem : ReactiveSystem<GameEntity>, IInitializeSystem
+    public class BehaveTreeFactorySystem : MultiReactiveSystem<IBehaveTreeLoad,Contexts>, IInitializeSystem
     {
         private Contexts m_Contexts;
 
-        public BehaveTreeFactorySystem(Contexts contexts) : base(contexts.game)
+        public BehaveTreeFactorySystem(Contexts contexts) : base(contexts)
         {
             m_Contexts = contexts;
         }
@@ -35,23 +35,28 @@ namespace UEngine.NP
             m_Contexts.game.SetBehaveTreeData(BehaveTreeDatas);
         }
 
-        protected override ICollector<GameEntity> GetTrigger(IContext<GameEntity> context)
+        protected override ICollector[] GetTrigger(Contexts contexts)
         {
-            return context.CreateCollector(GameMatcher.BehaveTreeLoad);
+            return new ICollector[] {
+                contexts.game.CreateCollector(GameMatcher.BehaveTreeLoad),
+                contexts.remoteAgent.CreateCollector(RemoteAgentMatcher.BehaveTreeLoad)
+            };
         }
 
-        protected override bool Filter(GameEntity entity) => entity.hasBehaveTree;
-
-
-        protected override void Execute(List<GameEntity> entities)
+        protected override bool Filter(IBehaveTreeLoad entity)
         {
-            foreach (GameEntity entity in entities)
+            return entity.hasBehaveTreeLoad && entity.hasSkillContainer && entity.hasUnit;
+        }
+
+        protected override void Execute(List<IBehaveTreeLoad> entities)
+        {
+            foreach (IBehaveTreeLoad entity in entities)
             {
                 LoadBehaveTree(entity);
             }
         }
 
-        private void LoadBehaveTree(GameEntity entity)
+        private void LoadBehaveTree(IBehaveTreeLoad entity)
         {
             var behaveTreeLoadComponent = entity.behaveTreeLoad;
             foreach (string behaveTreeName in behaveTreeLoadComponent.BehaveTreeNames)
@@ -60,13 +65,16 @@ namespace UEngine.NP
             }
         }
        
-        private void CreateNPTree(GameEntity entity, string behaveTreeName)
+        private void CreateNPTree(IBehaveTreeLoad entity, string behaveTreeName)
         {
-            var npDataSupportorBases = m_Contexts.game.behaveTreeDataEntity.behaveTreeData.BehaveTreeDatas;
+            var npDataSupportorBases = m_Contexts.game.behaveTreeDataEntity.behaveTreeData.NameToBehaveTreeDatas;
 
             var npDataSupportorBase = npDataSupportorBases[behaveTreeName];
             long rootId = npDataSupportorBase.NPBehaveTreeDataId;
-            NP_RuntimeTree npRuntimeTree = new NP_RuntimeTree();
+            Skill skill = new Skill();
+            skill.ID = npDataSupportorBase.SkillID;
+            skill.UnitID = entity.unit.ID;
+            skill.NPBehaveName = behaveTreeName;
 #if UNITY_EDITOR
             GameObject o = new GameObject();
             o.name = $"~{behaveTreeName}";
@@ -81,7 +89,7 @@ namespace UEngine.NP
                     case NodeType.Task:
                         try
                         {
-                            nodeDateBase.Value.CreateTask(npRuntimeTree, entity.unit.ID);
+                            nodeDateBase.Value.CreateTask(skill, entity.unit.ID);
                         }
                         catch (Exception e)
                         {
@@ -94,7 +102,7 @@ namespace UEngine.NP
                         {
                             nodeDateBase.Value.CreateDecoratorNode(
                                 npDataSupportorBase.NP_DataSupportorDic[nodeDateBase.Value.LinkedIds[0]].NP_GetNode(),
-                                npRuntimeTree);
+                                skill);
 #if UNITY_EDITOR
                             npBehaveStateSearcher.AddNode(nodeDateBase.Value.LinkedIds[0],
                                 npDataSupportorBase.NP_DataSupportorDic[nodeDateBase.Value.LinkedIds[0]].NP_GetNode());
@@ -134,17 +142,29 @@ namespace UEngine.NP
 
             //配置黑板数据
             Root root = npDataSupportorBase.NP_DataSupportorDic[rootId].NP_GetNode() as Root;
-            npRuntimeTree.Blackboard = root.blackboard;
+            skill.Blackboard = root.blackboard;
+            skill.Root = root;
             Dictionary<string, ANP_BBValue> bbvaluesManager = root.blackboard.GetDatas();
             foreach (var bbValues in npDataSupportorBase.NP_BBValueManager)
             {
                 bbvaluesManager.Add(bbValues.Key, bbValues.Value);
             }
+            
+            //Buff数据
+            if (npDataSupportorBase.NP_BuffDatas != null)
+            {
+                foreach (var buffData in npDataSupportorBase.NP_BuffDatas)
+                {
+                    buffData.Value.SkillID = skill.ID;
+                    buffData.Value.UnitID = skill.UnitID;
+                    buffData.Value.BehavetreeName = behaveTreeName;
+                }
+            }
 
 #if UNITY_EDITOR
             npBehaveStateSearcher.AddNode(rootId, root);
 #endif
-            entity.behaveTree.BehaveTreeRoots.Add(root);
+            entity.skillContainer.Skills.Add(skill);
             root.Start();
         }
     }

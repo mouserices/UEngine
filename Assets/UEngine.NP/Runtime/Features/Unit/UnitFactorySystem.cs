@@ -20,23 +20,29 @@ public class UnitFactorySystem : IInitializeSystem
         //gameEntity.AddPosition2(2,1,1);
         gameEntity.AddMainPlayer(1);
         gameEntity.AddUnit(1);
-        gameEntity.AddAsset("Avatar17");
-        gameEntity.AddPosition(new Vector3(44,3,64));
+        gameEntity.AddAsset("eliteKnight");
+        gameEntity.AddPosition(new Vector3(0,0,-15f));
         gameEntity.AddRotation(new Vector3(0,0,0));
 
         gameEntity.AddState(new LinkedList<FsmStateBase>());
-        gameEntity.AddStateEnter(new IdleStateParam(){AnimClipName = "Avatar17_Idle"});
+        gameEntity.AddStateEnter(new IdleStateParam(){AnimClipName = "Idle",StateType = StateType.IDLE});
         
-        gameEntity.AddBehaveTree(new List<Root>());
-        gameEntity.AddBehaveTreeLoad(new List<string>(){"Client_Skill01"});
+        gameEntity.AddSkillContainer(new List<Skill>());
+        gameEntity.AddBehaveTreeLoad(new List<string>(){"Client_Skill01","Client_Skill02"});
+        gameEntity.AddHP(100,100);
+        gameEntity.AddInputKey(new Dictionary<KeyCode, int>());
+        gameEntity.isMirror = true;
         
         
         var monsterEntity = m_Contexts.game.CreateEntity();
         monsterEntity.AddUnit(2);
-        monsterEntity.AddAsset("Avatar93");
-        monsterEntity.AddPosition(new Vector3(39,3,68));
-        monsterEntity.AddRotation(new Vector3(0,137f,0));
+        monsterEntity.AddAsset("Aavatar101");
+        monsterEntity.AddPosition(new Vector3(0,0,0));
+        monsterEntity.AddRotation(new Vector3(0,180,0));
+        monsterEntity.AddScale(new Vector3(1,1,1));
         monsterEntity.AddState(new LinkedList<FsmStateBase>());
-        monsterEntity.AddStateEnter(new IdleStateParam(){AnimClipName = "Avatar93_idle"});
+        monsterEntity.AddHP(100,100);
+        monsterEntity.AddStateEnter(new IdleStateParam(){AnimClipName = "Standing Idle",StateType = StateType.IDLE});
+        monsterEntity.isMirror = true;
     }
 }

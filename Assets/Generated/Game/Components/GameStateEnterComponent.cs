@@ -11,14 +11,14 @@ public partial class GameEntity {
     public StateEnterComponent stateEnter { get { return (StateEnterComponent)GetComponent(GameComponentsLookup.StateEnter); } }
     public bool hasStateEnter { get { return HasComponent(GameComponentsLookup.StateEnter); } }
 
-    public void AddStateEnter(IStateParam newStateParam) {
+    public void AddStateEnter(StateParam newStateParam) {
         var index = GameComponentsLookup.StateEnter;
         var component = (StateEnterComponent)CreateComponent(index, typeof(StateEnterComponent));
         component.StateParam = newStateParam;
         AddComponent(index, component);
     }
 
-    public void ReplaceStateEnter(IStateParam newStateParam) {
+    public void ReplaceStateEnter(StateParam newStateParam) {
         var index = GameComponentsLookup.StateEnter;
         var component = (StateEnterComponent)CreateComponent(index, typeof(StateEnterComponent));
         component.StateParam = newStateParam;

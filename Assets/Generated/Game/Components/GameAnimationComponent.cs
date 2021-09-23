@@ -11,17 +11,21 @@ public partial class GameEntity {
     public AnimationComponent animation { get { return (AnimationComponent)GetComponent(GameComponentsLookup.Animation); } }
     public bool hasAnimation { get { return HasComponent(GameComponentsLookup.Animation); } }
 
-    public void AddAnimation(string newAnimClipName) {
+    public void AddAnimation(string newAnimClipName, float newSpeed, System.Action newOnEnd) {
         var index = GameComponentsLookup.Animation;
         var component = (AnimationComponent)CreateComponent(index, typeof(AnimationComponent));
         component.AnimClipName = newAnimClipName;
+        component.Speed = newSpeed;
+        component.OnEnd = newOnEnd;
         AddComponent(index, component);
     }
 
-    public void ReplaceAnimation(string newAnimClipName) {
+    public void ReplaceAnimation(string newAnimClipName, float newSpeed, System.Action newOnEnd) {
         var index = GameComponentsLookup.Animation;
         var component = (AnimationComponent)CreateComponent(index, typeof(AnimationComponent));
         component.AnimClipName = newAnimClipName;
+        component.Speed = newSpeed;
+        component.OnEnd = newOnEnd;
         ReplaceComponent(index, component);
     }
 

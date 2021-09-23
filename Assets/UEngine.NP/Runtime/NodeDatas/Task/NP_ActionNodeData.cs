@@ -18,10 +18,10 @@ namespace UEngine.NP
         
         public NP_ClassForStoreAction NpClassForStoreAction;
 
-        public override Task CreateTask(NP_RuntimeTree npRuntimeTree,long unitID)
+        public override Task CreateTask(Skill npRuntimeTree,long unitID)
         {
             this.NpClassForStoreAction.UnitID = unitID;
-            this.NpClassForStoreAction.BelongtoRuntimeTree = npRuntimeTree;
+            this.NpClassForStoreAction.Skill = npRuntimeTree;
             this.m_ActionNode = this.NpClassForStoreAction._CreateNPBehaveAction();
             return this.m_ActionNode;
         }

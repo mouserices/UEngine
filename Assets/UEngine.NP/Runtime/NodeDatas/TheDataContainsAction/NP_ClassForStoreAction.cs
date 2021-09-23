@@ -24,13 +24,14 @@ namespace UEngine.NP
         [HideInEditorMode]
         public long UnitID;
 
+        [HideInEditorMode]
         public Blackboard Blackboard;
 
         /// <summary>
         /// 归属的运行时行为树实例
         /// </summary>
         [HideInEditorMode]
-        public NP_RuntimeTree BelongtoRuntimeTree;
+        public Skill Skill;
 
         [HideInEditorMode]
         public Action Action;
@@ -82,5 +83,7 @@ namespace UEngine.NP
 
             return null;
         }
+        
+        
     }
 }

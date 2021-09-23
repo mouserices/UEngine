@@ -261,14 +261,14 @@ namespace StarterAssets
                     //_animancerComponent.Play(_idleClip, 0.25f);
                     if (!Contexts.sharedInstance.game.mainPlayerEntity.CheckState(StateType.IDLE))
                     {
-                        Contexts.sharedInstance.game.mainPlayerEntity.ReplaceStateEnter(new IdleStateParam(){AnimClipName = "Avatar17_Idle"});
+                        Contexts.sharedInstance.game.mainPlayerEntity.ReplaceStateEnter(new IdleStateParam(){AnimClipName = "Idle",StateType = StateType.IDLE});
                     }
                 }
                 else
                 {
                     if (!Contexts.sharedInstance.game.mainPlayerEntity.CheckState(StateType.Walk))
                     {
-                        Contexts.sharedInstance.game.mainPlayerEntity.ReplaceStateEnter(new WalkStateParam(){AnimClipName = "Avatar17_Walk"});
+                        Contexts.sharedInstance.game.mainPlayerEntity.ReplaceStateEnter(new WalkStateParam(){AnimClipName = "Walk",StateType = StateType.Walk});
                     }
                     
                     // _animancerComponent.Play(_walkClip, 0.25f).Events.OnEnd = () =>

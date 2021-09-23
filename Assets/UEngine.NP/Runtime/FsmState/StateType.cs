@@ -10,5 +10,7 @@ namespace UEngine.NP.FsmState
         Walk = 1 << 2,
         Run = 1 << 3,
         Attack = 1 << 4,
+        Patrol = 1 << 5,
+        Combo = 1 << 6,
     }
 }
