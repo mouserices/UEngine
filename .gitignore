@@ -53,3 +53,6 @@ UnityEngine.UI.csproj
 
 归档.zip
 Temp
+*.csproj
+*.properties
+*.userproperties
