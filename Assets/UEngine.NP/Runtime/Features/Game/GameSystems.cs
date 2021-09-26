@@ -10,7 +10,8 @@ public class GameSystems : Feature
         // Initialize
         Add(new GameInitSystem(contexts));
         Add(new UnitFactorySystem(contexts));
-        
+        Add(new MirrorSystem(contexts));
+
         // Update
         Add(new AddViewSystem(contexts));
         Add(new BehaveTreeFactorySystem(contexts));
@@ -25,9 +26,10 @@ public class GameSystems : Feature
         
         Add(new DamageSystem(contexts));
         Add(new ClearHitTargetsSystem(contexts));
-        Add(new MirrorSystem(contexts));
         Add(new HitNotifySystem(contexts));
         Add(new ListenBuffSystem(contexts));
+        Add(new NumericInitSystem(contexts));
+        
         
         // Render
         Add(new PlayerFollowSystem(contexts));

@@ -9,6 +9,7 @@
 public sealed class GameCleanupSystems : Feature {
 
     public GameCleanupSystems(Contexts contexts) {
+        Add(new RemoveAP_AttackSucceedGameSystem(contexts));
         Add(new DestroyDamageGameSystem(contexts));
         Add(new RemoveBehaveTreeLoadGameSystem(contexts));
         Add(new RemoveStateEnterGameSystem(contexts));
@@ -17,6 +18,5 @@ public sealed class GameCleanupSystems : Feature {
         Add(new DestroyDestroyedGameSystem(contexts));
         Add(new DestroyInputGameSystem(contexts));
         Add(new RemoveStateExitGameSystem(contexts));
-        Add(new RemoveAP_AttackSucceedGameSystem(contexts));
     }
 }

@@ -11,7 +11,7 @@ public class UIHpShowSystem : IExecuteSystem
 
     public UIHpShowSystem(Contexts contexts)
     {
-        m_Group = contexts.game.GetGroup(GameMatcher.AllOf(GameMatcher.HP).NoneOf(GameMatcher.MainPlayer));
+        m_Group = contexts.game.GetGroup(GameMatcher.AllOf(GameMatcher.Numeric).NoneOf(GameMatcher.MainPlayer,GameMatcher.MirrorTag));
     }
 
     public void Execute()
@@ -40,7 +40,7 @@ public class UIHpShowSystem : IExecuteSystem
             sliderTransform.anchoredPosition = localPos;
             
             //update slider
-            slider.value = entity.hP.CurHP / entity.hP.MaxHP;
+            slider.value = entity.GetNumeric(NumericType.HP) / entity.GetNumeric(NumericType.MAX_HP);
         }
     }
 }

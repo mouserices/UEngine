@@ -1,9 +1,10 @@
 using System.Collections.Generic;
 using Entitas;
 
-public class DamageSystem: ReactiveSystem<GameEntity>
+public class DamageSystem : ReactiveSystem<GameEntity>
 {
     private readonly Contexts _contexts;
+
     public DamageSystem(Contexts contexts) : base(contexts.game)
     {
         _contexts = contexts;
@@ -31,29 +32,19 @@ public class DamageSystem: ReactiveSystem<GameEntity>
             {
                 continue;
             }
-
-            if (attackedEntity.hasHP)
-            {
-                float maxHP = attackedEntity.hP.MaxHP;
-                float curHP = attackedEntity.hP.CurHP - damage;
-                attackedEntity.ReplaceHP(maxHP,curHP);
-            }
+            
+            attackedEntity.ChangeNumeric(NumericType.HP, -damage);
 
 
 #if LOCAL_SERVER
             //本地服务器的情况下，需要对镜像的实例做相同的处理
-            var attackedEntityMirror = _contexts.remoteAgent.GetEntityWithUnit(damageTargetUnitID);
+            var attackedEntityMirror = _contexts.game.GetEntityWithUnit(damageTargetUnitID + 10000);
             if (attackedEntityMirror == null)
             {
                 continue;
             }
 
-            if (attackedEntityMirror.hasHP)
-            {
-                float maxHP = attackedEntityMirror.hP.MaxHP;
-                float curHP = attackedEntityMirror.hP.CurHP - damage;
-                attackedEntityMirror.ReplaceHP(maxHP,curHP);
-            }
+            attackedEntityMirror.ChangeNumeric(NumericType.HP, -damage);
 #endif
         }
     }

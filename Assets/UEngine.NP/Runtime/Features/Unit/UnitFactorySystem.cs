@@ -17,7 +17,7 @@ public class UnitFactorySystem : IInitializeSystem
     public void Initialize()
     {
         var gameEntity = m_Contexts.game.CreateEntity();
-        //gameEntity.AddPosition2(2,1,1);
+  
         gameEntity.AddMainPlayer(1);
         gameEntity.AddUnit(1);
         gameEntity.AddAsset("eliteKnight");
@@ -29,7 +29,10 @@ public class UnitFactorySystem : IInitializeSystem
         
         gameEntity.AddSkillContainer(new List<Skill>());
         gameEntity.AddBehaveTreeLoad(new List<string>(){"Client_Skill01","Client_Skill02"});
-        gameEntity.AddHP(100,100);
+        
+        gameEntity.AddNumeric(new Dictionary<NumericType, float>());
+        gameEntity.AddNumericModifier(new Dictionary<NumericType, List<BaseModifier>>());
+        
         gameEntity.AddInputKey(new Dictionary<KeyCode, int>());
         gameEntity.isMirror = true;
         
@@ -41,7 +44,10 @@ public class UnitFactorySystem : IInitializeSystem
         monsterEntity.AddRotation(new Vector3(0,180,0));
         monsterEntity.AddScale(new Vector3(1,1,1));
         monsterEntity.AddState(new LinkedList<FsmStateBase>());
-        monsterEntity.AddHP(100,100);
+        
+        monsterEntity.AddNumeric(new Dictionary<NumericType, float>());
+        monsterEntity.AddNumericModifier(new Dictionary<NumericType, List<BaseModifier>>());
+        
         monsterEntity.AddStateEnter(new IdleStateParam(){AnimClipName = "Standing Idle",StateType = StateType.IDLE});
         monsterEntity.isMirror = true;
     }

@@ -48,7 +48,7 @@ public class HitNotifySystem : ReactiveSystem<GameEntity>
 
 #if LOCAL_SERVER
             Debug.Log("LOCAL_SERVER");
-            var remoteAgentEntity = m_Contexts.remoteAgent.GetEntityWithUnit(bulletSourceUnitID);
+            var remoteAgentEntity = m_Contexts.game.GetEntityWithUnit(bulletSourceUnitID + 10000);
             var skillContainerSkills = remoteAgentEntity.skillContainer.Skills;
 
             var skill = skillContainerSkills.Find((p) => { return p.ID == bulletSourceSkillID;});

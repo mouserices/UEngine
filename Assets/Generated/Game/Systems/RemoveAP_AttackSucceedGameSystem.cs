@@ -20,8 +20,6 @@ public sealed class RemoveAP_AttackSucceedGameSystem : ICleanupSystem {
 
     public void Cleanup() {
         foreach (var e in _group.GetEntities(_buffer)) {
-            UnityEngine.Debug.Log($"isAP_AttackSucceed = false! {UnityEngine.Time.frameCount}");
-
             e.isAP_AttackSucceed = false;
         }
     }

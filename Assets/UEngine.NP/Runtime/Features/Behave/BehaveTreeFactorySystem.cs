@@ -8,11 +8,11 @@ using Exception = System.Exception;
 
 namespace UEngine.NP
 {
-    public class BehaveTreeFactorySystem : MultiReactiveSystem<IBehaveTreeLoad,Contexts>, IInitializeSystem
+    public class BehaveTreeFactorySystem : ReactiveSystem<GameEntity>, IInitializeSystem
     {
         private Contexts m_Contexts;
 
-        public BehaveTreeFactorySystem(Contexts contexts) : base(contexts)
+        public BehaveTreeFactorySystem(Contexts contexts) : base(contexts.game)
         {
             m_Contexts = contexts;
         }
@@ -35,28 +35,25 @@ namespace UEngine.NP
             m_Contexts.game.SetBehaveTreeData(BehaveTreeDatas);
         }
 
-        protected override ICollector[] GetTrigger(Contexts contexts)
+        protected override ICollector<GameEntity> GetTrigger(IContext<GameEntity> context)
         {
-            return new ICollector[] {
-                contexts.game.CreateCollector(GameMatcher.BehaveTreeLoad),
-                contexts.remoteAgent.CreateCollector(RemoteAgentMatcher.BehaveTreeLoad)
-            };
+            return context.CreateCollector(GameMatcher.BehaveTreeLoad);
         }
 
-        protected override bool Filter(IBehaveTreeLoad entity)
+        protected override bool Filter(GameEntity entity)
         {
             return entity.hasBehaveTreeLoad && entity.hasSkillContainer && entity.hasUnit;
         }
 
-        protected override void Execute(List<IBehaveTreeLoad> entities)
+        protected override void Execute(List<GameEntity> entities)
         {
-            foreach (IBehaveTreeLoad entity in entities)
+            foreach (GameEntity entity in entities)
             {
                 LoadBehaveTree(entity);
             }
         }
 
-        private void LoadBehaveTree(IBehaveTreeLoad entity)
+        private void LoadBehaveTree(GameEntity entity)
         {
             var behaveTreeLoadComponent = entity.behaveTreeLoad;
             foreach (string behaveTreeName in behaveTreeLoadComponent.BehaveTreeNames)
@@ -65,7 +62,7 @@ namespace UEngine.NP
             }
         }
        
-        private void CreateNPTree(IBehaveTreeLoad entity, string behaveTreeName)
+        private void CreateNPTree(GameEntity entity, string behaveTreeName)
         {
             var npDataSupportorBases = m_Contexts.game.behaveTreeDataEntity.behaveTreeData.NameToBehaveTreeDatas;
 

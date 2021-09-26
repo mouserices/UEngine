@@ -24,15 +24,13 @@ public partial class Contexts : Entitas.IContexts {
     public BuffContext buff { get; set; }
     public CombatContext combat { get; set; }
     public GameContext game { get; set; }
-    public RemoteAgentContext remoteAgent { get; set; }
 
-    public Entitas.IContext[] allContexts { get { return new Entitas.IContext [] { buff, combat, game, remoteAgent }; } }
+    public Entitas.IContext[] allContexts { get { return new Entitas.IContext [] { buff, combat, game }; } }
 
     public Contexts() {
         buff = new BuffContext();
         combat = new CombatContext();
         game = new GameContext();
-        remoteAgent = new RemoteAgentContext();
 
         var postConstructors = System.Linq.Enumerable.Where(
             GetType().GetMethods(),
@@ -76,10 +74,6 @@ public partial class Contexts {
             Unit,
             game.GetGroup(GameMatcher.Unit),
             (e, c) => ((UnitComponent)c).ID));
-        remoteAgent.AddEntityIndex(new Entitas.PrimaryEntityIndex<RemoteAgentEntity, long>(
-            Unit,
-            remoteAgent.GetGroup(RemoteAgentMatcher.Unit),
-            (e, c) => ((UnitComponent)c).ID));
     }
 }
 
@@ -91,10 +85,6 @@ public static class ContextsExtensions {
 
     public static GameEntity GetEntityWithUnit(this GameContext context, long ID) {
         return ((Entitas.PrimaryEntityIndex<GameEntity, long>)context.GetEntityIndex(Contexts.Unit)).GetEntity(ID);
-    }
-
-    public static RemoteAgentEntity GetEntityWithUnit(this RemoteAgentContext context, long ID) {
-        return ((Entitas.PrimaryEntityIndex<RemoteAgentEntity, long>)context.GetEntityIndex(Contexts.Unit)).GetEntity(ID);
     }
 }
 //------------------------------------------------------------------------------
@@ -115,7 +105,6 @@ public partial class Contexts {
             CreateContextObserver(buff);
             CreateContextObserver(combat);
             CreateContextObserver(game);
-            CreateContextObserver(remoteAgent);
         } catch(System.Exception) {
         }
     }
