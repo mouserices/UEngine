@@ -102,26 +102,21 @@ public class View : MonoBehaviour, IView, IPositionListener, IDestroyedListener,
 
     public void OnAnimation(GameEntity entity, string animClipName,float speed,Action onEnd)
     {
-        Debug.Log($"play anim:{animClipName}");
+        int pre = Time.frameCount;
+        Debug.Log($"play anim:{animClipName} frameCount: {Time.frameCount}");
         var animationClip = Resources.Load<AnimationClip>(animClipName);
         var animancerState = this.GetComponent<AnimancerComponent>().Play(animationClip, 0.25f);
+        animancerState.Time = 0;
         animancerState.Speed = speed;
         if (!animancerState.IsLooping)
         {
             animancerState.Events.OnEnd = () =>
             {
-                Debug.Log($"play anim end:{animClipName}");
+                Debug.Log($"play anim end:{animClipName} frameCount: {Time.frameCount}");
                 onEnd?.Invoke();
                 onEnd = null;
             };
         }
-    }
-
-    public async void ShortDelay(AnimationClip animationClip)
-    {
-        await Task.Delay(100);
-        this.GetComponent<AnimancerComponent>().InitializePlayable();
-        this.GetComponent<AnimancerComponent>().Play(animationClip, 0.25f);
     }
 
     public void OnRotation(GameEntity entity, Vector3 value)

@@ -5,7 +5,7 @@ using UnityEngine;
 namespace UEngine.NP
 {
     [Title("打印信息",TitleAlignment = TitleAlignments.Centered)]
-    public class NP_LogAction:NP_ClassForStoreAction
+    public class NP_LogAction:NP_BaseAction
     {
         [LabelText("信息")]
         public string LogInfo;

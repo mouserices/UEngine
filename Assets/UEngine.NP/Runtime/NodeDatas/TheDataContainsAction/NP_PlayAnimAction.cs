@@ -6,7 +6,7 @@ using UEngine.NP.Unit;
 namespace UEngine.NP
 {
     [Title("播放动画设置", TitleAlignment = TitleAlignments.Centered)]
-    public class NP_PlayAnimAction : NP_ClassForStoreAction
+    public class NP_PlayAnimAction : NP_BaseAction
     {
         // [LabelText("需要切换的状态")]
         // public StateType StateType;

@@ -3,7 +3,7 @@ using Sirenix.OdinInspector;
 using UEngine.NP;
 using UnityEngine;
 
-public class NP_IsConditionMetOfInputKey : NP_ClassForStoreAction
+public class NP_IsConditionMetOfInputKey : NP_BaseAction
 {
     [LabelText("监听的哪个Key")]
     public KeyCode keyCode;

@@ -2,7 +2,7 @@ using System;
 using Sirenix.OdinInspector;
 using UEngine.NP;
 
-public class NP_BindBuffAction : NP_ClassForStoreAction
+public class NP_BindBuffAction : NP_BaseAction
 {
     [LabelText("从下方选择你要绑定Buff的ID")]
     public VTD_Id VtdId;

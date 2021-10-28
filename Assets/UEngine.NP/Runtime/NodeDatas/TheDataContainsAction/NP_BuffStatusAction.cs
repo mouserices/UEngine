@@ -7,7 +7,7 @@ using System.Linq;
 using System.Reflection;
 
 [Title("Buff效果", TitleAlignment = TitleAlignments.Centered)]
-public class NP_BuffStatusAction : NP_ClassForStoreAction
+public class NP_BuffStatusAction : NP_BaseAction
 {
     [LabelText("状态ID"), DelayedProperty] public string ID = "Status1";
     [LabelText("状态名称"), DelayedProperty] public string Name = "状态1";

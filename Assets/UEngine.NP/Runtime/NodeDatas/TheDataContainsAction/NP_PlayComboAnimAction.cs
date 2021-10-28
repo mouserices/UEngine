@@ -7,7 +7,7 @@ using UEngine.NP.FsmState;
 using UnityEngine;
 
 [Title("播放连击动画", TitleAlignment = TitleAlignments.Centered)]
-public class NP_PlayComboAnimAction : NP_ClassForStoreAction
+public class NP_PlayComboAnimAction : NP_BaseAction
 {
     [LabelText("需要播放的动画名称")] public string AnimClipName;
     [LabelText("动画速度")] public float AnimClipSpeed = 1;
@@ -30,6 +30,7 @@ public class NP_PlayComboAnimAction : NP_ClassForStoreAction
                         gameEntity.combo.IsComboFinish = true;
                         if (gameEntity.combo.PressedCount <= 0 || IsLastCombo)
                         {
+                            Debug.Log($"RemoveCombo frameCount: {Time.frameCount}");
                             gameEntity.RemoveCombo();
                         }
                     }

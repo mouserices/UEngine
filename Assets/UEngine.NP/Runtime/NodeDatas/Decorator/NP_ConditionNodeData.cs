@@ -6,7 +6,7 @@ using UnityEngine;
 public class NP_ConditionNodeData : NP_NodeDataBase
 {
     private Condition _condition;
-    public NP_ClassForStoreAction NpClassForStoreAction = new NP_IsConditionMetOfInputKey();
+    public NP_BaseAction NpClassForStoreAction = new NP_IsConditionMetOfInputKey();
 
     public override Node NP_GetNode()
     {

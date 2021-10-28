@@ -16,7 +16,7 @@ namespace UEngine.NP
     {
         [HideInEditorMode] private Action m_ActionNode;
         
-        public NP_ClassForStoreAction NpClassForStoreAction;
+        public NP_BaseAction NpClassForStoreAction;
 
         public override Task CreateTask(Skill npRuntimeTree,long unitID)
         {

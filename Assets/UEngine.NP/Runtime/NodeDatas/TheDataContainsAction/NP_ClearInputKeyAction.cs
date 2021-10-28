@@ -5,7 +5,7 @@ using UEngine.NP;
 using UnityEngine;
 
 [Title("清除连击次数", TitleAlignment = TitleAlignments.Centered)]
-public class NP_ClearComboAction : NP_ClassForStoreAction
+public class NP_ClearComboAction : NP_BaseAction
 {
     [LabelText("清除延迟时间")]
     public float DelayClearTime;

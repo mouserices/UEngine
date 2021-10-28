@@ -4,7 +4,7 @@ using Sirenix.OdinInspector;
 using UEngine.NP;
 using UnityEngine;
 
-public class NP_HitTargetConditionAction : NP_ClassForStoreAction
+public class NP_HitTargetConditionAction : NP_BaseAction
 {
     [LabelText("子弹名称")]
     public NP_BlackBoardRelationData NPBalckBoardRelationData = new NP_BlackBoardRelationData();

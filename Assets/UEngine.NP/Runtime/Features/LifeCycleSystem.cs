@@ -20,6 +20,7 @@ public class LifeCycleSystem : IExecuteSystem
                 if (entity.life.PastTime >= entity.life.TotalTime)
                 {
                     entity.isDestroyed = true;
+                    Debug.Log($"isDestroyed = true {entity.name.Value} frameCount: {Time.frameCount}");
                     continue;
                 }
 

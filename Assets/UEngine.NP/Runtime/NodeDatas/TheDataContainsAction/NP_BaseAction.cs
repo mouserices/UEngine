@@ -16,31 +16,25 @@ namespace UEngine.NP
     [BoxGroup("用于包含Action的数据类"),GUIColor(0.961f, 0.902f, 0.788f, 1f)]
     [HideLabel]
     [BsonDeserializerRegister]
-    public class NP_ClassForStoreAction
+    public class NP_BaseAction
     {
         /// <summary>
         /// 归属的UnitID
         /// </summary>
-        [HideInEditorMode]
-        public long UnitID;
+        public long UnitID { get; set; }
 
-        [HideInEditorMode]
-        public Blackboard Blackboard;
+        public Blackboard Blackboard { get; set; }
 
         /// <summary>
         /// 归属的运行时行为树实例
         /// </summary>
-        [HideInEditorMode]
-        public Skill Skill;
+        public Skill Skill { get; set; }
 
-        [HideInEditorMode]
-        public Action Action;
+        public Action Action { get; set; }
 
-        [HideInEditorMode]
-        public Func<bool> Func1;
+        public Func<bool> Func1 { get; set; }
 
-        [HideInEditorMode]
-        public Func<bool, NPBehave.Action.Result> Func2;
+        public Func<bool, NPBehave.Action.Result> Func2 { get; set; }
 
         /// <summary>
         /// 获取将要执行的委托函数，也可以在这里面做一些初始化操作

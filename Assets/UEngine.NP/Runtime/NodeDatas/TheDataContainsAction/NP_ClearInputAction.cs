@@ -4,7 +4,7 @@
     using UEngine.NP;
     using UnityEngine;
 
-    public class NP_ClearInputAction : NP_ClassForStoreAction
+    public class NP_ClearInputAction : NP_BaseAction
     {
         [LabelText("清除的Key")]
         public KeyCode KeyCode;

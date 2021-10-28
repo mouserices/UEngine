@@ -5,7 +5,7 @@ using Sirenix.OdinInspector;
 using UEngine.NP;
 using UnityEngine;
 
-public class NP_DamageBuffAction : NP_ClassForStoreAction
+public class NP_DamageBuffAction : NP_BaseAction
 {
     [LabelText("目标来源")]
     public NP_BlackBoardKeySelecter<NP_BBValue_List_Long> BlackBoard_TargetUnitIDs = new NP_BlackBoardKeySelecter<NP_BBValue_List_Long>();

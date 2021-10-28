@@ -5,7 +5,7 @@ using UEngine.NP.FsmState;
 namespace UEngine.NP
 {
     [Title("移除状态",TitleAlignment = TitleAlignments.Centered)]
-    public class NP_RemoveFsmStateAction: NP_ClassForStoreAction
+    public class NP_RemoveFsmStateAction: NP_BaseAction
     {
         [LabelText("需要切换的状态")]
         public StateType StateType;

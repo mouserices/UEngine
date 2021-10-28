@@ -20,6 +20,10 @@ public class ProcessInputSystem : ReactiveSystem<GameEntity>
 
     protected override void Execute(List<GameEntity> entities)
     {
+        if (entities.Count > 1)
+        {
+            return;
+        }
         var singleEntity = entities.SingleEntity();
         var inputKeyCode = singleEntity.input.KeyCode;
 
@@ -36,7 +40,6 @@ public class ProcessInputSystem : ReactiveSystem<GameEntity>
         {
             if (gameMainPlayerEntity.hasCombo)
             {
-                Debug.Log("hasCombo");
                 gameMainPlayerEntity.combo.PressedCount = gameMainPlayerEntity.combo.PressedCount + 1;
             }
         }

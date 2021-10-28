@@ -23,6 +23,7 @@ public sealed class RemoveTimersSystem : IExecuteSystem
                 if (timer.hasTimerCompleteAction)
                 {
                     timer.timerCompleteAction.Action?.Invoke();
+                    timer.timerCompleteAction.Action = null;
                 }
             }
         }
