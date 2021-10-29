@@ -59,6 +59,11 @@ public class NPBehaveGraphWindow : UniversalGraphWindow
         var graphViewNodeViews = graphView.nodeViews;
         foreach (var nodeView in graphViewNodeViews)
         {
+            //buff节点暂时不支持debug
+            if (!(nodeView.nodeTarget is NP_NodeBase))
+            {
+                continue;
+            }
             var npNodeBase = nodeView.nodeTarget as NP_NodeBase;
             var id = npNodeBase.NP_GetNodeData().id;
 
@@ -83,6 +88,11 @@ public class NPBehaveGraphWindow : UniversalGraphWindow
         var graphViewEdgeViews = graphView.edgeViews;
         foreach (var edgeView in graphViewEdgeViews)
         {
+            //buff节点暂时不支持debug
+            if (!(edgeView.input.node is NP_NodeView))
+            {
+                continue;
+            }
             var npNodeView = (NP_NodeView) edgeView.input.node;
             var npNodeBase = npNodeView.nodeTarget as NP_NodeBase;
             var id = npNodeBase.NP_GetNodeData().id;
