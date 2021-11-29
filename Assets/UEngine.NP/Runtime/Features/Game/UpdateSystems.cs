@@ -1,14 +1,21 @@
+using UEngine.Net;
 using UEngine.NP;
 
-public class GameSystems : Feature
+public class UpdateSystems : Feature
 {
-    public GameSystems(Contexts contexts)
+    public UpdateSystems(Contexts contexts, Services services)
     {
+        // Net
+        Add(new NetworkSystems());
+        
         // Input
+        Add(new InputSystems(contexts,services));
         Add(new ProcessInputSystem(contexts));
+
+        Add(new MovementSystems(contexts, services));
         
         // Initialize
-        Add(new GameInitSystem(contexts));
+        Add(new GameInitSystems(contexts,services));
         Add(new UnitFactorySystem(contexts));
         Add(new MirrorSystem(contexts));
 
@@ -32,8 +39,8 @@ public class GameSystems : Feature
         
         
         // Render
-        Add(new PlayerFollowSystem(contexts));
-        Add(new UIBloodStripSystem(contexts));
+        //Add(new PlayerFollowSystem(contexts));
+        Add(new UIBloodStripSystem(contexts,services));
         
        
         // Events (Generated)

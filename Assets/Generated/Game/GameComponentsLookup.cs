@@ -18,48 +18,50 @@ public static class GameComponentsLookup {
     public const int BoxCollider = 7;
     public const int BoxColliderListener = 8;
     public const int Bullet = 9;
-    public const int Combo = 10;
-    public const int Damage = 11;
-    public const int Destroyed = 12;
-    public const int DestroyedListener = 13;
-    public const int HitSucceed = 14;
-    public const int HitTarget = 15;
-    public const int HP = 16;
-    public const int Input = 17;
-    public const int InputKey = 18;
-    public const int InputKeyRefenercedTimer = 19;
-    public const int Layer = 20;
-    public const int LayerListener = 21;
-    public const int Life = 22;
-    public const int MainPlayer = 23;
-    public const int Mirror = 24;
-    public const int MirrorTag = 25;
-    public const int Name = 26;
-    public const int Numeric = 27;
-    public const int NumericModifier = 28;
-    public const int Parent = 29;
-    public const int ParentListener = 30;
-    public const int Patrol = 31;
-    public const int PatrolPaths = 32;
-    public const int Position2 = 33;
-    public const int Position = 34;
-    public const int PositionListener = 35;
-    public const int RequestPath = 36;
-    public const int Rotation = 37;
-    public const int RotationListener = 38;
-    public const int Scale = 39;
-    public const int ScaleListener = 40;
-    public const int ScanedUnitID = 41;
-    public const int SkillContainer = 42;
-    public const int State = 43;
-    public const int StateEnter = 44;
-    public const int StateExit = 45;
-    public const int TimerCompleteAction = 46;
-    public const int Timer = 47;
-    public const int Unit = 48;
-    public const int View = 49;
+    public const int Camp = 10;
+    public const int Combo = 11;
+    public const int Damage = 12;
+    public const int Destroyed = 13;
+    public const int DestroyedListener = 14;
+    public const int HitSucceed = 15;
+    public const int HitTarget = 16;
+    public const int HP = 17;
+    public const int Input = 18;
+    public const int InputKey = 19;
+    public const int InputKeyRefenercedTimer = 20;
+    public const int Layer = 21;
+    public const int LayerListener = 22;
+    public const int Life = 23;
+    public const int MainPlayer = 24;
+    public const int Mirror = 25;
+    public const int MirrorTag = 26;
+    public const int Move = 27;
+    public const int Name = 28;
+    public const int Numeric = 29;
+    public const int NumericModifier = 30;
+    public const int Parent = 31;
+    public const int ParentListener = 32;
+    public const int Patrol = 33;
+    public const int PatrolPaths = 34;
+    public const int Position2 = 35;
+    public const int Position = 36;
+    public const int PositionListener = 37;
+    public const int RequestPath = 38;
+    public const int Rotation = 39;
+    public const int RotationListener = 40;
+    public const int Scale = 41;
+    public const int ScaleListener = 42;
+    public const int ScanedUnitID = 43;
+    public const int SkillContainer = 44;
+    public const int State = 45;
+    public const int StateEnter = 46;
+    public const int StateExit = 47;
+    public const int TimerCompleteAction = 48;
+    public const int Timer = 49;
+    public const int Unit = 50;
+    public const int View = 51;
 
-    public const int TotalComponents = 50;
+    public const int TotalComponents = 52;
 
     public static readonly string[] componentNames = {
         "Animation",
@@ -72,6 +74,7 @@ public static class GameComponentsLookup {
         "BoxCollider",
         "BoxColliderListener",
         "Bullet",
+        "Camp",
         "Combo",
         "Damage",
         "Destroyed",
@@ -88,6 +91,7 @@ public static class GameComponentsLookup {
         "MainPlayer",
         "Mirror",
         "MirrorTag",
+        "Move",
         "Name",
         "Numeric",
         "NumericModifier",
@@ -125,6 +129,7 @@ public static class GameComponentsLookup {
         typeof(BoxColliderComponent),
         typeof(BoxColliderListenerComponent),
         typeof(BulletComponent),
+        typeof(CampComponent),
         typeof(ComboComponent),
         typeof(DamageComponent),
         typeof(DestroyedComponent),
@@ -141,6 +146,7 @@ public static class GameComponentsLookup {
         typeof(MainPlayerComponent),
         typeof(MirrorComponent),
         typeof(MirrorTagComponent),
+        typeof(MoveComponent),
         typeof(NameComponent),
         typeof(NumericComponent),
         typeof(NumericModifierComponent),

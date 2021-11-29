@@ -6,9 +6,13 @@ using UnityEngine;
 public class UIBloodStripSystem : ReactiveSystem<GameEntity>
 {
     private Contexts _Contexts;
-    public UIBloodStripSystem(Contexts contexts) : base(contexts.game)
+    private CameraService _CameraService;
+    private UIService _UIService;
+    public UIBloodStripSystem(Contexts contexts, Services services) : base(contexts.game)
     {
         _Contexts = contexts;
+        _CameraService = services.CameraService;
+        _UIService = services.UIService;
     }
 
     protected override ICollector<GameEntity> GetTrigger(IContext<GameEntity> context)
@@ -26,7 +30,7 @@ public class UIBloodStripSystem : ReactiveSystem<GameEntity>
         foreach (GameEntity damageEntity in entities)
         {
             var uInstantiate = GameObject.Instantiate(Resources.Load<GameObject>("UIDamage"));
-            uInstantiate.transform.parent = Game.Canvas.transform;
+            uInstantiate.transform.parent = _UIService.Canvas.transform;
             uInstantiate.transform.localPosition = Vector3.zero;
             uInstantiate.transform.localScale = Vector3.one;
             
@@ -35,10 +39,10 @@ public class UIBloodStripSystem : ReactiveSystem<GameEntity>
             var attackedEntity = _Contexts.game.GetEntityWithUnit(damageEntity.damage.TargetUnitID);
 
             var worldToScreenPoint =
-                TransformUtility.WorldToScreenPoint(Game.MainCamera, attackedEntity.position.value + Vector3.up * 2.2f);
+                TransformUtility.WorldToScreenPoint(_CameraService.Camera, attackedEntity.position.value + Vector3.up * 2.2f);
             Vector2 localPos;
-            TransformUtility.ScreenPointToLocalPointInRectangle(Game.Canvas.transform as RectTransform, worldToScreenPoint,
-                Game.UICamera, out localPos);
+            TransformUtility.ScreenPointToLocalPointInRectangle(_UIService.Canvas.transform as RectTransform, worldToScreenPoint,
+                _UIService.UICamera, out localPos);
             var sliderTransform = uInstantiate.transform as RectTransform;
             sliderTransform.anchoredPosition = localPos + Vector2.right * 150f;
 

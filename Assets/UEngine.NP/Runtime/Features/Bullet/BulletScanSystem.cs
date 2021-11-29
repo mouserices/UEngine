@@ -48,6 +48,11 @@ public class BulletScanSystem : ReactiveSystem<GameEntity>
                     attackerEntity.isAP_AttackSucceed = true;
                     bulletEntity.hitTarget.Targets.Add(new HitTarget(){UnitID = attackedEntity.unit.ID,HasNotifyToServer = false});
                     bulletEntity.isHitSucceed = true;
+
+#if LOCAL_SERVER
+                    var attackerEntity_Server = _contexts.game.GetEntityWithUnit(10000 + bulletEntity.bullet.SourceUnitID);
+                    attackerEntity_Server.isAP_AttackSucceed = true;
+#endif
                 }
             };
         }

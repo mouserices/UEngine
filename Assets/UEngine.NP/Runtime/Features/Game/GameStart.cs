@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class GameStart : MonoBehaviour
 {
-    private GameSystems _GameSystems;
-    private GameLateUpdateSystems _GameLateUpdateSystems;
+    private UpdateSystems _GameSystems;
+    private LateUpdateSystems _GameLateUpdateSystems;
+    private Services _services;
+    private Contexts _contexts;
     public void Start()
     {
-        _GameSystems = new GameSystems(Contexts.sharedInstance);
+        _contexts = Contexts.sharedInstance;
+        _services = new Services();
+        
+        CreateServices(_contexts,_services);
+        
+        _GameSystems = new UpdateSystems(_contexts,_services);
         _GameSystems.Initialize();
 
-        _GameLateUpdateSystems = new GameLateUpdateSystems(Contexts.sharedInstance);
+        _GameLateUpdateSystems = new LateUpdateSystems(_contexts,_services);
         _GameLateUpdateSystems.Initialize();
+    }
+
+    private void CreateServices(Contexts contexts, Services services)
+    {
+        services.InputService = new InputService(contexts);
+        services.CameraService = new CameraService(contexts);
+        services.UIService = new UIService(contexts);
     }
 
     public void Update()

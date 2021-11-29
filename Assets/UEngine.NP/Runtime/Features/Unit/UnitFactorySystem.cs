@@ -34,7 +34,9 @@ public class UnitFactorySystem : IInitializeSystem
         gameEntity.AddNumericModifier(new Dictionary<NumericType, List<BaseModifier>>());
         
         gameEntity.AddInputKey(new Dictionary<KeyCode, int>());
+        gameEntity.AddCamp(CampType.Own);
         gameEntity.isMirror = true;
+        gameEntity.AddMove(false,Vector2.zero,0);
         
         
         var monsterEntity = m_Contexts.game.CreateEntity();
@@ -49,6 +51,9 @@ public class UnitFactorySystem : IInitializeSystem
         monsterEntity.AddNumericModifier(new Dictionary<NumericType, List<BaseModifier>>());
         
         monsterEntity.AddStateEnter(new IdleStateParam(){AnimClipName = "Standing Idle",StateType = StateType.IDLE});
+        monsterEntity.AddCamp(CampType.Enemy);
+
         monsterEntity.isMirror = true;
+        monsterEntity.AddMove(false,Vector2.zero,0);
     }
 }

@@ -8,10 +8,14 @@ public class UIHpShowSystem : IExecuteSystem
  
     private IGroup<GameEntity> m_Group;
     private Dictionary<long, Slider> m_Sliders = new Dictionary<long, Slider>();
-
-    public UIHpShowSystem(Contexts contexts)
+    private CameraService _CameraService;
+    private UIService _UIService;
+    public UIHpShowSystem(Contexts contexts, Services services)
     {
-        m_Group = contexts.game.GetGroup(GameMatcher.AllOf(GameMatcher.Numeric).NoneOf(GameMatcher.MainPlayer,GameMatcher.MirrorTag));
+        m_Group = contexts.game.GetGroup(GameMatcher.AllOf(GameMatcher.Numeric)
+            .NoneOf(GameMatcher.MainPlayer, GameMatcher.MirrorTag));
+        _CameraService = services.CameraService;
+        _UIService = services.UIService;
     }
 
     public void Execute()
@@ -22,7 +26,7 @@ public class UIHpShowSystem : IExecuteSystem
             if (!m_Sliders.TryGetValue(entity.unit.ID, out slider))
             {
                 var sliderGo = GameObject.Instantiate(Resources.Load<GameObject>("Slider"));
-                sliderGo.transform.parent = Game.Canvas.transform;
+                sliderGo.transform.parent = _UIService.Canvas.transform;
                 sliderGo.transform.localPosition = Vector3.zero;
                 sliderGo.transform.localScale = Vector3.one;
                 slider = sliderGo.GetComponent<Slider>();
@@ -32,10 +36,10 @@ public class UIHpShowSystem : IExecuteSystem
 
             //udpate pos
             var worldToScreenPoint =
-                TransformUtility.WorldToScreenPoint(Game.MainCamera, entity.position.value + Vector3.up * 2.2f);
+                TransformUtility.WorldToScreenPoint(_CameraService.Camera, entity.position.value + Vector3.up * 2.2f);
             Vector2 localPos;
-            TransformUtility.ScreenPointToLocalPointInRectangle(Game.Canvas.transform as RectTransform, worldToScreenPoint,
-                Game.UICamera, out localPos);
+            TransformUtility.ScreenPointToLocalPointInRectangle(_UIService.Canvas.transform as RectTransform, worldToScreenPoint,
+                _UIService.UICamera, out localPos);
             var sliderTransform = slider.transform as RectTransform;
             sliderTransform.anchoredPosition = localPos;
             

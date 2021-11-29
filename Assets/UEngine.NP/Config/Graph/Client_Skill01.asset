@@ -75,7 +75,7 @@ MonoBehaviour:
       Data: 2|UEngine.NP.NP_RootNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106974366072868
+      Data: 107001617252370
     - Name: NodeType
       Entry: 3
       Data: 1
@@ -87,7 +87,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 3
-      Data: 106974366072867
+      Data: 107001617252369
     - Name: 
       Entry: 13
       Data: 
@@ -123,10 +123,10 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 1250.55273
+      Data: 1250.49963
     - Name: 
       Entry: 4
-      Data: 513.999939
+      Data: 513.9999
     - Name: 
       Entry: 4
       Data: 110.5
@@ -153,7 +153,7 @@ MonoBehaviour:
       Data: 5|UEngine.NP.NP_WaitUntilStoppedData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106974366072866
+      Data: 107001617252368
     - Name: NodeType
       Entry: 3
       Data: 2
@@ -231,7 +231,7 @@ MonoBehaviour:
       Data: 8|UEngine.NP.NP_SelectorNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106974366072867
+      Data: 107001617252369
     - Name: NodeType
       Entry: 3
       Data: 0
@@ -243,16 +243,16 @@ MonoBehaviour:
       Data: 4
     - Name: 
       Entry: 3
-      Data: 106974366072863
+      Data: 107001617252365
     - Name: 
       Entry: 3
-      Data: 106974366072865
+      Data: 107001617252367
     - Name: 
       Entry: 3
-      Data: 106974366072864
+      Data: 107001617252366
     - Name: 
       Entry: 3
-      Data: 106974366072866
+      Data: 107001617252368
     - Name: 
       Entry: 13
       Data: 
@@ -285,10 +285,10 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: -454.658936
+      Data: -454.5
     - Name: 
       Entry: 4
-      Data: 552.056763
+      Data: 552
     - Name: 
       Entry: 4
       Data: 134.5
@@ -318,7 +318,7 @@ MonoBehaviour:
       Data: 11|NP_ConditionNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106974366072863
+      Data: 107001617252365
     - Name: NodeType
       Entry: 3
       Data: 1
@@ -330,7 +330,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 3
-      Data: 106974366072860
+      Data: 107001617252362
     - Name: 
       Entry: 13
       Data: 
@@ -343,24 +343,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 13|NP_ComboConditionAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: keyCode
       Entry: 3
       Data: 101
@@ -393,16 +375,16 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: -624.658936
+      Data: -625.3225
     - Name: 
       Entry: 4
-      Data: 829.556763
+      Data: 829.000061
     - Name: 
       Entry: 4
-      Data: 134.5
+      Data: 135
     - Name: 
       Entry: 4
-      Data: 76
+      Data: 92
     - Name: 
       Entry: 8
       Data: 
@@ -423,7 +405,7 @@ MonoBehaviour:
       Data: 15|UEngine.NP.NP_ActionNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106974366072852
+      Data: 107001617252354
     - Name: NodeType
       Entry: 3
       Data: 2
@@ -445,30 +427,12 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 17|NP_PlayComboAnimAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: AnimClipName
       Entry: 1
       Data: Attack01
     - Name: AnimClipSpeed
       Entry: 4
-      Data: 1.8
+      Data: 2
     - Name: ComboIndex
       Entry: 3
       Data: 1
@@ -501,16 +465,16 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 164.669785
+      Data: 156.000076
     - Name: 
       Entry: 4
-      Data: 540.158569
+      Data: 552
     - Name: 
       Entry: 4
       Data: 134.5
     - Name: 
       Entry: 4
-      Data: 84
+      Data: 97.5
     - Name: 
       Entry: 8
       Data: 
@@ -534,7 +498,7 @@ MonoBehaviour:
       Data: 19|NP_ConditionNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106974366072865
+      Data: 107001617252367
     - Name: NodeType
       Entry: 3
       Data: 1
@@ -546,7 +510,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 3
-      Data: 106974366072861
+      Data: 107001617252363
     - Name: 
       Entry: 13
       Data: 
@@ -559,24 +523,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 21|NP_ComboConditionAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: keyCode
       Entry: 3
       Data: 101
@@ -609,16 +555,16 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: -18.3302
+      Data: -17.6775017
     - Name: 
       Entry: 4
-      Data: 817.658569
+      Data: 818.3225
     - Name: 
       Entry: 4
-      Data: 134.5
+      Data: 135
     - Name: 
       Entry: 4
-      Data: 76
+      Data: 92
     - Name: 
       Entry: 8
       Data: 
@@ -639,7 +585,7 @@ MonoBehaviour:
       Data: 23|UEngine.NP.NP_ActionNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106974366072855
+      Data: 107001617252357
     - Name: NodeType
       Entry: 3
       Data: 2
@@ -661,24 +607,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 25|NP_PlayComboAnimAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: AnimClipName
       Entry: 1
       Data: Attack02
@@ -717,16 +645,16 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: -454.658936
+      Data: -454.000031
     - Name: 
       Entry: 4
-      Data: 669.556763
+      Data: 662
     - Name: 
       Entry: 4
-      Data: 110.5
+      Data: 111
     - Name: 
       Entry: 4
-      Data: 84
+      Data: 100
     - Name: 
       Entry: 8
       Data: 
@@ -750,7 +678,7 @@ MonoBehaviour:
       Data: 27|UEngine.NP.NP_SequenceNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106974366072860
+      Data: 107001617252362
     - Name: NodeType
       Entry: 3
       Data: 0
@@ -762,13 +690,13 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 3
-      Data: 106974366072852
+      Data: 107001617252354
     - Name: 
       Entry: 3
-      Data: 106974366072851
+      Data: 107001617252353
     - Name: 
       Entry: 3
-      Data: 106974366072853
+      Data: 107001617252355
     - Name: 
       Entry: 13
       Data: 
@@ -801,16 +729,16 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 164.669785
+      Data: 168.9025
     - Name: 
       Entry: 4
-      Data: 657.658569
+      Data: 662
     - Name: 
       Entry: 4
       Data: 110.5
     - Name: 
       Entry: 4
-      Data: 84
+      Data: 97.5
     - Name: 
       Entry: 8
       Data: 
@@ -834,7 +762,7 @@ MonoBehaviour:
       Data: 30|UEngine.NP.NP_SequenceNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106974366072861
+      Data: 107001617252363
     - Name: NodeType
       Entry: 3
       Data: 0
@@ -846,13 +774,13 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 3
-      Data: 106974366072855
+      Data: 107001617252357
     - Name: 
       Entry: 3
-      Data: 106974366072856
+      Data: 107001617252358
     - Name: 
       Entry: 3
-      Data: 106974366072854
+      Data: 107001617252356
     - Name: 
       Entry: 13
       Data: 
@@ -885,10 +813,10 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: -301.158936
+      Data: -300.999847
     - Name: 
       Entry: 4
-      Data: 829.556763
+      Data: 829.4999
     - Name: 
       Entry: 4
       Data: 134.5
@@ -915,7 +843,7 @@ MonoBehaviour:
       Data: 33|UEngine.NP.NP_ActionNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106974366072853
+      Data: 107001617252355
     - Name: NodeType
       Entry: 3
       Data: 2
@@ -937,24 +865,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 35|NP_ClearInputAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: KeyCode
       Entry: 3
       Data: 101
@@ -984,16 +894,16 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 288.669739
+      Data: 290.500061
     - Name: 
       Entry: 4
-      Data: 817.658569
+      Data: 819.4999
     - Name: 
       Entry: 4
       Data: 134.5
     - Name: 
       Entry: 4
-      Data: 76
+      Data: 89.5
     - Name: 
       Entry: 8
       Data: 
@@ -1014,7 +924,7 @@ MonoBehaviour:
       Data: 37|UEngine.NP.NP_ActionNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106974366072854
+      Data: 107001617252356
     - Name: NodeType
       Entry: 3
       Data: 2
@@ -1036,24 +946,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 39|NP_ClearInputAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: KeyCode
       Entry: 3
       Data: 101
@@ -1083,16 +975,16 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 651.669739
+      Data: 755.000061
     - Name: 
       Entry: 4
-      Data: 540.158569
+      Data: 552
     - Name: 
       Entry: 4
-      Data: 134.5
+      Data: 135
     - Name: 
       Entry: 4
-      Data: 84
+      Data: 100
     - Name: 
       Entry: 8
       Data: 
@@ -1116,7 +1008,7 @@ MonoBehaviour:
       Data: 41|NP_ConditionNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106974366072864
+      Data: 107001617252366
     - Name: NodeType
       Entry: 3
       Data: 1
@@ -1128,7 +1020,7 @@ MonoBehaviour:
       Data: 1
     - Name: 
       Entry: 3
-      Data: 106974366072862
+      Data: 107001617252364
     - Name: 
       Entry: 13
       Data: 
@@ -1141,24 +1033,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 43|NP_ComboConditionAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: keyCode
       Entry: 3
       Data: 101
@@ -1191,16 +1065,16 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 530.169739
+      Data: 620.000061
     - Name: 
       Entry: 4
-      Data: 809.658569
+      Data: 821
     - Name: 
       Entry: 4
-      Data: 134.5
+      Data: 135
     - Name: 
       Entry: 4
-      Data: 76
+      Data: 92
     - Name: 
       Entry: 8
       Data: 
@@ -1221,7 +1095,7 @@ MonoBehaviour:
       Data: 45|UEngine.NP.NP_ActionNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106974366072858
+      Data: 107001617252361
     - Name: NodeType
       Entry: 3
       Data: 2
@@ -1243,24 +1117,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 47|NP_PlayComboAnimAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: AnimClipName
       Entry: 1
       Data: Attack03
@@ -1299,16 +1155,16 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 664.6698
+      Data: 754.000061
     - Name: 
       Entry: 4
-      Data: 649.658569
+      Data: 662
     - Name: 
       Entry: 4
-      Data: 110.5
+      Data: 111
     - Name: 
       Entry: 4
-      Data: 84
+      Data: 100
     - Name: 
       Entry: 8
       Data: 
@@ -1332,7 +1188,7 @@ MonoBehaviour:
       Data: 49|UEngine.NP.NP_SequenceNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106974366072862
+      Data: 107001617252364
     - Name: NodeType
       Entry: 3
       Data: 0
@@ -1344,13 +1200,13 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 3
-      Data: 106974366072858
+      Data: 107001617252361
     - Name: 
       Entry: 3
-      Data: 106974366072859
+      Data: 107001617252360
     - Name: 
       Entry: 3
-      Data: 106974366072857
+      Data: 107001617252359
     - Name: 
       Entry: 13
       Data: 
@@ -1383,16 +1239,16 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 823.6698
+      Data: 913.000061
     - Name: 
       Entry: 4
-      Data: 809.658569
+      Data: 822
     - Name: 
       Entry: 4
-      Data: 134.5
+      Data: 135
     - Name: 
       Entry: 4
-      Data: 76
+      Data: 92
     - Name: 
       Entry: 8
       Data: 
@@ -1413,7 +1269,7 @@ MonoBehaviour:
       Data: 52|UEngine.NP.NP_ActionNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106974366072857
+      Data: 107001617252359
     - Name: NodeType
       Entry: 3
       Data: 2
@@ -1435,24 +1291,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 54|NP_ClearInputAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: KeyCode
       Entry: 3
       Data: 101
@@ -1482,16 +1320,16 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: -454.658936
+      Data: -454.000031
     - Name: 
       Entry: 4
-      Data: 829.556763
+      Data: 829.000061
     - Name: 
       Entry: 4
-      Data: 110.5
+      Data: 111
     - Name: 
       Entry: 4
-      Data: 76
+      Data: 92
     - Name: 
       Entry: 8
       Data: 
@@ -1512,7 +1350,7 @@ MonoBehaviour:
       Data: 56|UEngine.NP.NP_ActionNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106974366072851
+      Data: 107001617252353
     - Name: NodeType
       Entry: 3
       Data: 2
@@ -1534,24 +1372,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 58|NP_BindBulletAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: BindBoneName
       Entry: 1
       Data: arm right wrist
@@ -1620,13 +1440,13 @@ MonoBehaviour:
       Data: 
     - Name: DelayBornTime
       Entry: 4
-      Data: 0
+      Data: 0.66
     - Name: AutoDelayDestroyTime
       Entry: 4
-      Data: 1.5
+      Data: 1
     - Name: multiple
       Entry: 4
-      Data: 1
+      Data: 1.8
     - Name: BlackBoardKey_IsAttacked
       Entry: 7
       Data: 62|NP_BlackBoardKeySelecter`1[[UEngine.NP.NP_BBValue_Bool, Assembly-CSharp]],
@@ -1673,10 +1493,10 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 139.999985
+      Data: 141.500015
     - Name: 
       Entry: 4
-      Data: 817.4999
+      Data: 819.5
     - Name: 
       Entry: 4
       Data: 110.5
@@ -1703,7 +1523,7 @@ MonoBehaviour:
       Data: 65|UEngine.NP.NP_ActionNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106974366072856
+      Data: 107001617252358
     - Name: NodeType
       Entry: 3
       Data: 2
@@ -1725,24 +1545,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 67|NP_BindBulletAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: BindBoneName
       Entry: 1
       Data: arm right wrist
@@ -1811,13 +1613,13 @@ MonoBehaviour:
       Data: 
     - Name: DelayBornTime
       Entry: 4
-      Data: 0
+      Data: 0.66
     - Name: AutoDelayDestroyTime
       Entry: 4
-      Data: 1.5
+      Data: 0.66
     - Name: multiple
       Entry: 4
-      Data: 1
+      Data: 1.8
     - Name: BlackBoardKey_IsAttacked
       Entry: 7
       Data: 71|NP_BlackBoardKeySelecter`1[[UEngine.NP.NP_BBValue_Bool, Assembly-CSharp]],
@@ -1864,16 +1666,16 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 675.4999
+      Data: 765.000061
     - Name: 
       Entry: 4
-      Data: 809.4999
+      Data: 822
     - Name: 
       Entry: 4
-      Data: 110.5
+      Data: 111
     - Name: 
       Entry: 4
-      Data: 76
+      Data: 92
     - Name: 
       Entry: 8
       Data: 
@@ -1894,7 +1696,7 @@ MonoBehaviour:
       Data: 74|UEngine.NP.NP_ActionNodeData, Assembly-CSharp
     - Name: id
       Entry: 3
-      Data: 106974366072859
+      Data: 107001617252360
     - Name: NodeType
       Entry: 3
       Data: 2
@@ -1916,24 +1718,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 76|NP_BindBulletAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: BindBoneName
       Entry: 1
       Data: arm right wrist
@@ -2002,13 +1786,13 @@ MonoBehaviour:
       Data: 
     - Name: DelayBornTime
       Entry: 4
-      Data: 0
+      Data: 0.66
     - Name: AutoDelayDestroyTime
       Entry: 4
-      Data: 1.5
+      Data: 0.66
     - Name: multiple
       Entry: 4
-      Data: 1
+      Data: 1.8
     - Name: BlackBoardKey_IsAttacked
       Entry: 7
       Data: 80|NP_BlackBoardKeySelecter`1[[UEngine.NP.NP_BBValue_Bool, Assembly-CSharp]],
@@ -2056,19 +1840,19 @@ MonoBehaviour:
       Data: 83|GraphProcessor.Group, com.alelievr.NodeGraphProcessor.Runtime
     - Name: title
       Entry: 1
-      Data: First attack
+      Data: "\u7B2C\u4E00\u6BB5\u653B\u51FB"
     - Name: color
       Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 0.243166164
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 0.772549033
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 0.199999988
     - Name: 
       Entry: 4
       Data: 0.3
@@ -2080,16 +1864,16 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: -649.6589
+      Data: -382.5001
     - Name: 
       Entry: 4
-      Data: 493.056732
+      Data: 587.8182
     - Name: 
       Entry: 4
-      Data: 508
+      Data: 400
     - Name: 
       Entry: 4
-      Data: 437.5
+      Data: 200
     - Name: 
       Entry: 8
       Data: 
@@ -2110,7 +1894,22 @@ MonoBehaviour:
       Data: 84|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 5
+    - Name: 
+      Entry: 1
+      Data: 5b6118ae-468f-4afd-bf40-9fecf3032d37
+    - Name: 
+      Entry: 1
+      Data: edaf5f3c-5119-4a0e-9e6a-dd1a9e915caa
+    - Name: 
+      Entry: 1
+      Data: ca32a735-536c-4b42-83de-83c373c95bf5
+    - Name: 
+      Entry: 1
+      Data: 84ee0c7c-15a1-4088-b991-68de1acb8ce9
+    - Name: 
+      Entry: 1
+      Data: 026c6bdc-6d48-4685-918f-a8faffadce85
     - Name: 
       Entry: 13
       Data: 
@@ -2125,19 +1924,19 @@ MonoBehaviour:
       Data: 85|GraphProcessor.Group, com.alelievr.NodeGraphProcessor.Runtime
     - Name: title
       Entry: 1
-      Data: Second Attack
+      Data: 2
     - Name: color
       Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 0.8207547
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 0.5032615
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 0.352305084
     - Name: 
       Entry: 4
       Data: 0.3
@@ -2149,16 +1948,16 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 228.289032
+      Data: -43.0000076
     - Name: 
       Entry: 4
-      Data: 561.16864
+      Data: 490
     - Name: 
       Entry: 4
-      Data: 400
+      Data: 493
     - Name: 
       Entry: 4
-      Data: 200
+      Data: 446
     - Name: 
       Entry: 8
       Data: 
@@ -2179,7 +1978,22 @@ MonoBehaviour:
       Data: 86|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 5
+    - Name: 
+      Entry: 1
+      Data: a6838263-67eb-488e-a8b3-f072d7638589
+    - Name: 
+      Entry: 1
+      Data: 85c89642-21fd-4a66-a6c9-d8f4aee28572
+    - Name: 
+      Entry: 1
+      Data: 5e132e77-8773-44ed-87a6-d7a184a02088
+    - Name: 
+      Entry: 1
+      Data: f5e27e9f-bfcf-43f7-9290-1c60e4044878
+    - Name: 
+      Entry: 1
+      Data: 69ff33ea-571d-4ca5-91a4-a7a4ba411f1c
     - Name: 
       Entry: 13
       Data: 
@@ -2194,19 +2008,19 @@ MonoBehaviour:
       Data: 87|GraphProcessor.Group, com.alelievr.NodeGraphProcessor.Runtime
     - Name: title
       Entry: 1
-      Data: Third Attack
+      Data: 3
     - Name: color
       Entry: 7
       Data: UnityEngine.Color, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 0.200694218
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 0.5264495
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 0.7735849
     - Name: 
       Entry: 4
       Data: 0.3
@@ -2218,16 +2032,16 @@ MonoBehaviour:
       Data: UnityEngine.Rect, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 737.162354
+      Data: 595.000061
     - Name: 
       Entry: 4
-      Data: 587.3163
+      Data: 493.000031
     - Name: 
       Entry: 4
-      Data: 400
+      Data: 478
     - Name: 
       Entry: 4
-      Data: 200
+      Data: 446
     - Name: 
       Entry: 8
       Data: 
@@ -2248,7 +2062,22 @@ MonoBehaviour:
       Data: 88|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 5
+    - Name: 
+      Entry: 1
+      Data: 8491ab4f-751a-4b1a-8e03-03739aa348f6
+    - Name: 
+      Entry: 1
+      Data: 11dcb54e-666b-4ee9-8551-e355fde4ca16
+    - Name: 
+      Entry: 1
+      Data: c98af6e1-69ed-4c28-9ff2-06a9e00d0831
+    - Name: 
+      Entry: 1
+      Data: 9c09a252-619e-4a39-8ccc-5f5cdf001229
+    - Name: 
+      Entry: 1
+      Data: 2f223a30-3037-44c0-b40d-affa800b4be6
     - Name: 
       Entry: 13
       Data: 
@@ -2272,10 +2101,10 @@ MonoBehaviour:
       Data: 1001
     - Name: InstanceID
       Entry: 3
-      Data: 21524
+      Data: 23406
     - Name: NPBehaveTreeDataId
       Entry: 3
-      Data: 106974366072868
+      Data: 107001617252370
     - Name: NP_DataSupportorDic
       Entry: 7
       Data: 90|System.Collections.Generic.Dictionary`2[[System.Int64, mscorlib],[UEngine.NP.NP_NodeDataBase,
@@ -2295,7 +2124,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106974366072851
+      Data: 107001617252353
     - Name: $v
       Entry: 9
       Data: 56
@@ -2307,7 +2136,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106974366072852
+      Data: 107001617252354
     - Name: $v
       Entry: 9
       Data: 15
@@ -2319,7 +2148,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106974366072853
+      Data: 107001617252355
     - Name: $v
       Entry: 9
       Data: 33
@@ -2331,7 +2160,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106974366072854
+      Data: 107001617252356
     - Name: $v
       Entry: 9
       Data: 37
@@ -2343,7 +2172,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106974366072855
+      Data: 107001617252357
     - Name: $v
       Entry: 9
       Data: 23
@@ -2355,7 +2184,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106974366072856
+      Data: 107001617252358
     - Name: $v
       Entry: 9
       Data: 65
@@ -2367,7 +2196,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106974366072857
+      Data: 107001617252359
     - Name: $v
       Entry: 9
       Data: 52
@@ -2379,19 +2208,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106974366072858
-    - Name: $v
-      Entry: 9
-      Data: 45
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 106974366072859
+      Data: 107001617252360
     - Name: $v
       Entry: 9
       Data: 74
@@ -2403,7 +2220,19 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106974366072860
+      Data: 107001617252361
+    - Name: $v
+      Entry: 9
+      Data: 45
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107001617252362
     - Name: $v
       Entry: 9
       Data: 27
@@ -2415,7 +2244,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106974366072861
+      Data: 107001617252363
     - Name: $v
       Entry: 9
       Data: 30
@@ -2427,7 +2256,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106974366072862
+      Data: 107001617252364
     - Name: $v
       Entry: 9
       Data: 49
@@ -2439,7 +2268,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106974366072863
+      Data: 107001617252365
     - Name: $v
       Entry: 9
       Data: 11
@@ -2451,7 +2280,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106974366072864
+      Data: 107001617252366
     - Name: $v
       Entry: 9
       Data: 41
@@ -2463,7 +2292,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106974366072865
+      Data: 107001617252367
     - Name: $v
       Entry: 9
       Data: 19
@@ -2475,7 +2304,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106974366072866
+      Data: 107001617252368
     - Name: $v
       Entry: 9
       Data: 5
@@ -2487,7 +2316,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106974366072867
+      Data: 107001617252369
     - Name: $v
       Entry: 9
       Data: 8
@@ -2499,7 +2328,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 106974366072868
+      Data: 107001617252370
     - Name: $v
       Entry: 9
       Data: 2
@@ -2759,24 +2588,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 108|NP_BindBulletAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: BindBoneName
       Entry: 1
       Data: arm right wrist
@@ -2914,24 +2725,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 116|NP_PlayComboAnimAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: AnimClipName
       Entry: 1
       Data: Attack01
@@ -2986,24 +2779,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 119|NP_ClearInputAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: KeyCode
       Entry: 3
       Data: 101
@@ -3049,24 +2824,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 122|NP_ClearInputAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: KeyCode
       Entry: 3
       Data: 101
@@ -3112,24 +2869,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 125|NP_PlayComboAnimAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: AnimClipName
       Entry: 1
       Data: Attack02
@@ -3184,24 +2923,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 128|NP_BindBulletAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: BindBoneName
       Entry: 1
       Data: arm right wrist
@@ -3339,24 +3060,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 136|NP_ClearInputAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: KeyCode
       Entry: 3
       Data: 101
@@ -3402,24 +3105,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 139|NP_PlayComboAnimAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: AnimClipName
       Entry: 1
       Data: Attack03
@@ -3474,24 +3159,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 142|NP_BindBulletAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: BindBoneName
       Entry: 1
       Data: arm right wrist
@@ -3767,24 +3434,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 156|NP_ComboConditionAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: keyCode
       Entry: 3
       Data: 101
@@ -3836,24 +3485,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 159|NP_ComboConditionAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: keyCode
       Entry: 3
       Data: 101
@@ -3905,24 +3536,6 @@ MonoBehaviour:
     - Name: NpClassForStoreAction
       Entry: 7
       Data: 162|NP_ComboConditionAction, Assembly-CSharp
-    - Name: UnitID
-      Entry: 3
-      Data: 0
-    - Name: Blackboard
-      Entry: 6
-      Data: 
-    - Name: Skill
-      Entry: 6
-      Data: 
-    - Name: Action
-      Entry: 6
-      Data: 
-    - Name: Func1
-      Entry: 6
-      Data: 
-    - Name: Func2
-      Entry: 6
-      Data: 
     - Name: keyCode
       Entry: 3
       Data: 101
@@ -4565,8 +4178,8 @@ MonoBehaviour:
   exposedParameters: []
   serializedParameterList: []
   stickyNotes: []
-  position: {x: 325.5, y: 16.499996, z: 0}
-  scale: {x: 0.49717674, y: 0.49717674, z: 1}
+  position: {x: 487, y: 30.5, z: 0}
+  scale: {x: 0.57175326, y: 0.57175326, z: 1}
   Name: Client_Skill01
   SavePath: Assets/UEngine.NP/Config/Bytes
   references:

@@ -60,11 +60,17 @@ public partial class Contexts : Entitas.IContexts {
 //------------------------------------------------------------------------------
 public partial class Contexts {
 
+    public const string Camp = "Camp";
     public const string Name = "Name";
     public const string Unit = "Unit";
 
     [Entitas.CodeGeneration.Attributes.PostConstructor]
     public void InitializeEntityIndices() {
+        game.AddEntityIndex(new Entitas.EntityIndex<GameEntity, CampType>(
+            Camp,
+            game.GetGroup(GameMatcher.Camp),
+            (e, c) => ((CampComponent)c).Value));
+
         game.AddEntityIndex(new Entitas.PrimaryEntityIndex<GameEntity, string>(
             Name,
             game.GetGroup(GameMatcher.Name),
@@ -78,6 +84,10 @@ public partial class Contexts {
 }
 
 public static class ContextsExtensions {
+
+    public static System.Collections.Generic.HashSet<GameEntity> GetEntitiesWithCamp(this GameContext context, CampType Value) {
+        return ((Entitas.EntityIndex<GameEntity, CampType>)context.GetEntityIndex(Contexts.Camp)).GetEntities(Value);
+    }
 
     public static GameEntity GetEntityWithName(this GameContext context, string Value) {
         return ((Entitas.PrimaryEntityIndex<GameEntity, string>)context.GetEntityIndex(Contexts.Name)).GetEntity(Value);

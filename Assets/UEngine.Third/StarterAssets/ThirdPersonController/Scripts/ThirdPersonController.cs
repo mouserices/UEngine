@@ -246,8 +246,11 @@ namespace StarterAssets
             // move the player
             if (Contexts.sharedInstance.game.mainPlayerEntity.CheckState(StateType.Walk))
             {
-                _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) +
-                                 new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+                var targetDirectionNormalized = targetDirection.normalized * (_speed * Time.deltaTime) +
+                                                new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime;
+                targetDirectionNormalized.y = 0;
+                //_controller.Move();
+                Contexts.sharedInstance.game.mainPlayerEntity.ReplacePosition(Contexts.sharedInstance.game.mainPlayerEntity.position.value + targetDirectionNormalized);
             }
 
             // update animator if using character
