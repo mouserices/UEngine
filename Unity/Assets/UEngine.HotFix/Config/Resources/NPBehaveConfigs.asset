@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a86034b372fd4287b3d6a2f577bc3514, type: 3}
+  m_Name: NPBehaveConfigs
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 4900000, guid: 694d51e11124646409bdec61bb52ac8c, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Configs
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UEngine.NP.NPBehaveConfig,
+        UEngine.HotFix]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Client_Skill01
+    - Name: $v
+      Entry: 7
+      Data: 2|UEngine.NP.NPBehaveConfig, UEngine.HotFix
+    - Name: TextAsset
+      Entry: 10
+      Data: 0
+    - Name: GraphPath
+      Entry: 1
+      Data: Assets/UEngine.HotFix/Config/Graph/Client_Skill01.asset
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Server_Skill01
+    - Name: $v
+      Entry: 7
+      Data: 3|UEngine.NP.NPBehaveConfig, UEngine.HotFix
+    - Name: TextAsset
+      Entry: 6
+      Data: 
+    - Name: GraphPath
+      Entry: 1
+      Data: Assets/UEngine.NP/Config/Graph/Server_Skill01.asset
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Server_Skill02
+    - Name: $v
+      Entry: 7
+      Data: 4|UEngine.NP.NPBehaveConfig, UEngine.HotFix
+    - Name: TextAsset
+      Entry: 6
+      Data: 
+    - Name: GraphPath
+      Entry: 1
+      Data: Assets/UEngine.NP/Config/Graph/Server_Skill02.asset
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Client_Skill02
+    - Name: $v
+      Entry: 7
+      Data: 5|UEngine.NP.NPBehaveConfig, UEngine.HotFix
+    - Name: TextAsset
+      Entry: 6
+      Data: 
+    - Name: GraphPath
+      Entry: 1
+      Data: Assets/UEngine.NP/Config/Graph/Client_Skill02.asset
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 

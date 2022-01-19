@@ -56,3 +56,4 @@ Temp
 *.csproj
 *.properties
 *.userproperties
+.vscode
