@@ -1,5 +1,4 @@
-﻿namespace ETModel
-{
+﻿
 	public static class IdGenerater
 	{
 		private static long instanceIdGenerator;
@@ -34,4 +33,3 @@
 			return (int)(v >> 48);
 		}
 	}
-}
