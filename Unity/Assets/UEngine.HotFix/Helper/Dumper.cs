@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Reflection;
 using System.Text;
-using Google.Protobuf;
+// using Google.Protobuf;
 using UnityEngine;
 
 namespace ETModel
@@ -59,14 +59,14 @@ namespace ETModel
                 _text.Append(",");
                 AppendIndent(1);
             }
-            else if (obj is ByteString)
-            {
-                _text.Append("\"");
-                _text.Append(((ByteString) obj).bytes.Utf8ToStr());
-                _text.Append("\"");
-                _text.Append(",");
-                AppendIndent(1);
-            }
+            // else if (obj is ByteString)
+            // {
+            //     _text.Append("\"");
+            //     _text.Append(((ByteString) obj).bytes.Utf8ToStr());
+            //     _text.Append("\"");
+            //     _text.Append(",");
+            //     AppendIndent(1);
+            // }
             else if (t.IsArray)
             {
                 Array a = (Array) obj;

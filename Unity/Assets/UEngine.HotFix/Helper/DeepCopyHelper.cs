@@ -7,10 +7,6 @@
 using System;
 using System.IO;
 using System.Reflection;
-using System.Runtime.Serialization.Formatters.Binary;
-using MongoDB.Bson.IO;
-using MongoDB.Bson.Serialization;
-using MongoDB.Bson.Serialization.Serializers;
 using UnityEngine;
 
 
@@ -33,9 +29,10 @@ public static class DeepCloneHelper
                 }
                 using (MemoryStream stream = new MemoryStream())
                 {
-                    BsonSerializer.Serialize(new BsonBinaryWriter(stream), obj);
-                    stream.Position = 0;
-                    return  BsonSerializer.Deserialize<T>(stream);
+                    // BsonSerializer.Serialize(new BsonBinaryWriter(stream), obj);
+                    // stream.Position = 0;
+                    // return  BsonSerializer.Deserialize<T>(stream);
+                    return null;
                 }
             }
             catch(Exception e)

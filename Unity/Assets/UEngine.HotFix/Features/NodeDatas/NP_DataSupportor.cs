@@ -4,9 +4,6 @@
 // Data: 2019年8月22日 8:06:52
 //------------------------------------------------------------
 
-using System.Collections.Generic;
-using MongoDB.Bson.Serialization.Attributes;
-using MongoDB.Bson.Serialization.Options;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -16,7 +13,6 @@ namespace UEngine.NP
     /// 技能配置数据载体
     /// </summary>
     [HideLabel]
-    [BsonDeserializerRegister]
     public class NP_DataSupportor
     {
         // [BoxGroup("技能中的Buff数据结点")]

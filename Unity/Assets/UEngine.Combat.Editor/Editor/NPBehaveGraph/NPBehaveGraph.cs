@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using ETModel;
 using GraphProcessor;
-using MongoDB.Bson.IO;
-using MongoDB.Bson.Serialization;
+using Newtonsoft.Json;
 using Sirenix.OdinInspector;
 using UEngine.NP;
 using UEngine.NP.Editor;
 using UnityEditor;
 using UnityEngine;
+using JsonSerializer = Newtonsoft.Json.JsonSerializer;
 
 
 public class NPBehaveGraph : BaseGraph
@@ -70,16 +71,34 @@ public class NPBehaveGraph : BaseGraph
             return;
         }
 
-        using (FileStream file = File.Create($"{SavePath}/{this.Name}.bytes"))
+        using (var fileWriter = File.CreateText($"{SavePath}/{this.Name}.json"))
         {
-            BsonSerializer.Serialize(new BsonBinaryWriter(file), this.NpDataSupportor);
+            var jsonSerializerSettings = new JsonSerializerSettings();
+            jsonSerializerSettings.TypeNameHandling = TypeNameHandling.Auto;
+            jsonSerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+            jsonSerializerSettings.DefaultValueHandling = DefaultValueHandling.Ignore;
+
+            var jsonSerializer = JsonSerializer.Create(jsonSerializerSettings);
+            jsonSerializer.Serialize(fileWriter,this.NpDataSupportor);
+
+
+            // using (var fileStream = File.Create($"{SavePath}/{this.Name}1.bytes"))
+            // {
+            //     var bsonWriter = new BsonWriter(fileStream);
+            //     jsonSerializer.Serialize(bsonWriter,this.NpDataSupportor);
+            // }
+            
+            
+            
+            
+            //BsonSerializer.Serialize(new BsonBinaryWriter(file), this.NpDataSupportor);
         }
 
-        Debug.Log($"保存 {SavePath}/{this.Name}.bytes 成功");
+        Debug.Log($"保存 {SavePath}/{this.Name}.json 成功");
         AssetDatabase.Refresh();
         var npBehaveConfigs =
             AssetDatabase.LoadAssetAtPath<NPBehaveConfigs>("Assets/UEngine.HotFix/Config/Resources/NPBehaveConfigs.asset");
-        var assetAtPath = AssetDatabase.LoadAssetAtPath<TextAsset>($"{SavePath}/{this.Name}.bytes");
+        var assetAtPath = AssetDatabase.LoadAssetAtPath<TextAsset>($"{SavePath}/{this.Name}.json");
         var assetPath = AssetDatabase.GetAssetPath(this);
         npBehaveConfigs.AddConfig(this.name, assetAtPath, assetPath);
         AssetDatabase.Refresh();
@@ -89,13 +108,18 @@ public class NPBehaveGraph : BaseGraph
     [Button("测试反序列化", 25), GUIColor(0.4f, 0.8f, 1)]
     public void TestDe()
     {
-        byte[] mfile = File.ReadAllBytes($"{SavePath}/{this.Name}.bytes");
+       string mfile = File.ReadAllText($"{SavePath}/{this.Name}.json");
 
         if (mfile.Length == 0) Debug.Log("没有读取到文件");
 
         try
         {
-            this.NpDataSupportor1 = BsonSerializer.Deserialize<NP_DataSupportorBase>(mfile);
+            var jsonSerializerSettings = new JsonSerializerSettings();
+            jsonSerializerSettings.TypeNameHandling = TypeNameHandling.Auto;
+            jsonSerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+            jsonSerializerSettings.DefaultValueHandling = DefaultValueHandling.Ignore;
+            
+           this.NpDataSupportor1 = JsonConvert.DeserializeObject<NP_DataSupportorBase>(mfile,jsonSerializerSettings);
         }
         catch (Exception e)
         {

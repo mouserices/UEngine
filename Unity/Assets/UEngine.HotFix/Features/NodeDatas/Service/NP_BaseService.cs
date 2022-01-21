@@ -1,7 +1,4 @@
 using System;
-using UEngine.NP;
-
-[BsonDeserializerRegister]
 public abstract class NP_BaseService
 {
     public Skill Skill { get; set; }

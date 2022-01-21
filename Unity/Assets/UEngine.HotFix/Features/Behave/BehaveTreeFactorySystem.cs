@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.IO;
 using Entitas;
-using MongoDB.Bson.Serialization;
+using Newtonsoft.Json;
 using NPBehave;
 using Exception = System.Exception;
 
@@ -30,14 +30,21 @@ namespace UEngine.NP
 
             Dictionary<int, NP_DataSupportorBase> BehaveTreeDatas = new Dictionary<int, NP_DataSupportorBase>();
 
-            var filePaths = Directory.GetFiles(npBehaveConfigsPath, "*.bytes");
+            var filePaths = Directory.GetFiles(npBehaveConfigsPath, "*.json");
             foreach (var filePath in filePaths)
             {
                 var fileName = Path.GetFileNameWithoutExtension(filePath);
 
-                var readAllBytes = File.ReadAllBytes(filePath);
-                NP_DataSupportorBase npDataSupportorBase =
-                    BsonSerializer.Deserialize<NP_DataSupportorBase>(readAllBytes);
+                var readAllBytes = File.ReadAllText(filePath);
+                // NP_DataSupportorBase npDataSupportorBase =
+                //     BsonSerializer.Deserialize<NP_DataSupportorBase>(readAllBytes);
+                
+                var jsonSerializerSettings = new JsonSerializerSettings();
+                jsonSerializerSettings.TypeNameHandling = TypeNameHandling.Auto;
+                jsonSerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+                jsonSerializerSettings.DefaultValueHandling = DefaultValueHandling.Ignore;
+                
+                NP_DataSupportorBase npDataSupportorBase = JsonConvert.DeserializeObject<NP_DataSupportorBase>(readAllBytes,jsonSerializerSettings);
 
                 if (npDataSupportorBase.Platform == runPlatform)
                 {

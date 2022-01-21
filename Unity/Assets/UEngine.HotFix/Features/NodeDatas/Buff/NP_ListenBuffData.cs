@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using MongoDB.Bson.Serialization.Attributes;
 using Sirenix.OdinInspector;
 using UEngine.NP;
 
@@ -15,7 +14,6 @@ public enum TriggerConditon
 }
 
 [Title("Buff节点数据块",TitleAlignment = TitleAlignments.Centered)]
-[BsonIgnoreExtraElements]
 public class NP_ListenBuffData : NP_BuffNodeDataBase
 {
     [BoxGroup("Base Data")][OnValueChanged("OnConditionSelected")]

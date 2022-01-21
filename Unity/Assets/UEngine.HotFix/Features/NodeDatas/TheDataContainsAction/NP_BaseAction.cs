@@ -1,20 +1,12 @@
-//------------------------------------------------------------
-// Author: 烟雨迷离半世殇
-// Mail: 1778139321@qq.com
-// Data: 2019年8月22日 21:10:35
-//------------------------------------------------------------
-
 using System;
 using NPBehave;
 using Sirenix.OdinInspector;
 using Action = System.Action;
 
-
 namespace UEngine.NP
 {
     [BoxGroup("用于包含Action的数据类"),GUIColor(0.961f, 0.902f, 0.788f, 1f)]
     [HideLabel]
-    [BsonDeserializerRegister]
     public class NP_BaseAction
     {
         /// <summary>

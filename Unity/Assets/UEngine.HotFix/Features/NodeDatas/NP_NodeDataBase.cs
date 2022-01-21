@@ -1,19 +1,10 @@
-//------------------------------------------------------------
-// Author: 烟雨迷离半世殇
-// Mail: 1778139321@qq.com
-// Data: 2019年8月21日 7:14:44
-//------------------------------------------------------------
-
-using System;
 using System.Collections.Generic;
-using MongoDB.Bson.Serialization.Attributes;
 using NPBehave;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace UEngine.NP
 {
-    [BsonDeserializerRegister]
     public abstract class NP_NodeDataBase
     {
         /// <summary>
@@ -36,7 +27,6 @@ namespace UEngine.NP
         [BoxGroup("结点信息描述")]
         [TextArea(2, 2)]
         [HideLabel]
-        [BsonIgnore]
         public string NodeDes;
 
         /// <summary>

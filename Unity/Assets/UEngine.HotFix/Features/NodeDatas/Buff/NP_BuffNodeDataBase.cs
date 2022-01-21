@@ -4,7 +4,6 @@ using UEngine.NP;
     using UnityEngine;
 #endif
 
-[BsonDeserializerRegister]
 public class NP_BuffNodeDataBase
 {
 #if CLIENT
