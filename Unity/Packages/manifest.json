@@ -1,4 +1,13 @@
 {
+  "scopedRegistries": [
+    {
+      "name": "ILRuntime",
+      "url": "https://registry.npmjs.org",
+      "scopes": [
+        "com.ourpalm"
+      ]
+    }
+  ],
   "dependencies": {
     "com.unity.cinemachine": "2.6.9",
     "com.unity.collab-proxy": "1.5.7",

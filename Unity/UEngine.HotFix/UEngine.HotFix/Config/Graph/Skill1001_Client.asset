@@ -1,0 +1,4192 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a996cc31e12a940e5bc20705766a462b, type: 3}
+  m_Name: Skill1001_Client
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: nodes
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[GraphProcessor.BaseNode, com.alelievr.NodeGraphProcessor.Runtime]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 18
+    - Name: 
+      Entry: 7
+      Data: 1|UEngine.NP.Editor.NP_RootNode, Assembly-CSharp-Editor
+    - Name: nodeCustomName
+      Entry: 6
+      Data: 
+    - Name: GUID
+      Entry: 1
+      Data: 198fa54e-68a6-4ac7-bb3a-e1b1a8496fec
+    - Name: computeOrder
+      Entry: 3
+      Data: 0
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 310
+    - Name: 
+      Entry: 4
+      Data: 106
+    - Name: 
+      Entry: 4
+      Data: 134.5
+    - Name: 
+      Entry: 4
+      Data: 76
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: expanded
+      Entry: 5
+      Data: false
+    - Name: debug
+      Entry: 5
+      Data: false
+    - Name: nodeLock
+      Entry: 5
+      Data: false
+    - Name: NextNode
+      Entry: 6
+      Data: 
+    - Name: MRootNodeData
+      Entry: 7
+      Data: 2|UEngine.NP.NP_RootNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304018
+    - Name: NodeType
+      Entry: 3
+      Data: 1
+    - Name: LinkedIds
+      Entry: 7
+      Data: 3|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 3
+      Data: 107415650304017
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: m_Root
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|UEngine.NP.Editor.NP_WaitUntilStopped, Assembly-CSharp-Editor
+    - Name: nodeCustomName
+      Entry: 6
+      Data: 
+    - Name: GUID
+      Entry: 1
+      Data: 4cced39f-a5a8-480a-85db-a05f488474a8
+    - Name: computeOrder
+      Entry: 3
+      Data: 2
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1250.49963
+    - Name: 
+      Entry: 4
+      Data: 513.9999
+    - Name: 
+      Entry: 4
+      Data: 110.5
+    - Name: 
+      Entry: 4
+      Data: 76
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: expanded
+      Entry: 5
+      Data: false
+    - Name: debug
+      Entry: 5
+      Data: false
+    - Name: nodeLock
+      Entry: 5
+      Data: false
+    - Name: PrevNode
+      Entry: 6
+      Data: 
+    - Name: NodeData
+      Entry: 7
+      Data: 5|UEngine.NP.NP_WaitUntilStoppedData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304016
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 6|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: sucessWhenStopped
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 7|UEngine.NP.Editor.NP_SelectorNode, Assembly-CSharp-Editor
+    - Name: nodeCustomName
+      Entry: 6
+      Data: 
+    - Name: GUID
+      Entry: 1
+      Data: 58cfe052-37a4-4d00-a83c-67dba1c74454
+    - Name: computeOrder
+      Entry: 3
+      Data: 1
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 267.749939
+    - Name: 
+      Entry: 4
+      Data: 245.397949
+    - Name: 
+      Entry: 4
+      Data: 110.5
+    - Name: 
+      Entry: 4
+      Data: 84
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: expanded
+      Entry: 5
+      Data: false
+    - Name: debug
+      Entry: 5
+      Data: false
+    - Name: nodeLock
+      Entry: 5
+      Data: false
+    - Name: PrevNode
+      Entry: 6
+      Data: 
+    - Name: NextNode
+      Entry: 6
+      Data: 
+    - Name: NP_SelectorNodeData
+      Entry: 7
+      Data: 8|UEngine.NP.NP_SelectorNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304017
+    - Name: NodeType
+      Entry: 3
+      Data: 0
+    - Name: LinkedIds
+      Entry: 7
+      Data: 9|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 3
+      Data: 107415650304015
+    - Name: 
+      Entry: 3
+      Data: 107415650304014
+    - Name: 
+      Entry: 3
+      Data: 107415650304013
+    - Name: 
+      Entry: 3
+      Data: 107415650304016
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 1
+      Data: "\u9009\u62E9\u7EC4\u5408\u5668"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 10|NP_ComboConditionNode, Assembly-CSharp-Editor
+    - Name: nodeCustomName
+      Entry: 6
+      Data: 
+    - Name: GUID
+      Entry: 1
+      Data: 5b6118ae-468f-4afd-bf40-9fecf3032d37
+    - Name: computeOrder
+      Entry: 3
+      Data: 3
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -454.5
+    - Name: 
+      Entry: 4
+      Data: 552
+    - Name: 
+      Entry: 4
+      Data: 134.5
+    - Name: 
+      Entry: 4
+      Data: 84
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: expanded
+      Entry: 5
+      Data: false
+    - Name: debug
+      Entry: 5
+      Data: false
+    - Name: nodeLock
+      Entry: 5
+      Data: false
+    - Name: PrevNode
+      Entry: 6
+      Data: 
+    - Name: NextNode
+      Entry: 6
+      Data: 
+    - Name: NpConditionNodeData
+      Entry: 7
+      Data: 11|NP_ConditionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304015
+    - Name: NodeType
+      Entry: 3
+      Data: 1
+    - Name: LinkedIds
+      Entry: 7
+      Data: 12|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 3
+      Data: 107415650304012
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 13|NP_ComboConditionAction, UEngine.HotFix
+    - Name: keyCode
+      Entry: 3
+      Data: 101
+    - Name: Num
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 14|NP_PlayComboAnimNode, Assembly-CSharp-Editor
+    - Name: nodeCustomName
+      Entry: 6
+      Data: 
+    - Name: GUID
+      Entry: 1
+      Data: edaf5f3c-5119-4a0e-9e6a-dd1a9e915caa
+    - Name: computeOrder
+      Entry: 3
+      Data: 5
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -625.3225
+    - Name: 
+      Entry: 4
+      Data: 829.000061
+    - Name: 
+      Entry: 4
+      Data: 135
+    - Name: 
+      Entry: 4
+      Data: 92
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: expanded
+      Entry: 5
+      Data: false
+    - Name: debug
+      Entry: 5
+      Data: false
+    - Name: nodeLock
+      Entry: 5
+      Data: false
+    - Name: PrevNode
+      Entry: 6
+      Data: 
+    - Name: NP_PlayAnimNodeData
+      Entry: 7
+      Data: 15|UEngine.NP.NP_ActionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304003
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 16|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 17|NP_PlayComboAnimAction, UEngine.HotFix
+    - Name: AnimClipName
+      Entry: 1
+      Data: Attack01
+    - Name: AnimClipSpeed
+      Entry: 4
+      Data: 2
+    - Name: ComboIndex
+      Entry: 3
+      Data: 1
+    - Name: IsLastCombo
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 18|NP_ComboConditionNode, Assembly-CSharp-Editor
+    - Name: nodeCustomName
+      Entry: 1
+      Data: 
+    - Name: GUID
+      Entry: 1
+      Data: a6838263-67eb-488e-a8b3-f072d7638589
+    - Name: computeOrder
+      Entry: 3
+      Data: 6
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 156.000076
+    - Name: 
+      Entry: 4
+      Data: 552
+    - Name: 
+      Entry: 4
+      Data: 134.5
+    - Name: 
+      Entry: 4
+      Data: 97.5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: expanded
+      Entry: 5
+      Data: false
+    - Name: debug
+      Entry: 5
+      Data: false
+    - Name: nodeLock
+      Entry: 5
+      Data: false
+    - Name: PrevNode
+      Entry: 6
+      Data: 
+    - Name: NextNode
+      Entry: 6
+      Data: 
+    - Name: NpConditionNodeData
+      Entry: 7
+      Data: 19|NP_ConditionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304014
+    - Name: NodeType
+      Entry: 3
+      Data: 1
+    - Name: LinkedIds
+      Entry: 7
+      Data: 20|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 3
+      Data: 107415650304011
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 21|NP_ComboConditionAction, UEngine.HotFix
+    - Name: keyCode
+      Entry: 3
+      Data: 101
+    - Name: Num
+      Entry: 3
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 22|NP_PlayComboAnimNode, Assembly-CSharp-Editor
+    - Name: nodeCustomName
+      Entry: 1
+      Data: 
+    - Name: GUID
+      Entry: 1
+      Data: 85c89642-21fd-4a66-a6c9-d8f4aee28572
+    - Name: computeOrder
+      Entry: 3
+      Data: 8
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -17.6775017
+    - Name: 
+      Entry: 4
+      Data: 818.3225
+    - Name: 
+      Entry: 4
+      Data: 135
+    - Name: 
+      Entry: 4
+      Data: 92
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: expanded
+      Entry: 5
+      Data: false
+    - Name: debug
+      Entry: 5
+      Data: false
+    - Name: nodeLock
+      Entry: 5
+      Data: false
+    - Name: PrevNode
+      Entry: 6
+      Data: 
+    - Name: NP_PlayAnimNodeData
+      Entry: 7
+      Data: 23|UEngine.NP.NP_ActionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304009
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 24|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 25|NP_PlayComboAnimAction, UEngine.HotFix
+    - Name: AnimClipName
+      Entry: 1
+      Data: Attack02
+    - Name: AnimClipSpeed
+      Entry: 4
+      Data: 1.8
+    - Name: ComboIndex
+      Entry: 3
+      Data: 2
+    - Name: IsLastCombo
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 26|UEngine.NP.Editor.NP_SequenceNode, Assembly-CSharp-Editor
+    - Name: nodeCustomName
+      Entry: 6
+      Data: 
+    - Name: GUID
+      Entry: 1
+      Data: ca32a735-536c-4b42-83de-83c373c95bf5
+    - Name: computeOrder
+      Entry: 3
+      Data: 4
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -454.000031
+    - Name: 
+      Entry: 4
+      Data: 662
+    - Name: 
+      Entry: 4
+      Data: 111
+    - Name: 
+      Entry: 4
+      Data: 100
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: expanded
+      Entry: 5
+      Data: false
+    - Name: debug
+      Entry: 5
+      Data: false
+    - Name: nodeLock
+      Entry: 5
+      Data: false
+    - Name: PrevNode
+      Entry: 6
+      Data: 
+    - Name: NextNode
+      Entry: 6
+      Data: 
+    - Name: NP_SequenceNodeData
+      Entry: 7
+      Data: 27|UEngine.NP.NP_SequenceNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304012
+    - Name: NodeType
+      Entry: 3
+      Data: 0
+    - Name: LinkedIds
+      Entry: 7
+      Data: 28|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 3
+      Data: 107415650304003
+    - Name: 
+      Entry: 3
+      Data: 107415650304002
+    - Name: 
+      Entry: 3
+      Data: 107415650304001
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 1
+      Data: "\u5E8F\u5217\u7EC4\u5408\u5668"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 29|UEngine.NP.Editor.NP_SequenceNode, Assembly-CSharp-Editor
+    - Name: nodeCustomName
+      Entry: 6
+      Data: 
+    - Name: GUID
+      Entry: 1
+      Data: 5e132e77-8773-44ed-87a6-d7a184a02088
+    - Name: computeOrder
+      Entry: 3
+      Data: 7
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 168.9025
+    - Name: 
+      Entry: 4
+      Data: 662
+    - Name: 
+      Entry: 4
+      Data: 110.5
+    - Name: 
+      Entry: 4
+      Data: 97.5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: expanded
+      Entry: 5
+      Data: false
+    - Name: debug
+      Entry: 5
+      Data: false
+    - Name: nodeLock
+      Entry: 5
+      Data: false
+    - Name: PrevNode
+      Entry: 6
+      Data: 
+    - Name: NextNode
+      Entry: 6
+      Data: 
+    - Name: NP_SequenceNodeData
+      Entry: 7
+      Data: 30|UEngine.NP.NP_SequenceNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304011
+    - Name: NodeType
+      Entry: 3
+      Data: 0
+    - Name: LinkedIds
+      Entry: 7
+      Data: 31|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 3
+      Data: 107415650304009
+    - Name: 
+      Entry: 3
+      Data: 107415650304007
+    - Name: 
+      Entry: 3
+      Data: 107415650304008
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 1
+      Data: "\u5E8F\u5217\u7EC4\u5408\u5668"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 32|NP_ClearInputNode, Assembly-CSharp-Editor
+    - Name: nodeCustomName
+      Entry: 6
+      Data: 
+    - Name: GUID
+      Entry: 1
+      Data: 84ee0c7c-15a1-4088-b991-68de1acb8ce9
+    - Name: computeOrder
+      Entry: 3
+      Data: 9
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -300.999847
+    - Name: 
+      Entry: 4
+      Data: 829.4999
+    - Name: 
+      Entry: 4
+      Data: 134.5
+    - Name: 
+      Entry: 4
+      Data: 76
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: expanded
+      Entry: 5
+      Data: false
+    - Name: debug
+      Entry: 5
+      Data: false
+    - Name: nodeLock
+      Entry: 5
+      Data: false
+    - Name: PrevNode
+      Entry: 6
+      Data: 
+    - Name: NpActionNodeData
+      Entry: 7
+      Data: 33|UEngine.NP.NP_ActionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304001
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 34|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 35|NP_ClearInputAction, UEngine.HotFix
+    - Name: KeyCode
+      Entry: 3
+      Data: 101
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 36|NP_ClearInputNode, Assembly-CSharp-Editor
+    - Name: nodeCustomName
+      Entry: 1
+      Data: 
+    - Name: GUID
+      Entry: 1
+      Data: f5e27e9f-bfcf-43f7-9290-1c60e4044878
+    - Name: computeOrder
+      Entry: 3
+      Data: 10
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 290.500061
+    - Name: 
+      Entry: 4
+      Data: 819.4999
+    - Name: 
+      Entry: 4
+      Data: 134.5
+    - Name: 
+      Entry: 4
+      Data: 89.5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: expanded
+      Entry: 5
+      Data: false
+    - Name: debug
+      Entry: 5
+      Data: false
+    - Name: nodeLock
+      Entry: 5
+      Data: false
+    - Name: PrevNode
+      Entry: 6
+      Data: 
+    - Name: NpActionNodeData
+      Entry: 7
+      Data: 37|UEngine.NP.NP_ActionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304008
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 38|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 39|NP_ClearInputAction, UEngine.HotFix
+    - Name: KeyCode
+      Entry: 3
+      Data: 101
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 40|NP_ComboConditionNode, Assembly-CSharp-Editor
+    - Name: nodeCustomName
+      Entry: 1
+      Data: 
+    - Name: GUID
+      Entry: 1
+      Data: 2f223a30-3037-44c0-b40d-affa800b4be6
+    - Name: computeOrder
+      Entry: 3
+      Data: 11
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 755.000061
+    - Name: 
+      Entry: 4
+      Data: 552
+    - Name: 
+      Entry: 4
+      Data: 135
+    - Name: 
+      Entry: 4
+      Data: 100
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: expanded
+      Entry: 5
+      Data: false
+    - Name: debug
+      Entry: 5
+      Data: false
+    - Name: nodeLock
+      Entry: 5
+      Data: false
+    - Name: PrevNode
+      Entry: 6
+      Data: 
+    - Name: NextNode
+      Entry: 6
+      Data: 
+    - Name: NpConditionNodeData
+      Entry: 7
+      Data: 41|NP_ConditionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304013
+    - Name: NodeType
+      Entry: 3
+      Data: 1
+    - Name: LinkedIds
+      Entry: 7
+      Data: 42|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 3
+      Data: 107415650304010
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 43|NP_ComboConditionAction, UEngine.HotFix
+    - Name: keyCode
+      Entry: 3
+      Data: 101
+    - Name: Num
+      Entry: 3
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 44|NP_PlayComboAnimNode, Assembly-CSharp-Editor
+    - Name: nodeCustomName
+      Entry: 1
+      Data: 
+    - Name: GUID
+      Entry: 1
+      Data: 8491ab4f-751a-4b1a-8e03-03739aa348f6
+    - Name: computeOrder
+      Entry: 3
+      Data: 13
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 620.000061
+    - Name: 
+      Entry: 4
+      Data: 821
+    - Name: 
+      Entry: 4
+      Data: 135
+    - Name: 
+      Entry: 4
+      Data: 92
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: expanded
+      Entry: 5
+      Data: false
+    - Name: debug
+      Entry: 5
+      Data: false
+    - Name: nodeLock
+      Entry: 5
+      Data: false
+    - Name: PrevNode
+      Entry: 6
+      Data: 
+    - Name: NP_PlayAnimNodeData
+      Entry: 7
+      Data: 45|UEngine.NP.NP_ActionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304006
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 46|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 47|NP_PlayComboAnimAction, UEngine.HotFix
+    - Name: AnimClipName
+      Entry: 1
+      Data: Attack03
+    - Name: AnimClipSpeed
+      Entry: 4
+      Data: 1.8
+    - Name: ComboIndex
+      Entry: 3
+      Data: 3
+    - Name: IsLastCombo
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 48|UEngine.NP.Editor.NP_SequenceNode, Assembly-CSharp-Editor
+    - Name: nodeCustomName
+      Entry: 1
+      Data: 
+    - Name: GUID
+      Entry: 1
+      Data: 11dcb54e-666b-4ee9-8551-e355fde4ca16
+    - Name: computeOrder
+      Entry: 3
+      Data: 12
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 754.000061
+    - Name: 
+      Entry: 4
+      Data: 662
+    - Name: 
+      Entry: 4
+      Data: 111
+    - Name: 
+      Entry: 4
+      Data: 100
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: expanded
+      Entry: 5
+      Data: false
+    - Name: debug
+      Entry: 5
+      Data: false
+    - Name: nodeLock
+      Entry: 5
+      Data: false
+    - Name: PrevNode
+      Entry: 6
+      Data: 
+    - Name: NextNode
+      Entry: 6
+      Data: 
+    - Name: NP_SequenceNodeData
+      Entry: 7
+      Data: 49|UEngine.NP.NP_SequenceNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304010
+    - Name: NodeType
+      Entry: 3
+      Data: 0
+    - Name: LinkedIds
+      Entry: 7
+      Data: 50|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 3
+      Data: 107415650304006
+    - Name: 
+      Entry: 3
+      Data: 107415650304004
+    - Name: 
+      Entry: 3
+      Data: 107415650304005
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 1
+      Data: "\u5E8F\u5217\u7EC4\u5408\u5668"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 51|NP_ClearInputNode, Assembly-CSharp-Editor
+    - Name: nodeCustomName
+      Entry: 1
+      Data: 
+    - Name: GUID
+      Entry: 1
+      Data: c98af6e1-69ed-4c28-9ff2-06a9e00d0831
+    - Name: computeOrder
+      Entry: 3
+      Data: 14
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 913.000061
+    - Name: 
+      Entry: 4
+      Data: 822
+    - Name: 
+      Entry: 4
+      Data: 135
+    - Name: 
+      Entry: 4
+      Data: 92
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: expanded
+      Entry: 5
+      Data: false
+    - Name: debug
+      Entry: 5
+      Data: false
+    - Name: nodeLock
+      Entry: 5
+      Data: false
+    - Name: PrevNode
+      Entry: 6
+      Data: 
+    - Name: NpActionNodeData
+      Entry: 7
+      Data: 52|UEngine.NP.NP_ActionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304005
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 53|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 54|NP_ClearInputAction, UEngine.HotFix
+    - Name: KeyCode
+      Entry: 3
+      Data: 101
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 55|NP_BindBulletNode, Assembly-CSharp-Editor
+    - Name: nodeCustomName
+      Entry: 6
+      Data: 
+    - Name: GUID
+      Entry: 1
+      Data: 026c6bdc-6d48-4685-918f-a8faffadce85
+    - Name: computeOrder
+      Entry: 3
+      Data: 15
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -454.000031
+    - Name: 
+      Entry: 4
+      Data: 829.000061
+    - Name: 
+      Entry: 4
+      Data: 111
+    - Name: 
+      Entry: 4
+      Data: 92
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: expanded
+      Entry: 5
+      Data: false
+    - Name: debug
+      Entry: 5
+      Data: false
+    - Name: nodeLock
+      Entry: 5
+      Data: false
+    - Name: PrevNode
+      Entry: 6
+      Data: 
+    - Name: NpActionNodeData
+      Entry: 7
+      Data: 56|UEngine.NP.NP_ActionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304002
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 57|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 58|NP_BindBulletAction, UEngine.HotFix
+    - Name: BindBoneName
+      Entry: 1
+      Data: arm right wrist
+    - Name: BoxPos
+      Entry: 7
+      Data: 59|UEngine.NP.NP_BBValue_Vector3, UEngine.HotFix
+    - Name: Value
+      Entry: 7
+      Data: System.Numerics.Vector3, System.Numerics
+    - Name: X
+      Entry: 4
+      Data: 0.00579
+    - Name: Y
+      Entry: 4
+      Data: 0.00038
+    - Name: Z
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BoxRot
+      Entry: 7
+      Data: 60|UEngine.NP.NP_BBValue_Vector3, UEngine.HotFix
+    - Name: Value
+      Entry: 7
+      Data: System.Numerics.Vector3, System.Numerics
+    - Name: X
+      Entry: 4
+      Data: 0
+    - Name: Y
+      Entry: 4
+      Data: 0
+    - Name: Z
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BoxScale
+      Entry: 7
+      Data: 61|UEngine.NP.NP_BBValue_Vector3, UEngine.HotFix
+    - Name: Value
+      Entry: 7
+      Data: System.Numerics.Vector3, System.Numerics
+    - Name: X
+      Entry: 4
+      Data: 0.01618962
+    - Name: Y
+      Entry: 4
+      Data: 0.0021244
+    - Name: Z
+      Entry: 4
+      Data: 0.002070376
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: DelayBornTime
+      Entry: 4
+      Data: 0.66
+    - Name: AutoDelayDestroyTime
+      Entry: 4
+      Data: 1
+    - Name: multiple
+      Entry: 4
+      Data: 1.8
+    - Name: BlackBoardKey_IsAttacked
+      Entry: 7
+      Data: 62|NP_BlackBoardKeySelecter`1[[UEngine.NP.NP_BBValue_Bool, UEngine.HotFix]],
+        UEngine.HotFix
+    - Name: BBKey
+      Entry: 1
+      Data: isAttacked_Bullet01
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BlackBoardKey_Targets
+      Entry: 7
+      Data: 63|NP_BlackBoardKeySelecter`1[[UEngine.NP.NP_BBValue_List_Long, UEngine.HotFix]],
+        UEngine.HotFix
+    - Name: BBKey
+      Entry: 1
+      Data: TargetUnitIDs
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 64|NP_BindBulletNode, Assembly-CSharp-Editor
+    - Name: nodeCustomName
+      Entry: 1
+      Data: 
+    - Name: GUID
+      Entry: 1
+      Data: 69ff33ea-571d-4ca5-91a4-a7a4ba411f1c
+    - Name: computeOrder
+      Entry: 3
+      Data: 16
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 141.500015
+    - Name: 
+      Entry: 4
+      Data: 819.5
+    - Name: 
+      Entry: 4
+      Data: 110.5
+    - Name: 
+      Entry: 4
+      Data: 76
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: expanded
+      Entry: 5
+      Data: false
+    - Name: debug
+      Entry: 5
+      Data: false
+    - Name: nodeLock
+      Entry: 5
+      Data: false
+    - Name: PrevNode
+      Entry: 6
+      Data: 
+    - Name: NpActionNodeData
+      Entry: 7
+      Data: 65|UEngine.NP.NP_ActionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304007
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 66|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 67|NP_BindBulletAction, UEngine.HotFix
+    - Name: BindBoneName
+      Entry: 1
+      Data: arm right wrist
+    - Name: BoxPos
+      Entry: 7
+      Data: 68|UEngine.NP.NP_BBValue_Vector3, UEngine.HotFix
+    - Name: Value
+      Entry: 7
+      Data: System.Numerics.Vector3, System.Numerics
+    - Name: X
+      Entry: 4
+      Data: 0.00579
+    - Name: Y
+      Entry: 4
+      Data: 0.00038
+    - Name: Z
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BoxRot
+      Entry: 7
+      Data: 69|UEngine.NP.NP_BBValue_Vector3, UEngine.HotFix
+    - Name: Value
+      Entry: 7
+      Data: System.Numerics.Vector3, System.Numerics
+    - Name: X
+      Entry: 4
+      Data: 0
+    - Name: Y
+      Entry: 4
+      Data: 0
+    - Name: Z
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BoxScale
+      Entry: 7
+      Data: 70|UEngine.NP.NP_BBValue_Vector3, UEngine.HotFix
+    - Name: Value
+      Entry: 7
+      Data: System.Numerics.Vector3, System.Numerics
+    - Name: X
+      Entry: 4
+      Data: 0.01618962
+    - Name: Y
+      Entry: 4
+      Data: 0.0021244
+    - Name: Z
+      Entry: 4
+      Data: 0.002070376
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: DelayBornTime
+      Entry: 4
+      Data: 0.66
+    - Name: AutoDelayDestroyTime
+      Entry: 4
+      Data: 0.66
+    - Name: multiple
+      Entry: 4
+      Data: 1.8
+    - Name: BlackBoardKey_IsAttacked
+      Entry: 7
+      Data: 71|NP_BlackBoardKeySelecter`1[[UEngine.NP.NP_BBValue_Bool, UEngine.HotFix]],
+        UEngine.HotFix
+    - Name: BBKey
+      Entry: 1
+      Data: isAttacked_Bullet02
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BlackBoardKey_Targets
+      Entry: 7
+      Data: 72|NP_BlackBoardKeySelecter`1[[UEngine.NP.NP_BBValue_List_Long, UEngine.HotFix]],
+        UEngine.HotFix
+    - Name: BBKey
+      Entry: 1
+      Data: TargetUnitIDs
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 73|NP_BindBulletNode, Assembly-CSharp-Editor
+    - Name: nodeCustomName
+      Entry: 6
+      Data: 
+    - Name: GUID
+      Entry: 1
+      Data: 9c09a252-619e-4a39-8ccc-5f5cdf001229
+    - Name: computeOrder
+      Entry: 3
+      Data: 17
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 765.000061
+    - Name: 
+      Entry: 4
+      Data: 822
+    - Name: 
+      Entry: 4
+      Data: 111
+    - Name: 
+      Entry: 4
+      Data: 92
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: expanded
+      Entry: 5
+      Data: false
+    - Name: debug
+      Entry: 5
+      Data: false
+    - Name: nodeLock
+      Entry: 5
+      Data: false
+    - Name: PrevNode
+      Entry: 6
+      Data: 
+    - Name: NpActionNodeData
+      Entry: 7
+      Data: 74|UEngine.NP.NP_ActionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304004
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 75|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 76|NP_BindBulletAction, UEngine.HotFix
+    - Name: BindBoneName
+      Entry: 1
+      Data: arm right wrist
+    - Name: BoxPos
+      Entry: 7
+      Data: 77|UEngine.NP.NP_BBValue_Vector3, UEngine.HotFix
+    - Name: Value
+      Entry: 7
+      Data: System.Numerics.Vector3, System.Numerics
+    - Name: X
+      Entry: 4
+      Data: 0.00579
+    - Name: Y
+      Entry: 4
+      Data: 0.00038
+    - Name: Z
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BoxRot
+      Entry: 7
+      Data: 78|UEngine.NP.NP_BBValue_Vector3, UEngine.HotFix
+    - Name: Value
+      Entry: 7
+      Data: System.Numerics.Vector3, System.Numerics
+    - Name: X
+      Entry: 4
+      Data: 0
+    - Name: Y
+      Entry: 4
+      Data: 0
+    - Name: Z
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BoxScale
+      Entry: 7
+      Data: 79|UEngine.NP.NP_BBValue_Vector3, UEngine.HotFix
+    - Name: Value
+      Entry: 7
+      Data: System.Numerics.Vector3, System.Numerics
+    - Name: X
+      Entry: 4
+      Data: 0.01618962
+    - Name: Y
+      Entry: 4
+      Data: 0.0021244
+    - Name: Z
+      Entry: 4
+      Data: 0.002070376
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: DelayBornTime
+      Entry: 4
+      Data: 0.66
+    - Name: AutoDelayDestroyTime
+      Entry: 4
+      Data: 0.66
+    - Name: multiple
+      Entry: 4
+      Data: 1.8
+    - Name: BlackBoardKey_IsAttacked
+      Entry: 7
+      Data: 80|NP_BlackBoardKeySelecter`1[[UEngine.NP.NP_BBValue_Bool, UEngine.HotFix]],
+        UEngine.HotFix
+    - Name: BBKey
+      Entry: 1
+      Data: isAttacked_Bullet03
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BlackBoardKey_Targets
+      Entry: 7
+      Data: 81|NP_BlackBoardKeySelecter`1[[UEngine.NP.NP_BBValue_List_Long, UEngine.HotFix]],
+        UEngine.HotFix
+    - Name: BBKey
+      Entry: 1
+      Data: TargetUnitIDs
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: groups
+      Entry: 7
+      Data: 82|System.Collections.Generic.List`1[[GraphProcessor.Group, com.alelievr.NodeGraphProcessor.Runtime]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 83|GraphProcessor.Group, com.alelievr.NodeGraphProcessor.Runtime
+    - Name: title
+      Entry: 1
+      Data: "\u7B2C\u4E00\u6BB5\u653B\u51FB"
+    - Name: color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.243166164
+    - Name: 
+      Entry: 4
+      Data: 0.772549033
+    - Name: 
+      Entry: 4
+      Data: 0.199999988
+    - Name: 
+      Entry: 4
+      Data: 0.3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -382.5001
+    - Name: 
+      Entry: 4
+      Data: 587.8182
+    - Name: 
+      Entry: 4
+      Data: 400
+    - Name: 
+      Entry: 4
+      Data: 200
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: size
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 400
+    - Name: 
+      Entry: 4
+      Data: 200
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: innerNodeGUIDs
+      Entry: 7
+      Data: 84|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 5
+    - Name: 
+      Entry: 1
+      Data: 5b6118ae-468f-4afd-bf40-9fecf3032d37
+    - Name: 
+      Entry: 1
+      Data: edaf5f3c-5119-4a0e-9e6a-dd1a9e915caa
+    - Name: 
+      Entry: 1
+      Data: ca32a735-536c-4b42-83de-83c373c95bf5
+    - Name: 
+      Entry: 1
+      Data: 84ee0c7c-15a1-4088-b991-68de1acb8ce9
+    - Name: 
+      Entry: 1
+      Data: 026c6bdc-6d48-4685-918f-a8faffadce85
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 85|GraphProcessor.Group, com.alelievr.NodeGraphProcessor.Runtime
+    - Name: title
+      Entry: 1
+      Data: 2
+    - Name: color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.8207547
+    - Name: 
+      Entry: 4
+      Data: 0.5032615
+    - Name: 
+      Entry: 4
+      Data: 0.352305084
+    - Name: 
+      Entry: 4
+      Data: 0.3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -43.0000076
+    - Name: 
+      Entry: 4
+      Data: 490
+    - Name: 
+      Entry: 4
+      Data: 493
+    - Name: 
+      Entry: 4
+      Data: 446
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: size
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 400
+    - Name: 
+      Entry: 4
+      Data: 200
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: innerNodeGUIDs
+      Entry: 7
+      Data: 86|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 5
+    - Name: 
+      Entry: 1
+      Data: a6838263-67eb-488e-a8b3-f072d7638589
+    - Name: 
+      Entry: 1
+      Data: 85c89642-21fd-4a66-a6c9-d8f4aee28572
+    - Name: 
+      Entry: 1
+      Data: 5e132e77-8773-44ed-87a6-d7a184a02088
+    - Name: 
+      Entry: 1
+      Data: f5e27e9f-bfcf-43f7-9290-1c60e4044878
+    - Name: 
+      Entry: 1
+      Data: 69ff33ea-571d-4ca5-91a4-a7a4ba411f1c
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 87|GraphProcessor.Group, com.alelievr.NodeGraphProcessor.Runtime
+    - Name: title
+      Entry: 1
+      Data: 3
+    - Name: color
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.200694218
+    - Name: 
+      Entry: 4
+      Data: 0.5264495
+    - Name: 
+      Entry: 4
+      Data: 0.7735849
+    - Name: 
+      Entry: 4
+      Data: 0.3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: position
+      Entry: 7
+      Data: UnityEngine.Rect, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 595.000061
+    - Name: 
+      Entry: 4
+      Data: 493.000031
+    - Name: 
+      Entry: 4
+      Data: 478
+    - Name: 
+      Entry: 4
+      Data: 446
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: size
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 400
+    - Name: 
+      Entry: 4
+      Data: 200
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: innerNodeGUIDs
+      Entry: 7
+      Data: 88|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 5
+    - Name: 
+      Entry: 1
+      Data: 8491ab4f-751a-4b1a-8e03-03739aa348f6
+    - Name: 
+      Entry: 1
+      Data: 11dcb54e-666b-4ee9-8551-e355fde4ca16
+    - Name: 
+      Entry: 1
+      Data: c98af6e1-69ed-4c28-9ff2-06a9e00d0831
+    - Name: 
+      Entry: 1
+      Data: 9c09a252-619e-4a39-8ccc-5f5cdf001229
+    - Name: 
+      Entry: 1
+      Data: 2f223a30-3037-44c0-b40d-affa800b4be6
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NpDataSupportor
+      Entry: 7
+      Data: 89|UEngine.NP.NP_DataSupportorBase, UEngine.HotFix
+    - Name: SkillID
+      Entry: 3
+      Data: 1001
+    - Name: Platform
+      Entry: 3
+      Data: 1
+    - Name: InstanceID
+      Entry: 3
+      Data: 23270
+    - Name: NPBehaveTreeDataId
+      Entry: 3
+      Data: 107415650304018
+    - Name: NP_DataSupportorDic
+      Entry: 7
+      Data: 90|System.Collections.Generic.Dictionary`2[[System.Int64, mscorlib],[UEngine.NP.NP_NodeDataBase,
+        UEngine.HotFix]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 91|System.Collections.Generic.GenericEqualityComparer`1[[System.Int64,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 18
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304001
+    - Name: $v
+      Entry: 9
+      Data: 33
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304002
+    - Name: $v
+      Entry: 9
+      Data: 56
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304003
+    - Name: $v
+      Entry: 9
+      Data: 15
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304004
+    - Name: $v
+      Entry: 9
+      Data: 74
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304005
+    - Name: $v
+      Entry: 9
+      Data: 52
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304006
+    - Name: $v
+      Entry: 9
+      Data: 45
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304007
+    - Name: $v
+      Entry: 9
+      Data: 65
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304008
+    - Name: $v
+      Entry: 9
+      Data: 37
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304009
+    - Name: $v
+      Entry: 9
+      Data: 23
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304010
+    - Name: $v
+      Entry: 9
+      Data: 49
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304011
+    - Name: $v
+      Entry: 9
+      Data: 30
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304012
+    - Name: $v
+      Entry: 9
+      Data: 27
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304013
+    - Name: $v
+      Entry: 9
+      Data: 41
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304014
+    - Name: $v
+      Entry: 9
+      Data: 19
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304015
+    - Name: $v
+      Entry: 9
+      Data: 11
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304016
+    - Name: $v
+      Entry: 9
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304017
+    - Name: $v
+      Entry: 9
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304018
+    - Name: $v
+      Entry: 9
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NP_BBValueManager
+      Entry: 7
+      Data: 92|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UEngine.NP.ANP_BBValue,
+        UEngine.HotFix]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 93|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 9
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: KeyboardInput_E
+    - Name: $v
+      Entry: 7
+      Data: 94|UEngine.NP.NP_BBValue_Bool, UEngine.HotFix
+    - Name: Value
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AttackTime
+    - Name: $v
+      Entry: 7
+      Data: 95|UEngine.NP.NP_BBValue_Float, UEngine.HotFix
+    - Name: Value
+      Entry: 4
+      Data: 1.56
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AttackFinish
+    - Name: $v
+      Entry: 7
+      Data: 96|UEngine.NP.NP_BBValue_Bool, UEngine.HotFix
+    - Name: Value
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Attack02Time
+    - Name: $v
+      Entry: 7
+      Data: 97|UEngine.NP.NP_BBValue_Float, UEngine.HotFix
+    - Name: Value
+      Entry: 4
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Attack01Time
+    - Name: $v
+      Entry: 7
+      Data: 98|UEngine.NP.NP_BBValue_Float, UEngine.HotFix
+    - Name: Value
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TargetUnitIDs
+    - Name: $v
+      Entry: 7
+      Data: 99|UEngine.NP.NP_BBValue_List_Long, UEngine.HotFix
+    - Name: Value
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: isAttacked_Bullet01
+    - Name: $v
+      Entry: 7
+      Data: 100|UEngine.NP.NP_BBValue_Bool, UEngine.HotFix
+    - Name: Value
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: isAttacked_Bullet02
+    - Name: $v
+      Entry: 7
+      Data: 101|UEngine.NP.NP_BBValue_Bool, UEngine.HotFix
+    - Name: Value
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: isAttacked_Bullet03
+    - Name: $v
+      Entry: 7
+      Data: 102|UEngine.NP.NP_BBValue_Bool, UEngine.HotFix
+    - Name: Value
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NP_BuffDatas
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NpDataSupportor1
+      Entry: 7
+      Data: 103|UEngine.NP.NP_DataSupportorBase, UEngine.HotFix
+    - Name: SkillID
+      Entry: 3
+      Data: 1001
+    - Name: Platform
+      Entry: 3
+      Data: 0
+    - Name: InstanceID
+      Entry: 3
+      Data: 23270
+    - Name: NPBehaveTreeDataId
+      Entry: 3
+      Data: 107415650304018
+    - Name: NP_DataSupportorDic
+      Entry: 7
+      Data: 104|System.Collections.Generic.Dictionary`2[[System.Int64, mscorlib],[UEngine.NP.NP_NodeDataBase,
+        UEngine.HotFix]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 105|System.Collections.Generic.GenericEqualityComparer`1[[System.Int64,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 18
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304001
+    - Name: $v
+      Entry: 7
+      Data: 106|UEngine.NP.NP_ActionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304001
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 107|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 108|NP_ClearInputAction, UEngine.HotFix
+    - Name: KeyCode
+      Entry: 3
+      Data: 101
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304002
+    - Name: $v
+      Entry: 7
+      Data: 109|UEngine.NP.NP_ActionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304002
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 110|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 111|NP_BindBulletAction, UEngine.HotFix
+    - Name: BindBoneName
+      Entry: 1
+      Data: arm right wrist
+    - Name: BoxPos
+      Entry: 7
+      Data: 112|UEngine.NP.NP_BBValue_Vector3, UEngine.HotFix
+    - Name: Value
+      Entry: 7
+      Data: System.Numerics.Vector3, System.Numerics
+    - Name: X
+      Entry: 4
+      Data: 0.00579
+    - Name: Y
+      Entry: 4
+      Data: 0.00038
+    - Name: Z
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BoxRot
+      Entry: 7
+      Data: 113|UEngine.NP.NP_BBValue_Vector3, UEngine.HotFix
+    - Name: Value
+      Entry: 7
+      Data: System.Numerics.Vector3, System.Numerics
+    - Name: X
+      Entry: 4
+      Data: 0
+    - Name: Y
+      Entry: 4
+      Data: 0
+    - Name: Z
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BoxScale
+      Entry: 7
+      Data: 114|UEngine.NP.NP_BBValue_Vector3, UEngine.HotFix
+    - Name: Value
+      Entry: 7
+      Data: System.Numerics.Vector3, System.Numerics
+    - Name: X
+      Entry: 4
+      Data: 0.01618962
+    - Name: Y
+      Entry: 4
+      Data: 0.0021244
+    - Name: Z
+      Entry: 4
+      Data: 0.002070376
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: DelayBornTime
+      Entry: 4
+      Data: 0.66
+    - Name: AutoDelayDestroyTime
+      Entry: 4
+      Data: 1
+    - Name: multiple
+      Entry: 4
+      Data: 1.8
+    - Name: BlackBoardKey_IsAttacked
+      Entry: 7
+      Data: 115|NP_BlackBoardKeySelecter`1[[UEngine.NP.NP_BBValue_Bool, UEngine.HotFix]],
+        UEngine.HotFix
+    - Name: BBKey
+      Entry: 1
+      Data: isAttacked_Bullet01
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BlackBoardKey_Targets
+      Entry: 7
+      Data: 116|NP_BlackBoardKeySelecter`1[[UEngine.NP.NP_BBValue_List_Long, UEngine.HotFix]],
+        UEngine.HotFix
+    - Name: BBKey
+      Entry: 1
+      Data: TargetUnitIDs
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304003
+    - Name: $v
+      Entry: 7
+      Data: 117|UEngine.NP.NP_ActionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304003
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 118|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 119|NP_PlayComboAnimAction, UEngine.HotFix
+    - Name: AnimClipName
+      Entry: 1
+      Data: Attack01
+    - Name: AnimClipSpeed
+      Entry: 4
+      Data: 2
+    - Name: ComboIndex
+      Entry: 3
+      Data: 1
+    - Name: IsLastCombo
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304004
+    - Name: $v
+      Entry: 7
+      Data: 120|UEngine.NP.NP_ActionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304004
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 121|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 122|NP_BindBulletAction, UEngine.HotFix
+    - Name: BindBoneName
+      Entry: 1
+      Data: arm right wrist
+    - Name: BoxPos
+      Entry: 7
+      Data: 123|UEngine.NP.NP_BBValue_Vector3, UEngine.HotFix
+    - Name: Value
+      Entry: 7
+      Data: System.Numerics.Vector3, System.Numerics
+    - Name: X
+      Entry: 4
+      Data: 0.00579
+    - Name: Y
+      Entry: 4
+      Data: 0.00038
+    - Name: Z
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BoxRot
+      Entry: 7
+      Data: 124|UEngine.NP.NP_BBValue_Vector3, UEngine.HotFix
+    - Name: Value
+      Entry: 7
+      Data: System.Numerics.Vector3, System.Numerics
+    - Name: X
+      Entry: 4
+      Data: 0
+    - Name: Y
+      Entry: 4
+      Data: 0
+    - Name: Z
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BoxScale
+      Entry: 7
+      Data: 125|UEngine.NP.NP_BBValue_Vector3, UEngine.HotFix
+    - Name: Value
+      Entry: 7
+      Data: System.Numerics.Vector3, System.Numerics
+    - Name: X
+      Entry: 4
+      Data: 0.01618962
+    - Name: Y
+      Entry: 4
+      Data: 0.0021244
+    - Name: Z
+      Entry: 4
+      Data: 0.002070376
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: DelayBornTime
+      Entry: 4
+      Data: 0.66
+    - Name: AutoDelayDestroyTime
+      Entry: 4
+      Data: 0.66
+    - Name: multiple
+      Entry: 4
+      Data: 1.8
+    - Name: BlackBoardKey_IsAttacked
+      Entry: 7
+      Data: 126|NP_BlackBoardKeySelecter`1[[UEngine.NP.NP_BBValue_Bool, UEngine.HotFix]],
+        UEngine.HotFix
+    - Name: BBKey
+      Entry: 1
+      Data: isAttacked_Bullet03
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BlackBoardKey_Targets
+      Entry: 7
+      Data: 127|NP_BlackBoardKeySelecter`1[[UEngine.NP.NP_BBValue_List_Long, UEngine.HotFix]],
+        UEngine.HotFix
+    - Name: BBKey
+      Entry: 1
+      Data: TargetUnitIDs
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304005
+    - Name: $v
+      Entry: 7
+      Data: 128|UEngine.NP.NP_ActionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304005
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 129|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 130|NP_ClearInputAction, UEngine.HotFix
+    - Name: KeyCode
+      Entry: 3
+      Data: 101
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304006
+    - Name: $v
+      Entry: 7
+      Data: 131|UEngine.NP.NP_ActionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304006
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 132|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 133|NP_PlayComboAnimAction, UEngine.HotFix
+    - Name: AnimClipName
+      Entry: 1
+      Data: Attack03
+    - Name: AnimClipSpeed
+      Entry: 4
+      Data: 1.8
+    - Name: ComboIndex
+      Entry: 3
+      Data: 3
+    - Name: IsLastCombo
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304007
+    - Name: $v
+      Entry: 7
+      Data: 134|UEngine.NP.NP_ActionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304007
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 135|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 136|NP_BindBulletAction, UEngine.HotFix
+    - Name: BindBoneName
+      Entry: 1
+      Data: arm right wrist
+    - Name: BoxPos
+      Entry: 7
+      Data: 137|UEngine.NP.NP_BBValue_Vector3, UEngine.HotFix
+    - Name: Value
+      Entry: 7
+      Data: System.Numerics.Vector3, System.Numerics
+    - Name: X
+      Entry: 4
+      Data: 0.00579
+    - Name: Y
+      Entry: 4
+      Data: 0.00038
+    - Name: Z
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BoxRot
+      Entry: 7
+      Data: 138|UEngine.NP.NP_BBValue_Vector3, UEngine.HotFix
+    - Name: Value
+      Entry: 7
+      Data: System.Numerics.Vector3, System.Numerics
+    - Name: X
+      Entry: 4
+      Data: 0
+    - Name: Y
+      Entry: 4
+      Data: 0
+    - Name: Z
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BoxScale
+      Entry: 7
+      Data: 139|UEngine.NP.NP_BBValue_Vector3, UEngine.HotFix
+    - Name: Value
+      Entry: 7
+      Data: System.Numerics.Vector3, System.Numerics
+    - Name: X
+      Entry: 4
+      Data: 0.01618962
+    - Name: Y
+      Entry: 4
+      Data: 0.0021244
+    - Name: Z
+      Entry: 4
+      Data: 0.002070376
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: DelayBornTime
+      Entry: 4
+      Data: 0.66
+    - Name: AutoDelayDestroyTime
+      Entry: 4
+      Data: 0.66
+    - Name: multiple
+      Entry: 4
+      Data: 1.8
+    - Name: BlackBoardKey_IsAttacked
+      Entry: 7
+      Data: 140|NP_BlackBoardKeySelecter`1[[UEngine.NP.NP_BBValue_Bool, UEngine.HotFix]],
+        UEngine.HotFix
+    - Name: BBKey
+      Entry: 1
+      Data: isAttacked_Bullet02
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: BlackBoardKey_Targets
+      Entry: 7
+      Data: 141|NP_BlackBoardKeySelecter`1[[UEngine.NP.NP_BBValue_List_Long, UEngine.HotFix]],
+        UEngine.HotFix
+    - Name: BBKey
+      Entry: 1
+      Data: TargetUnitIDs
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304008
+    - Name: $v
+      Entry: 7
+      Data: 142|UEngine.NP.NP_ActionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304008
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 143|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 144|NP_ClearInputAction, UEngine.HotFix
+    - Name: KeyCode
+      Entry: 3
+      Data: 101
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304009
+    - Name: $v
+      Entry: 7
+      Data: 145|UEngine.NP.NP_ActionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304009
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 146|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 147|NP_PlayComboAnimAction, UEngine.HotFix
+    - Name: AnimClipName
+      Entry: 1
+      Data: Attack02
+    - Name: AnimClipSpeed
+      Entry: 4
+      Data: 1.8
+    - Name: ComboIndex
+      Entry: 3
+      Data: 2
+    - Name: IsLastCombo
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304010
+    - Name: $v
+      Entry: 7
+      Data: 148|UEngine.NP.NP_SequenceNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304010
+    - Name: NodeType
+      Entry: 3
+      Data: 0
+    - Name: LinkedIds
+      Entry: 7
+      Data: 149|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 3
+      Data: 107415650304006
+    - Name: 
+      Entry: 3
+      Data: 107415650304004
+    - Name: 
+      Entry: 3
+      Data: 107415650304005
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304011
+    - Name: $v
+      Entry: 7
+      Data: 150|UEngine.NP.NP_SequenceNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304011
+    - Name: NodeType
+      Entry: 3
+      Data: 0
+    - Name: LinkedIds
+      Entry: 7
+      Data: 151|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 3
+      Data: 107415650304009
+    - Name: 
+      Entry: 3
+      Data: 107415650304007
+    - Name: 
+      Entry: 3
+      Data: 107415650304008
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304012
+    - Name: $v
+      Entry: 7
+      Data: 152|UEngine.NP.NP_SequenceNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304012
+    - Name: NodeType
+      Entry: 3
+      Data: 0
+    - Name: LinkedIds
+      Entry: 7
+      Data: 153|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 3
+      Data: 107415650304003
+    - Name: 
+      Entry: 3
+      Data: 107415650304002
+    - Name: 
+      Entry: 3
+      Data: 107415650304001
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304013
+    - Name: $v
+      Entry: 7
+      Data: 154|NP_ConditionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304013
+    - Name: NodeType
+      Entry: 3
+      Data: 1
+    - Name: LinkedIds
+      Entry: 7
+      Data: 155|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 3
+      Data: 107415650304010
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 156|NP_ComboConditionAction, UEngine.HotFix
+    - Name: keyCode
+      Entry: 3
+      Data: 101
+    - Name: Num
+      Entry: 3
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304014
+    - Name: $v
+      Entry: 7
+      Data: 157|NP_ConditionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304014
+    - Name: NodeType
+      Entry: 3
+      Data: 1
+    - Name: LinkedIds
+      Entry: 7
+      Data: 158|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 3
+      Data: 107415650304011
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 159|NP_ComboConditionAction, UEngine.HotFix
+    - Name: keyCode
+      Entry: 3
+      Data: 101
+    - Name: Num
+      Entry: 3
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304015
+    - Name: $v
+      Entry: 7
+      Data: 160|NP_ConditionNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304015
+    - Name: NodeType
+      Entry: 3
+      Data: 1
+    - Name: LinkedIds
+      Entry: 7
+      Data: 161|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 3
+      Data: 107415650304012
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: NpClassForStoreAction
+      Entry: 7
+      Data: 162|NP_ComboConditionAction, UEngine.HotFix
+    - Name: keyCode
+      Entry: 3
+      Data: 101
+    - Name: Num
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304016
+    - Name: $v
+      Entry: 7
+      Data: 163|UEngine.NP.NP_WaitUntilStoppedData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304016
+    - Name: NodeType
+      Entry: 3
+      Data: 2
+    - Name: LinkedIds
+      Entry: 7
+      Data: 164|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: sucessWhenStopped
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304017
+    - Name: $v
+      Entry: 7
+      Data: 165|UEngine.NP.NP_SelectorNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304017
+    - Name: NodeType
+      Entry: 3
+      Data: 0
+    - Name: LinkedIds
+      Entry: 7
+      Data: 166|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 3
+      Data: 107415650304015
+    - Name: 
+      Entry: 3
+      Data: 107415650304014
+    - Name: 
+      Entry: 3
+      Data: 107415650304013
+    - Name: 
+      Entry: 3
+      Data: 107415650304016
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 107415650304018
+    - Name: $v
+      Entry: 7
+      Data: 167|UEngine.NP.NP_RootNodeData, UEngine.HotFix
+    - Name: id
+      Entry: 3
+      Data: 107415650304018
+    - Name: NodeType
+      Entry: 3
+      Data: 1
+    - Name: LinkedIds
+      Entry: 7
+      Data: 168|System.Collections.Generic.List`1[[System.Int64, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 3
+      Data: 107415650304017
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NodeDes
+      Entry: 6
+      Data: 
+    - Name: m_Root
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NP_BBValueManager
+      Entry: 7
+      Data: 169|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UEngine.NP.ANP_BBValue,
+        UEngine.HotFix]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 170|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 9
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: KeyboardInput_E
+    - Name: $v
+      Entry: 7
+      Data: 171|UEngine.NP.NP_BBValue_Bool, UEngine.HotFix
+    - Name: Value
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AttackTime
+    - Name: $v
+      Entry: 7
+      Data: 172|UEngine.NP.NP_BBValue_Float, UEngine.HotFix
+    - Name: Value
+      Entry: 4
+      Data: 1.56
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AttackFinish
+    - Name: $v
+      Entry: 7
+      Data: 173|UEngine.NP.NP_BBValue_Bool, UEngine.HotFix
+    - Name: Value
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Attack02Time
+    - Name: $v
+      Entry: 7
+      Data: 174|UEngine.NP.NP_BBValue_Float, UEngine.HotFix
+    - Name: Value
+      Entry: 4
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Attack01Time
+    - Name: $v
+      Entry: 7
+      Data: 175|UEngine.NP.NP_BBValue_Float, UEngine.HotFix
+    - Name: Value
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TargetUnitIDs
+    - Name: $v
+      Entry: 7
+      Data: 176|UEngine.NP.NP_BBValue_List_Long, UEngine.HotFix
+    - Name: Value
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: isAttacked_Bullet01
+    - Name: $v
+      Entry: 7
+      Data: 177|UEngine.NP.NP_BBValue_Bool, UEngine.HotFix
+    - Name: Value
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: isAttacked_Bullet02
+    - Name: $v
+      Entry: 7
+      Data: 178|UEngine.NP.NP_BBValue_Bool, UEngine.HotFix
+    - Name: Value
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: isAttacked_Bullet03
+    - Name: $v
+      Entry: 7
+      Data: 179|UEngine.NP.NP_BBValue_Bool, UEngine.HotFix
+    - Name: Value
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NP_BuffDatas
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: NpBlackBoardDataManager
+      Entry: 7
+      Data: 180|UEngine.NP.NP_BlackBoardDataManager, UEngine.HotFix
+    - Name: BBValues
+      Entry: 7
+      Data: 181|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UEngine.NP.ANP_BBValue,
+        UEngine.HotFix]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 93
+    - Name: 
+      Entry: 12
+      Data: 9
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: KeyboardInput_E
+    - Name: $v
+      Entry: 9
+      Data: 94
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AttackTime
+    - Name: $v
+      Entry: 9
+      Data: 95
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AttackFinish
+    - Name: $v
+      Entry: 9
+      Data: 96
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Attack02Time
+    - Name: $v
+      Entry: 9
+      Data: 97
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Attack01Time
+    - Name: $v
+      Entry: 9
+      Data: 98
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: TargetUnitIDs
+    - Name: $v
+      Entry: 9
+      Data: 99
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: isAttacked_Bullet01
+    - Name: $v
+      Entry: 9
+      Data: 100
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: isAttacked_Bullet02
+    - Name: $v
+      Entry: 9
+      Data: 101
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: isAttacked_Bullet03
+    - Name: $v
+      Entry: 9
+      Data: 102
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: EventValues
+      Entry: 7
+      Data: 182|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Ids
+      Entry: 7
+      Data: 183|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Int64,
+        mscorlib]], mscorlib
+    - Name: comparer
+      Entry: 9
+      Data: 93
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  serializedNodes: []
+  edges:
+  - GUID: 16c461fd-d578-4feb-9ce9-3c1af5160b4b
+    owner: {fileID: 11400000}
+    inputNodeGUID: 58cfe052-37a4-4d00-a83c-67dba1c74454
+    outputNodeGUID: 198fa54e-68a6-4ac7-bb3a-e1b1a8496fec
+    inputFieldName: PrevNode
+    outputFieldName: NextNode
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 647a280f-8ecb-4ae9-ba76-900d6349e0b6
+    owner: {fileID: 11400000}
+    inputNodeGUID: 5b6118ae-468f-4afd-bf40-9fecf3032d37
+    outputNodeGUID: 58cfe052-37a4-4d00-a83c-67dba1c74454
+    inputFieldName: PrevNode
+    outputFieldName: NextNode
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 7c6676d2-7a2a-4dae-b886-9913cce2f353
+    owner: {fileID: 11400000}
+    inputNodeGUID: a6838263-67eb-488e-a8b3-f072d7638589
+    outputNodeGUID: 58cfe052-37a4-4d00-a83c-67dba1c74454
+    inputFieldName: PrevNode
+    outputFieldName: NextNode
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: f733c6cb-cf20-40e3-b98b-f3dc88f43f2a
+    owner: {fileID: 11400000}
+    inputNodeGUID: ca32a735-536c-4b42-83de-83c373c95bf5
+    outputNodeGUID: 5b6118ae-468f-4afd-bf40-9fecf3032d37
+    inputFieldName: PrevNode
+    outputFieldName: NextNode
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 2711569c-859f-41a2-bfd5-4307cf7522e4
+    owner: {fileID: 11400000}
+    inputNodeGUID: edaf5f3c-5119-4a0e-9e6a-dd1a9e915caa
+    outputNodeGUID: ca32a735-536c-4b42-83de-83c373c95bf5
+    inputFieldName: PrevNode
+    outputFieldName: NextNode
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 6a646569-9fac-49ab-a1b5-b1b2687296b5
+    owner: {fileID: 11400000}
+    inputNodeGUID: 5e132e77-8773-44ed-87a6-d7a184a02088
+    outputNodeGUID: a6838263-67eb-488e-a8b3-f072d7638589
+    inputFieldName: PrevNode
+    outputFieldName: NextNode
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 7e6c6198-9887-4fb7-afd8-e9ad4d305f91
+    owner: {fileID: 11400000}
+    inputNodeGUID: 85c89642-21fd-4a66-a6c9-d8f4aee28572
+    outputNodeGUID: 5e132e77-8773-44ed-87a6-d7a184a02088
+    inputFieldName: PrevNode
+    outputFieldName: NextNode
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: ca6e636b-6774-4460-ad7d-3a52eb32ba4d
+    owner: {fileID: 11400000}
+    inputNodeGUID: 84ee0c7c-15a1-4088-b991-68de1acb8ce9
+    outputNodeGUID: ca32a735-536c-4b42-83de-83c373c95bf5
+    inputFieldName: PrevNode
+    outputFieldName: NextNode
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 0c986d06-03bc-49fa-8ac9-467c926ee2fc
+    owner: {fileID: 11400000}
+    inputNodeGUID: f5e27e9f-bfcf-43f7-9290-1c60e4044878
+    outputNodeGUID: 5e132e77-8773-44ed-87a6-d7a184a02088
+    inputFieldName: PrevNode
+    outputFieldName: NextNode
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 4a4ceb7d-95fb-4645-9bd6-91ea58ff06dc
+    owner: {fileID: 11400000}
+    inputNodeGUID: 11dcb54e-666b-4ee9-8551-e355fde4ca16
+    outputNodeGUID: 2f223a30-3037-44c0-b40d-affa800b4be6
+    inputFieldName: PrevNode
+    outputFieldName: NextNode
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 6c4d8bc7-e9bc-4d0e-91f4-fb5e84424a1d
+    owner: {fileID: 11400000}
+    inputNodeGUID: 8491ab4f-751a-4b1a-8e03-03739aa348f6
+    outputNodeGUID: 11dcb54e-666b-4ee9-8551-e355fde4ca16
+    inputFieldName: PrevNode
+    outputFieldName: NextNode
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 0b48c51e-f0bd-492b-9c28-6f901bc11302
+    owner: {fileID: 11400000}
+    inputNodeGUID: c98af6e1-69ed-4c28-9ff2-06a9e00d0831
+    outputNodeGUID: 11dcb54e-666b-4ee9-8551-e355fde4ca16
+    inputFieldName: PrevNode
+    outputFieldName: NextNode
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: f184dc57-5a7c-459a-861c-762f4d101283
+    owner: {fileID: 11400000}
+    inputNodeGUID: 026c6bdc-6d48-4685-918f-a8faffadce85
+    outputNodeGUID: ca32a735-536c-4b42-83de-83c373c95bf5
+    inputFieldName: PrevNode
+    outputFieldName: NextNode
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: fadc2165-2bc6-45d7-8bff-633c0e7a6d5a
+    owner: {fileID: 11400000}
+    inputNodeGUID: 69ff33ea-571d-4ca5-91a4-a7a4ba411f1c
+    outputNodeGUID: 5e132e77-8773-44ed-87a6-d7a184a02088
+    inputFieldName: PrevNode
+    outputFieldName: NextNode
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: f7f5005a-36c1-40de-b9f3-24c6b4a160ac
+    owner: {fileID: 11400000}
+    inputNodeGUID: 9c09a252-619e-4a39-8ccc-5f5cdf001229
+    outputNodeGUID: 11dcb54e-666b-4ee9-8551-e355fde4ca16
+    inputFieldName: PrevNode
+    outputFieldName: NextNode
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 1707711a-22a3-4828-bfde-66b824c1f4f2
+    owner: {fileID: 11400000}
+    inputNodeGUID: 2f223a30-3037-44c0-b40d-affa800b4be6
+    outputNodeGUID: 58cfe052-37a4-4d00-a83c-67dba1c74454
+    inputFieldName: PrevNode
+    outputFieldName: NextNode
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 00e1b55f-5b96-48c4-b01f-14bde9215cb9
+    owner: {fileID: 11400000}
+    inputNodeGUID: 4cced39f-a5a8-480a-85db-a05f488474a8
+    outputNodeGUID: 58cfe052-37a4-4d00-a83c-67dba1c74454
+    inputFieldName: PrevNode
+    outputFieldName: NextNode
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  stackNodes: []
+  pinnedElements: []
+  exposedParameters: []
+  serializedParameterList: []
+  stickyNotes: []
+  position: {x: 408.5, y: 53.000004, z: 0}
+  scale: {x: 0.49717674, y: 0.49717674, z: 1}
+  Name: Skill1001_Client
+  SavePath: Assets/UEngine.HotFix/Config/Bytes
+  references:
+    version: 1

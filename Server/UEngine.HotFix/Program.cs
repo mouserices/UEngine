@@ -9,7 +9,6 @@ namespace UEngine.HotFix
     {
         public static void Main(string[] args)
         {
-            BsonHelper.Init();
             var serverSystemConfigutation = new ServerSystemConfigutation();
             serverSystemConfigutation.InitializeSystems(Contexts.sharedInstance);
             serverSystemConfigutation.Initialize();
