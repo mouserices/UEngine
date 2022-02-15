@@ -81,7 +81,10 @@ namespace ILRuntime.CLR.Utils
                         if (t == null)
                         {
                             t = appdomain.GetType(name);
-                            Debug.Log($"{name} {t==null}");
+                            if (t == null)
+                            {
+                                t = appdomain.GetType($"{name},{i.ParameterType.Scope}");
+                            }
                         }
 
                         if (t != null && i.ParameterType.IsByReference)
