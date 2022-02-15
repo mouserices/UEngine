@@ -540,7 +540,7 @@ namespace ILRuntime.CLR.TypeSystem
                 }
                 lst.Add(new CLRMethod(i, this, appdomain));
             }
-            foreach (var i in clrType.GetConstructors())
+            foreach (var i in clrType.GetConstructors(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance))
             {
                 constructors.Add(new CLRMethod(i, this, appdomain));
             }
