@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{67111767-37B8-4213-9C17-1D81779E1DB4}</ProjectGuid>
+        <OutputType>Exe</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>Core</RootNamespace>
+        <AssemblyName>Core</AssemblyName>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="DesperateDevs.Utils, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\Lib\Entitas\DesperateDevs.Utils.dll</HintPath>
+        </Reference>
+        <Reference Include="Entitas, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\Lib\Entitas\Entitas.dll</HintPath>
+        </Reference>
+        <Reference Include="Entitas.CodeGeneration.Attributes, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\Lib\Entitas\Entitas.CodeGeneration.Attributes.dll</HintPath>
+        </Reference>
+        <Reference Include="protobuf-net, Version=3.0.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67">
+          <HintPath>..\Lib\protobuf-net\protobuf-net.dll</HintPath>
+        </Reference>
+        <Reference Include="protobuf-net.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67">
+          <HintPath>..\Lib\protobuf-net\protobuf-net.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="System" />
+        <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>..\Lib\protobuf-net\System.Buffers.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Collections.Immutable, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\Lib\protobuf-net\System.Collections.Immutable.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>..\Lib\protobuf-net\System.Memory.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\Lib\protobuf-net\System.Numerics.Vectors.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\Lib\protobuf-net\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+        </Reference>
+        <Reference Include="System.Xml" />
+    </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Generated\Network\Components\NetworkClientConnectingComponent.cs" />
+    <Compile Include="Generated\Network\Components\NetworkNetworkClientComponent.cs" />
+    <Compile Include="Generated\Network\Components\NetworkNetworkServerComponent.cs" />
+    <Compile Include="Generated\Network\Components\NetworkServerListeningComponent.cs" />
+    <Compile Include="Generated\NetMessage\Components\NetMessageMessageDispacherComponent.cs" />
+    <Compile Include="Generated\NetMessage\Components\NetMessageMessageSendComponent.cs" />
+    <Compile Include="Generated\Network\NetworkComponentsLookup.cs" />
+    <Compile Include="Generated\NetMessage\NetMessageComponentsLookup.cs" />
+    <Compile Include="Generated\Network\NetworkAttribute.cs" />
+    <Compile Include="Generated\NetMessage\NetMessageAttribute.cs" />
+    <Compile Include="Generated\Network\NetworkContext.cs" />
+    <Compile Include="Generated\NetMessage\NetMessageContext.cs" />
+    <Compile Include="Generated\Network\NetworkMatcher.cs" />
+    <Compile Include="Generated\NetMessage\NetMessageMatcher.cs" />
+    <Compile Include="Generated\Contexts.cs" />
+    <Compile Include="Generated\Network\NetworkEntity.cs" />
+    <Compile Include="Generated\NetMessage\NetMessageEntity.cs" />
+    <Compile Include="Generated\NetMessage\Systems\DestroyMessageDispacherNetMessageSystem.cs" />
+    <Compile Include="Generated\NetMessage\Systems\DestroyMessageSendNetMessageSystem.cs" />
+    <Compile Include="Generated\NetMessage\NetMessageCleanupSystems.cs" />
+    <Compile Include="Generated\Feature.cs" />
+  </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Feature\Network\C2S_Login.cs" />
+        <Compile Include="Feature\Network\ClientConnectingComponent.cs" />
+        <Compile Include="Feature\Network\NetMessage\ByteHelper.cs" />
+        <Compile Include="Feature\Network\NetMessage\Component\MessageDispacherComponent.cs" />
+        <Compile Include="Feature\Network\NetMessage\Component\MessageSendComponent.cs" />
+        <Compile Include="Feature\Network\NetMessage\IMessage.cs" />
+        <Compile Include="Feature\Network\NetMessage\MessageDispacherSystem.cs" />
+        <Compile Include="Feature\Network\NetMessage\MessageSendSystem.cs" />
+        <Compile Include="Feature\Network\NetworkClientComponent.cs" />
+        <Compile Include="Feature\Network\NetworkDestroySystem.cs" />
+        <Compile Include="Feature\Network\NetworkHelper.cs" />
+        <Compile Include="Feature\Network\NetworkServerComponent.cs" />
+        <Compile Include="Feature\Network\NetworkStartSystem.cs" />
+        <Compile Include="Feature\Network\NetworkSystems.cs" />
+        <Compile Include="Feature\Network\NetworkTickSystem.cs" />
+        <Compile Include="Feature\Network\ServerListeningComponent.cs" />
+        <Compile Include="Feature\Network\Telepathy\Client.cs" />
+        <Compile Include="Feature\Network\Telepathy\Common.cs" />
+        <Compile Include="Feature\Network\Telepathy\ConnectionState.cs" />
+        <Compile Include="Feature\Network\Telepathy\EventType.cs" />
+        <Compile Include="Feature\Network\Telepathy\Log.cs" />
+        <Compile Include="Feature\Network\Telepathy\MagnificentReceivePipe.cs" />
+        <Compile Include="Feature\Network\Telepathy\MagnificentSendPipe.cs" />
+        <Compile Include="Feature\Network\Telepathy\NetworkStreamExtensions.cs" />
+        <Compile Include="Feature\Network\Telepathy\Pool.cs" />
+        <Compile Include="Feature\Network\Telepathy\Server.cs" />
+        <Compile Include="Feature\Network\Telepathy\ThreadFunctions.cs" />
+        <Compile Include="Feature\Network\Telepathy\Utils.cs" />
+        <Compile Include="Program.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Feature\Network\C2S_Login.cs.meta" />
+      <Content Include="Feature\Network\ClientConnectingComponent.cs.meta" />
+      <Content Include="Feature\Network\NetMessage.meta" />
+      <Content Include="Feature\Network\NetMessage\ByteHelper.cs.meta" />
+      <Content Include="Feature\Network\NetMessage\Component.meta" />
+      <Content Include="Feature\Network\NetMessage\Component\MessageDispacherComponent.cs.meta" />
+      <Content Include="Feature\Network\NetMessage\Component\MessageSendComponent.cs.meta" />
+      <Content Include="Feature\Network\NetMessage\IMessage.cs.meta" />
+      <Content Include="Feature\Network\NetMessage\MessageDispacherSystem.cs.meta" />
+      <Content Include="Feature\Network\NetMessage\MessageSendSystem.cs.meta" />
+      <Content Include="Feature\Network\NetworkClientComponent.cs.meta" />
+      <Content Include="Feature\Network\NetworkDestroySystem.cs.meta" />
+      <Content Include="Feature\Network\NetworkHelper.cs.meta" />
+      <Content Include="Feature\Network\NetworkServerComponent.cs.meta" />
+      <Content Include="Feature\Network\NetworkStartSystem.cs.meta" />
+      <Content Include="Feature\Network\NetworkSystems.cs.meta" />
+      <Content Include="Feature\Network\NetworkTickSystem.cs.meta" />
+      <Content Include="Feature\Network\Plugins.meta" />
+      <Content Include="Feature\Network\ServerListeningComponent.cs.meta" />
+      <Content Include="Feature\Network\Telepathy.meta" />
+      <Content Include="Feature\Network\Telepathy\Client.cs.meta" />
+      <Content Include="Feature\Network\Telepathy\Common.cs.meta" />
+      <Content Include="Feature\Network\Telepathy\ConnectionState.cs.meta" />
+      <Content Include="Feature\Network\Telepathy\EventType.cs.meta" />
+      <Content Include="Feature\Network\Telepathy\Log.cs.meta" />
+      <Content Include="Feature\Network\Telepathy\MagnificentReceivePipe.cs.meta" />
+      <Content Include="Feature\Network\Telepathy\MagnificentSendPipe.cs.meta" />
+      <Content Include="Feature\Network\Telepathy\NetworkStreamExtensions.cs.meta" />
+      <Content Include="Feature\Network\Telepathy\Pool.cs.meta" />
+      <Content Include="Feature\Network\Telepathy\Server.cs.meta" />
+      <Content Include="Feature\Network\Telepathy\Telepathy.csproj" />
+      <Content Include="Feature\Network\Telepathy\Telepathy.csproj.meta" />
+      <Content Include="Feature\Network\Telepathy\ThreadFunctions.cs.meta" />
+      <Content Include="Feature\Network\Telepathy\Utils.cs.meta" />
+      <Content Include="Feature\Network\Telepathy\VERSION" />
+      <Content Include="Feature\Network\Telepathy\VERSION.meta" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>

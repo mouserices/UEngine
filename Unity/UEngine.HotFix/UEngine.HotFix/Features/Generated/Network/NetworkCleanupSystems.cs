@@ -9,8 +9,8 @@
 public sealed class NetworkCleanupSystems : Feature {
 
     public NetworkCleanupSystems(Contexts contexts) {
-        Add(new DestroyNetworkConnectedNetworkSystem(contexts));
         Add(new RemoveClientConnectingNetworkSystem(contexts));
+        Add(new DestroyNetworkConnectedNetworkSystem(contexts));
         Add(new DestroyNetworkDisconnectedNetworkSystem(contexts));
         Add(new RemoveServerListeningNetworkSystem(contexts));
     }

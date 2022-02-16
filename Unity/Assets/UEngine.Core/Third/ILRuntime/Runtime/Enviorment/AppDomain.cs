@@ -841,8 +841,6 @@ namespace ILRuntime.Runtime.Enviorment
             if (genericParams != null || isArray || isByRef)
             {
                 IType bt = GetType(baseType);
-                Debug.Log($"baseType: {baseType} fullname: {fullname} {bt == null}");
-
                 if (bt == null)
                 {
                     bt = GetType(baseType.Replace("/", "+"));

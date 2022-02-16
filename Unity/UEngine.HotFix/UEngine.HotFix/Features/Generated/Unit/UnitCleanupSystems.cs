@@ -10,12 +10,12 @@ public sealed class UnitCleanupSystems : Feature {
 
     public UnitCleanupSystems(Contexts contexts) {
         Add(new RemoveAP_AttackSucceedUnitSystem(contexts));
-        Add(new DestroyDamageUnitSystem(contexts));
-        Add(new RemoveBehaveTreeLoadUnitSystem(contexts));
-        Add(new RemoveMirrorUnitSystem(contexts));
-        Add(new RemoveHitSucceedUnitSystem(contexts));
         Add(new DestroyDestroyedUnitSystem(contexts));
-        Add(new DestroyInputUnitSystem(contexts));
+        Add(new RemoveBehaveTreeLoadUnitSystem(contexts));
+        Add(new DestroyDamageUnitSystem(contexts));
+        Add(new RemoveHitSucceedUnitSystem(contexts));
         Add(new RemoveStateExitUnitSystem(contexts));
+        Add(new RemoveMirrorUnitSystem(contexts));
+        Add(new DestroyInputUnitSystem(contexts));
     }
 }

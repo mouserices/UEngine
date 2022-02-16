@@ -2,6 +2,7 @@
 using System.Collections;
 using System.IO;
 using ILRuntime.Runtime.Enviorment;
+using UEngine;
 
 public class Main : MonoBehaviour
 {
@@ -72,6 +73,21 @@ public class Main : MonoBehaviour
         appdomain.UnityMainThreadID = System.Threading.Thread.CurrentThread.ManagedThreadId;
 #endif
         //这里做一些ILRuntime的注册，HelloWorld示例暂时没有需要注册的
+        appdomain.RegisterCrossBindingAdaptor(new EntityAdapter());
+        appdomain.RegisterCrossBindingAdaptor(new ContextAttributeAdaptor());
+        appdomain.RegisterCrossBindingAdaptor(new ContextAdapter());
+        appdomain.RegisterCrossBindingAdaptor(new SystemsAdaptor());
+        appdomain.RegisterCrossBindingAdaptor(new ReactiveSystemAdapter());
+        appdomain.RegisterCrossBindingAdaptor(new IContextsAdapter());
+        appdomain.RegisterCrossBindingAdaptor(new IComponentAdapter());
+        appdomain.RegisterCrossBindingAdaptor(new IInitializeSystemAdapter());
+        appdomain.RegisterCrossBindingAdaptor(new IExecuteSystemAdapter());
+        appdomain.RegisterCrossBindingAdaptor(new ITearDownSystemAdapter());
+        appdomain.RegisterCrossBindingAdaptor(new ICleanupSystemAdapter());
+        
+        appdomain.DelegateManager.RegisterFunctionDelegate<Entitas.IEntity, Entitas.IAERC>();
+        appdomain.DelegateManager.RegisterFunctionDelegate<UEngine.EntityAdapter.Adapter>();
+        appdomain.DelegateManager.RegisterFunctionDelegate<System.Reflection.MethodInfo, System.Boolean>();
     }
 
     void OnHotFixLoaded()

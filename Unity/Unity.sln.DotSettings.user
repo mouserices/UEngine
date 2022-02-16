@@ -5,4 +5,5 @@
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;
   &lt;Assembly Path="/Applications/Unity/Hub/Editor/2020.3.12f1c1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIElementsModule.dll" /&gt;
   &lt;Assembly Path="/Applications/Unity/Hub/Editor/2020.3.12f1c1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.CoreModule.dll" /&gt;
+  &lt;Assembly Path="/Applications/Unity/Hub/Editor/2020.3.12f1c1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll" /&gt;
 &lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

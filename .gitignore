@@ -53,8 +53,8 @@ UnityEngine.UI.csproj
 
 归档.zip
 Temp
-*.csproj
 *.properties
 *.userproperties
 .vscode
 Unity/UEngine.HotFix/.vs
+Unity/*.csproj

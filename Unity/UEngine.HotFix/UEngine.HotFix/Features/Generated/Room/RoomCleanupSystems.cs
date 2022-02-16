@@ -9,7 +9,7 @@
 public sealed class RoomCleanupSystems : Feature {
 
     public RoomCleanupSystems(Contexts contexts) {
-        Add(new DestroyRemovePlayerMessageRoomSystem(contexts));
         Add(new DestroyAddPlayerMessageRoomSystem(contexts));
+        Add(new DestroyRemovePlayerMessageRoomSystem(contexts));
     }
 }
