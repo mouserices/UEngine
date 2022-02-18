@@ -73,21 +73,22 @@ namespace UEngine.Net
 
         private void DoStartClient(string ip, int port)
         {
-            Telepathy.Client client = new Telepathy.Client(16 * 1024);
-            client.OnConnected = async () =>
-            {
-                var networkEntity = Contexts.sharedInstance.network.CreateEntity();
-                networkEntity.AddNetworkConnected(0);
-            };
-            client.OnData = this.OnDataReceived;
-            client.OnDisconnected = () =>
-            {
-                MetaContext.Get<ILogService>().Log("Client Disconnected!");
-                var networkEntity = Contexts.sharedInstance.network.CreateEntity();
-                networkEntity.AddNetworkDisconnected(0);
-            };
-            client.Connect(ip, port);
-            Contexts.sharedInstance.network.clientConnectingEntity.AddNetworkClient(client);
+            // Telepathy.Client client = new Telepathy.Client(16 * 1024);
+            // client.OnConnected = async () =>
+            // {
+            //     var networkEntity = Contexts.sharedInstance.network.CreateEntity();
+            //     networkEntity.AddNetworkConnected(0);
+            // };
+            // client.OnData = this.OnDataReceived;
+            // client.OnDisconnected = () =>
+            // {
+            //     MetaContext.Get<ILogService>().Log("Client Disconnected!");
+            //     var networkEntity = Contexts.sharedInstance.network.CreateEntity();
+            //     networkEntity.AddNetworkDisconnected(0);
+            // };
+            // MetaContext.Get<ILogService>().Log($"client begin connect,ip:{ip} port:{port}");
+            // client.Connect(ip, port);
+            // Contexts.sharedInstance.network.clientConnectingEntity.AddNetworkClient(client);
 
             MetaContext.Get<ILogService>().Log($"client connecting,ip:{ip} port:{port}");
         }

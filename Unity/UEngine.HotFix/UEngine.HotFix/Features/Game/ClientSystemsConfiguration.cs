@@ -8,19 +8,19 @@ public class ClientSystemsConfiguration : Feature, ISystemConfiguration
     {
         Add(new AutoRegisterServiceSystem());
         Add(new NetworkSystems());
-        Add(new BehaveTreeFactorySystem(contexts));
-        Add(new ClockSystem());
-        
-        Add(new GameStartSystem());
-        Add(new ViewSystem(contexts));
-        Add(new StateChangeSystem(contexts));
-        Add(new StateRemoveSystem(contexts));
-        Add(new PingSystem());
-        Add(new RoomSystems());
-        Add(new FrameSyncSystems());
-        Add(new CameraFollowSystem());
-        
-        Add(new UnitEventSystems(contexts));
+        // Add(new BehaveTreeFactorySystem(contexts));
+        // Add(new ClockSystem());
+        //
+        // Add(new GameStartSystem());
+        // Add(new ViewSystem(contexts));
+        // Add(new StateChangeSystem(contexts));
+        // Add(new StateRemoveSystem(contexts));
+        // Add(new PingSystem());
+        // Add(new RoomSystems());
+        // Add(new FrameSyncSystems());
+        // Add(new CameraFollowSystem());
+        //
+        // Add(new UnitEventSystems(contexts));
         return;
 
         // Input

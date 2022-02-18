@@ -1,14 +1,17 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using System.IO;
-using ILRuntime.Runtime.Enviorment;
+using System.Linq;
 using UEngine;
+using AppDomain = ILRuntime.Runtime.Enviorment.AppDomain;
 
 public class Main : MonoBehaviour
 {
     //AppDomain是ILRuntime的入口，最好是在一个单例类中保存，整个游戏全局就一个，这里为了示例方便，每个例子里面都单独做了一个
     //大家在正式项目中请全局只创建一个AppDomain
-    AppDomain appdomain;
+    static AppDomain appdomain;
 
     System.IO.MemoryStream fs;
     System.IO.MemoryStream p;
@@ -73,20 +76,31 @@ public class Main : MonoBehaviour
         appdomain.UnityMainThreadID = System.Threading.Thread.CurrentThread.ManagedThreadId;
 #endif
         //这里做一些ILRuntime的注册，HelloWorld示例暂时没有需要注册的
-        appdomain.RegisterCrossBindingAdaptor(new EntityAdapter());
-        appdomain.RegisterCrossBindingAdaptor(new ContextAttributeAdaptor());
-        appdomain.RegisterCrossBindingAdaptor(new ContextAdapter());
-        appdomain.RegisterCrossBindingAdaptor(new SystemsAdaptor());
-        appdomain.RegisterCrossBindingAdaptor(new ReactiveSystemAdapter());
-        appdomain.RegisterCrossBindingAdaptor(new IContextsAdapter());
-        appdomain.RegisterCrossBindingAdaptor(new IComponentAdapter());
-        appdomain.RegisterCrossBindingAdaptor(new IInitializeSystemAdapter());
-        appdomain.RegisterCrossBindingAdaptor(new IExecuteSystemAdapter());
-        appdomain.RegisterCrossBindingAdaptor(new ITearDownSystemAdapter());
-        appdomain.RegisterCrossBindingAdaptor(new ICleanupSystemAdapter());
+        // appdomain.RegisterCrossBindingAdaptor(new EntityAdapter());
+        // appdomain.RegisterCrossBindingAdaptor(new ContextAttributeAdaptor());
+        // appdomain.RegisterCrossBindingAdaptor(new ContextAdapter());
+        // appdomain.RegisterCrossBindingAdaptor(new SystemsAdaptor());
+        // appdomain.RegisterCrossBindingAdaptor(new ReactiveSystemAdapter());
+        // appdomain.RegisterCrossBindingAdaptor(new IContextsAdapter());
+        // appdomain.RegisterCrossBindingAdaptor(new IComponentAdapter());
+        // appdomain.RegisterCrossBindingAdaptor(new IInitializeSystemAdapter());
+        // appdomain.RegisterCrossBindingAdaptor(new IExecuteSystemAdapter());
+        // appdomain.RegisterCrossBindingAdaptor(new ITearDownSystemAdapter());
+        // appdomain.RegisterCrossBindingAdaptor(new ICleanupSystemAdapter());
+        //
+        // appdomain.DelegateManager.RegisterFunctionDelegate<Entitas.IEntity, Entitas.IAERC>();
+        // appdomain.DelegateManager.RegisterFunctionDelegate<UEngine.EntityAdapter.Adapter>();
+        // appdomain.DelegateManager.RegisterFunctionDelegate<System.Reflection.MethodInfo, System.Boolean>();
         
-        appdomain.DelegateManager.RegisterFunctionDelegate<Entitas.IEntity, Entitas.IAERC>();
-        appdomain.DelegateManager.RegisterFunctionDelegate<UEngine.EntityAdapter.Adapter>();
+        
+        appdomain.RegisterCrossBindingAdaptor(new ExceptionAdapter());
+        appdomain.RegisterCrossBindingAdaptor(new IEqualityComparer_1_ILTypeInstanceAdapter());
+        appdomain.RegisterCrossBindingAdaptor(new MonoBehaviourAdapter());
+        appdomain.RegisterCrossBindingAdaptor(new IAsyncStateMachineAdapter());
+        appdomain.RegisterCrossBindingAdaptor(new INotifyCompletionAdapter());
+        
+        appdomain.DelegateManager.RegisterFunctionDelegate<System.Collections.Generic.List<ILRuntime.Runtime.Intepreter.ILTypeInstance>>();
+        appdomain.DelegateManager.RegisterMethodDelegate<System.Collections.Generic.List<ILRuntime.Runtime.Intepreter.ILTypeInstance>>();
         appdomain.DelegateManager.RegisterFunctionDelegate<System.Reflection.MethodInfo, System.Boolean>();
     }
 
@@ -114,4 +128,10 @@ public class Main : MonoBehaviour
             appdomain.Invoke("UEngine.GameStart", "Update", null, null);
         }
     }
+
+    public static List<Type> GetTypes()
+    {
+        return appdomain.LoadedTypes.Select(p=>p.Value.ReflectionType).ToList();
+    }
+
 }

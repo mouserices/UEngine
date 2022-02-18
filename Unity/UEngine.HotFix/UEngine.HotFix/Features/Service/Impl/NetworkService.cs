@@ -1,11 +1,14 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UEngine.Net;
+using UnityEngine;
+
 [Service]
 public class NetworkService : INetworkService
 {
     public void StartClient(string ip, int port)
     {
+        Debug.LogError($"AddClientConnecting");
         var networkEntity = Contexts.sharedInstance.network.CreateEntity();
         networkEntity.AddClientConnecting(ip, port);
     }

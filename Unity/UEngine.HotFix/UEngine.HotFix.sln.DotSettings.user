@@ -45,4 +45,5 @@
   &lt;Assembly Path="/Users/wangwei/Work/Project/UEngine/Unity/UEngine.HotFix/UEngine.HotFix/UnityDlls/UnityEngine.InputLegacyModule.dll" /&gt;
   &lt;Assembly Path="/Users/wangwei/Work/Project/UEngine/Unity/UEngine.HotFix/UEngine.HotFix/UnityDlls/UnityEditor.CoreModule.dll" /&gt;
   &lt;Assembly Path="/Users/wangwei/Work/Project/UEngine/Unity/UEngine.HotFix/UEngine.HotFix/UnityDlls/UnityEngine.dll" /&gt;
+  &lt;Assembly Path="/Users/wangwei/Work/Project/UEngine/UEngine.Share/Lib/Entitas/DesperateDevs.Utils.dll" /&gt;
 &lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

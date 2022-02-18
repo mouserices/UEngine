@@ -18,7 +18,7 @@
         <DebugType>full</DebugType>
         <Optimize>false</Optimize>
         <OutputPath>..\..\Assets\StreamingAssets\</OutputPath>
-        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <DefineConstants>DEBUG;TRACE;CLIENT</DefineConstants>
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -28,7 +28,7 @@
         <DebugType>pdbonly</DebugType>
         <Optimize>true</Optimize>
         <OutputPath>..\..\Assets\StreamingAssets\</OutputPath>
-        <DefineConstants>TRACE</DefineConstants>
+        <DefineConstants>TRACE;CLIENT</DefineConstants>
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -52,18 +52,6 @@
         </Reference>
         <Reference Include="DesperateDevs.Utils, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
           <HintPath>..\..\..\UEngine.Share\Lib\Entitas\DesperateDevs.Utils.dll</HintPath>
-          <Private>False</Private>
-        </Reference>
-        <Reference Include="Entitas, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\UEngine.Share\Lib\Entitas\Entitas.dll</HintPath>
-          <Private>False</Private>
-        </Reference>
-        <Reference Include="Entitas.CodeGeneration.Attributes, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\UEngine.Share\Lib\Entitas\Entitas.CodeGeneration.Attributes.dll</HintPath>
-          <Private>False</Private>
-        </Reference>
-        <Reference Include="Entitas.Unity, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\Assets\UEngine.Core\Third\Entitas\Entitas\Entitas.Unity.dll</HintPath>
           <Private>False</Private>
         </Reference>
         <Reference Include="Entitas.VisualDebugging.Unity, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
@@ -324,6 +312,85 @@
     <Compile Include="..\..\UEngine.HotFix\UEngine.HotFix\Features\Generated\Feature.cs" />
   </ItemGroup>
     <ItemGroup>
+        <Compile Include="Entitas\Entitas.CodeGeneration.Attributes\CleanupAttribute.cs" />
+        <Compile Include="Entitas\Entitas.CodeGeneration.Attributes\ComponentNameAttribute.cs" />
+        <Compile Include="Entitas\Entitas.CodeGeneration.Attributes\ContextAttribute.cs" />
+        <Compile Include="Entitas\Entitas.CodeGeneration.Attributes\CustomEntityIndexAttribute.cs" />
+        <Compile Include="Entitas\Entitas.CodeGeneration.Attributes\DontGenerateAttribute.cs" />
+        <Compile Include="Entitas\Entitas.CodeGeneration.Attributes\EntityIndex\AbstractEntityIndexAttribute.cs" />
+        <Compile Include="Entitas\Entitas.CodeGeneration.Attributes\EntityIndex\EntityIndexAttribute.cs" />
+        <Compile Include="Entitas\Entitas.CodeGeneration.Attributes\EntityIndex\EntityIndexGetMethodAttribute.cs" />
+        <Compile Include="Entitas\Entitas.CodeGeneration.Attributes\EntityIndex\EntityIndexType.cs" />
+        <Compile Include="Entitas\Entitas.CodeGeneration.Attributes\EntityIndex\PrimaryEntityIndexAttribute.cs" />
+        <Compile Include="Entitas\Entitas.CodeGeneration.Attributes\EventAttribute.cs" />
+        <Compile Include="Entitas\Entitas.CodeGeneration.Attributes\FlagPrefixAttribute.cs" />
+        <Compile Include="Entitas\Entitas.CodeGeneration.Attributes\PostConstructorAttribute.cs" />
+        <Compile Include="Entitas\Entitas.CodeGeneration.Attributes\UniqueAttribute.cs" />
+        <Compile Include="Entitas\Entitas.Unity\EntityLink.cs" />
+        <Compile Include="Entitas\Entitas\Collector\Collector.cs" />
+        <Compile Include="Entitas\Entitas\Collector\CollectorContextExtension.cs" />
+        <Compile Include="Entitas\Entitas\Collector\CollectorException.cs" />
+        <Compile Include="Entitas\Entitas\Collector\ICollector.cs" />
+        <Compile Include="Entitas\Entitas\Collector\TriggerOnEvent.cs" />
+        <Compile Include="Entitas\Entitas\Collector\TriggerOnEventMatcherExtension.cs" />
+        <Compile Include="Entitas\Entitas\ContextInfo.cs" />
+        <Compile Include="Entitas\Entitas\Context\Context.cs" />
+        <Compile Include="Entitas\Entitas\Context\ContextExtension.cs" />
+        <Compile Include="Entitas\Entitas\Context\Exceptions\ContextDoesNotContainEntityException.cs" />
+        <Compile Include="Entitas\Entitas\Context\Exceptions\ContextEntityIndexDoesAlreadyExistException.cs" />
+        <Compile Include="Entitas\Entitas\Context\Exceptions\ContextEntityIndexDoesNotExistException.cs" />
+        <Compile Include="Entitas\Entitas\Context\Exceptions\ContextInfoException.cs" />
+        <Compile Include="Entitas\Entitas\Context\Exceptions\ContextStillHasRetainedEntitiesException.cs" />
+        <Compile Include="Entitas\Entitas\Context\Exceptions\EntityIsNotDestroyedException.cs" />
+        <Compile Include="Entitas\Entitas\Context\IContext.cs" />
+        <Compile Include="Entitas\Entitas\Context\IContexts.cs" />
+        <Compile Include="Entitas\Entitas\EntitasException.cs" />
+        <Compile Include="Entitas\Entitas\EntitasResources.cs" />
+        <Compile Include="Entitas\Entitas\EntityIndex\AbstractEntityIndex.cs" />
+        <Compile Include="Entitas\Entitas\EntityIndex\EntityIndex.cs" />
+        <Compile Include="Entitas\Entitas\EntityIndex\EntityIndexException.cs" />
+        <Compile Include="Entitas\Entitas\EntityIndex\IEntityIndex.cs" />
+        <Compile Include="Entitas\Entitas\EntityIndex\PrimaryEntityIndex.cs" />
+        <Compile Include="Entitas\Entitas\Entity\Entity.cs" />
+        <Compile Include="Entitas\Entitas\Entity\EntityEqualityComparer.cs" />
+        <Compile Include="Entitas\Entitas\Entity\Exceptions\EntityAlreadyHasComponentException.cs" />
+        <Compile Include="Entitas\Entitas\Entity\Exceptions\EntityDoesNotHaveComponentException.cs" />
+        <Compile Include="Entitas\Entitas\Entity\Exceptions\EntityIsAlreadyRetainedByOwnerException.cs" />
+        <Compile Include="Entitas\Entitas\Entity\Exceptions\EntityIsNotEnabledException.cs" />
+        <Compile Include="Entitas\Entitas\Entity\Exceptions\EntityIsNotRetainedByOwnerException.cs" />
+        <Compile Include="Entitas\Entitas\Entity\IAERC.cs" />
+        <Compile Include="Entitas\Entitas\Entity\IEntity.cs" />
+        <Compile Include="Entitas\Entitas\Entity\SafeAERC.cs" />
+        <Compile Include="Entitas\Entitas\Entity\UnsafeAERC.cs" />
+        <Compile Include="Entitas\Entitas\Extensions\CollectionExtension.cs" />
+        <Compile Include="Entitas\Entitas\Extensions\EntitasStringExtension.cs" />
+        <Compile Include="Entitas\Entitas\Extensions\PublicMemberInfoEntityExtension.cs" />
+        <Compile Include="Entitas\Entitas\Group\Group.cs" />
+        <Compile Include="Entitas\Entitas\Group\GroupEvent.cs" />
+        <Compile Include="Entitas\Entitas\Group\GroupExtension.cs" />
+        <Compile Include="Entitas\Entitas\Group\GroupSingleEntityException.cs" />
+        <Compile Include="Entitas\Entitas\Group\IGroup.cs" />
+        <Compile Include="Entitas\Entitas\IComponent.cs" />
+        <Compile Include="Entitas\Entitas\Matcher\Interfaces\IAllOfMatcher.cs" />
+        <Compile Include="Entitas\Entitas\Matcher\Interfaces\IAnyOfMatcher.cs" />
+        <Compile Include="Entitas\Entitas\Matcher\Interfaces\ICompoundMatcher.cs" />
+        <Compile Include="Entitas\Entitas\Matcher\Interfaces\IMatcher.cs" />
+        <Compile Include="Entitas\Entitas\Matcher\Interfaces\INoneOfMatcher.cs" />
+        <Compile Include="Entitas\Entitas\Matcher\Matcher.cs" />
+        <Compile Include="Entitas\Entitas\Matcher\MatcherEquals.cs" />
+        <Compile Include="Entitas\Entitas\Matcher\MatcherException.cs" />
+        <Compile Include="Entitas\Entitas\Matcher\MatcherStatic.cs" />
+        <Compile Include="Entitas\Entitas\Matcher\MatcherToString.cs" />
+        <Compile Include="Entitas\Entitas\Systems\Interfaces\ICleanupSystem.cs" />
+        <Compile Include="Entitas\Entitas\Systems\Interfaces\IExecuteSystem.cs" />
+        <Compile Include="Entitas\Entitas\Systems\Interfaces\IInitializeSystem.cs" />
+        <Compile Include="Entitas\Entitas\Systems\Interfaces\IReactiveSystem.cs" />
+        <Compile Include="Entitas\Entitas\Systems\Interfaces\ISystem.cs" />
+        <Compile Include="Entitas\Entitas\Systems\Interfaces\ITearDownSystem.cs" />
+        <Compile Include="Entitas\Entitas\Systems\JobSystem.cs" />
+        <Compile Include="Entitas\Entitas\Systems\MultiReactiveSystem.cs" />
+        <Compile Include="Entitas\Entitas\Systems\ReactiveSystem.cs" />
+        <Compile Include="Entitas\Entitas\Systems\Systems.cs" />
         <Compile Include="Features\ActionPoint\AP_AttackSucceedComponent.cs" />
         <Compile Include="Features\Basic\DestroyedComponent.cs" />
         <Compile Include="Features\Basic\HPComponent.cs" />
@@ -628,6 +695,8 @@
       <Folder Include="Config\Bytes" />
     </ItemGroup>
     <ItemGroup>
+      <Content Include="Entitas\Entitas\.DS_Store" />
+      <Content Include="Entitas\Entitas\version.txt" />
       <Content Include="Features\.DS_Store" />
       <Content Include="Features\ActionPoint.meta" />
       <Content Include="Features\ActionPoint\AP_AttackSucceedComponent.cs.meta" />

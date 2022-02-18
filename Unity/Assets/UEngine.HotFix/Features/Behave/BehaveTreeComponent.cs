@@ -1,8 +1,7 @@
 using System.Collections.Generic;
 using Entitas;
-using Entitas.VisualDebugging.Unity;
 
-[Unit,DontDrawComponent]
+[Unit]
 public class SkillContainerComponent : IComponent
 {
     public List<Skill> Skills;

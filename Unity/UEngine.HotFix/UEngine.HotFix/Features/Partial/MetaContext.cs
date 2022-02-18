@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public partial class MetaContext
 {
     public static T Get<T>() where T : class, IService

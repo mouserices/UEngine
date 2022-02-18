@@ -2,7 +2,6 @@
     "name": "UEngine.HotFix",
     "rootNamespace": "UEngine.HotFix",
     "references": [
-        "GUID:f8534fcc3ebdf41259feefe0f6990a0a",
         "GUID:efa45043feb7e4147a305b73b5cea642",
         "GUID:4c25c05f410a3a447a75c3b0909152ef",
         "GUID:4307f53044263cf4b835bd812fc161a4",

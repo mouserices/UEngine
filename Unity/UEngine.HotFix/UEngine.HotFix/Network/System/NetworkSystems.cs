@@ -11,12 +11,12 @@ namespace UEngine.Net
         {
             Add(new NetworkInitSystem());
             Add(new NetworkStartSystem());
-            Add(new NetworkTickSystem());
-
-            Add(new MessageSendSystem());
-
-            Add(new MessageDispacherSystem());
-            Add(new NetworkDestroySystem());
+            // Add(new NetworkTickSystem());
+            //
+            // Add(new MessageSendSystem());
+            //
+            // Add(new MessageDispacherSystem());
+            // Add(new NetworkDestroySystem());
             
             //clear
             Add(new NetworkCleanupSystems(Contexts.sharedInstance));

@@ -6,6 +6,9 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+
+using UnityEngine;
+
 public partial class NetworkContext {
 
     public NetworkEntity clientConnectingEntity { get { return GetGroup(NetworkMatcher.ClientConnecting).GetSingleEntity(); } }
@@ -66,6 +69,7 @@ public partial class NetworkEntity {
     }
 
     public void RemoveClientConnecting() {
+        Debug.LogError($"RemoveClientConnecting: {NetworkComponentsLookup.ClientConnecting}");
         RemoveComponent(NetworkComponentsLookup.ClientConnecting);
     }
 }
