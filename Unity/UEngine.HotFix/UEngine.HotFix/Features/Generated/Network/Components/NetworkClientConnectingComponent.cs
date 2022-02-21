@@ -69,7 +69,6 @@ public partial class NetworkEntity {
     }
 
     public void RemoveClientConnecting() {
-        Debug.LogError($"RemoveClientConnecting: {NetworkComponentsLookup.ClientConnecting}");
         RemoveComponent(NetworkComponentsLookup.ClientConnecting);
     }
 }

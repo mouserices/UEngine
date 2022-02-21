@@ -20,14 +20,9 @@ public sealed class RemoveClientConnectingNetworkSystem : ICleanupSystem {
     }
 
     public void Cleanup() {
-        Debug.LogError($"_group.GetEntities(_buffer): {_group.GetEntities(_buffer).Count}");
         foreach (var e in _group.GetEntities(_buffer))
         {
             var components = e.GetComponents();
-            foreach (var c in components)
-            {
-                Debug.LogError($"components: {c.ToString()}");
-            }
             e.RemoveClientConnecting();
         }
     }

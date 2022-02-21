@@ -96,7 +96,6 @@ namespace Entitas {
             if (entity.isEnabled) {
                 var added = _entities.Add(entity);
                 if (added) {
-                    Debug.LogError($"add entity succeed! {entity.ToString()}");
                     _entitiesCache = null;
                     _singleEntityCache = null;
                     entity.Retain(this);
@@ -115,13 +114,9 @@ namespace Entitas {
         }
 
         bool removeEntitySilently(TEntity entity) {
-            Debug.LogError($"======removeEntitySilently  {entity}");
 
             var removed = _entities.Remove(entity);
-
             if (removed) {
-                Debug.LogError($"======removeEntitySilently succeed  {entity}");
-
                 _entitiesCache = null;
                 _singleEntityCache = null;
                 entity.Release(this);
