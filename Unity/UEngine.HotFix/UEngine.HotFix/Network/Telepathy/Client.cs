@@ -35,7 +35,7 @@ namespace Telepathy
         // => bools are atomic according to
         //    https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/variables
         //    made volatile so the compiler does not reorder access to it
-        public volatile bool Connecting;
+        public  bool Connecting;
 
         // thread safe pipe for received messages
         // => inside client connection state so that we can create a new state
