@@ -37,6 +37,8 @@ namespace UEngine
             ILTypeInstance instance;
             ILRuntime.Runtime.Enviorment.AppDomain appdomain;
 
+            private IMethod equals;
+            private IMethod getHashCode;
             public Adapter()
             {
 
@@ -46,18 +48,23 @@ namespace UEngine
             {
                 this.appdomain = appdomain;
                 this.instance = instance;
+
+                this.equals = this.instance.Type.GetMethod("Equals");
+                this.getHashCode = this.instance.Type.GetMethod("GetHashCode");
             }
 
             public ILTypeInstance ILInstance { get { return instance; } }
 
             public System.Boolean Equals(ILRuntime.Runtime.Intepreter.ILTypeInstance x, ILRuntime.Runtime.Intepreter.ILTypeInstance y)
             {
-                return mEquals_0.Invoke(this.instance, x, y);
+                // return mEquals_0.Invoke(this.instance, x, y);
+                return (bool)this.appdomain.Invoke(this.equals, this.instance, x, y);
             }
 
             public System.Int32 GetHashCode(ILRuntime.Runtime.Intepreter.ILTypeInstance obj)
             {
-                return mGetHashCode_1.Invoke(this.instance, obj);
+                // return mGetHashCode_1.Invoke(this.instance, obj);
+                return (int)this.appdomain.Invoke(this.getHashCode, this.instance,obj);
             }
 
             public override string ToString()
