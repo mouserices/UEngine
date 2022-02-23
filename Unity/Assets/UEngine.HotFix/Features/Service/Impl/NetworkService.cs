@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UEngine.Net;
+using UnityEngine;
+
 [Service]
 public class NetworkService : INetworkService
 {
@@ -23,6 +25,7 @@ public class NetworkService : INetworkService
 
     public NetworkRequest SendRequest<T>(int connectedID,T request) where T : IMessage
     {
+        Debug.Log("SendRequest");
         request.RpcID = RpcIdGenerater.GetRpcID();
         var networkRequest = new NetworkRequest(request.RpcID);
         

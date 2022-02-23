@@ -10,7 +10,12 @@ public class AutoRegisterServiceSystem : IInitializeSystem
 
         Dictionary<Type, IService> services = new Dictionary<Type, IService>();
 
-        var types = this.GetType().Assembly.GetTypes();
+        Type[] types;
+#if SERVER
+        types =  this.GetType().Assembly.GetTypes();
+#elif CLIENT
+        types = Main.GetTypes().ToArray();
+#endif
         foreach (var type in types)
         {
             if (!type.IsClass)

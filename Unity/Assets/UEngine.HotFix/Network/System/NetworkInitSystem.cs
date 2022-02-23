@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Entitas;
+using UnityEngine;
 
 namespace UEngine.Net.System
 {
@@ -20,16 +21,23 @@ namespace UEngine.Net.System
             var request2Response = networkContext.messageRelation.Request2Response;
             var request2Handlers = networkContext.messageRelation.Request2Handlers;
 
-
-            var types = this.GetType().Assembly.GetTypes();
+            Type[] types;
+#if SERVER
+            types =  this.GetType().Assembly.GetTypes();
+#elif CLIENT
+            types = Main.GetTypes().ToArray();
+#endif
             foreach (var type in types)
             {
-                if (typeof(IMessageHandler).IsAssignableFrom(type) && !type.IsInterface && !type.IsAbstract)
+                var type1 = typeof(IMessageHandler);
+                // 通过IsGenericTypeDefinition排除一些泛型定义类，否则ILruntime下IsAssignableFrom内部报错（找不到接口类型）
+                if (!type.IsGenericTypeDefinition&&!type.IsInterface && !type.IsAbstract && type1.IsAssignableFrom(type))
                 {
                     if (!request2Handlers.ContainsKey(type))
                     {
                         var messageHandler = Activator.CreateInstance(type) as IMessageHandler;
                         request2Handlers.Add(messageHandler.GetRequestType(),messageHandler);
+                        //Debug.LogError($"RequestType {messageHandler.GetRequestType()}");
                     }
                 }
                 
@@ -38,24 +46,24 @@ namespace UEngine.Net.System
                 {
                     continue;
                 }
-
+                
                 var messageOpCodeAttribute = attMessageOpCodes[0] as MessageOpCodeAttribute;
                 if (messageOpCodeAttribute == null)
                 {
                     continue;
                 }
-
+                
                 var opCode = messageOpCodeAttribute.OpCode;
                 if (!op2Types.ContainsKey(opCode))
                 {
                     op2Types.Add(opCode,type);
                 }
-
+                
                 if (!type2Ops.ContainsKey(type))
                 {
                     type2Ops.Add(type,opCode);
                 }
-
+                
                 if (typeof(IRequest).IsAssignableFrom(type))
                 {
                     var attMessageResponses = type.GetCustomAttributes(typeof(MessageResponseAttribute), false);
@@ -63,7 +71,7 @@ namespace UEngine.Net.System
                     {
                         continue;
                     }
-
+                
                     var messageResponseAttribute = attMessageResponses[0] as MessageResponseAttribute;
                     if (!request2Response.ContainsKey(type))
                     {
