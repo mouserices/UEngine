@@ -3,6 +3,7 @@ using System.IO;
 using Entitas;
 using Newtonsoft.Json;
 using NPBehave;
+using UnityEngine;
 using Exception = System.Exception;
 
 namespace UEngine.NP
@@ -21,7 +22,7 @@ namespace UEngine.NP
             string npBehaveConfigsPath = string.Empty;
             var runPlatform = RunPlatform.Client;
 #if CLIENT
-            npBehaveConfigsPath = $"{UnityEngine.Application.dataPath}/UEngine.HotFix/Config/Bytes";
+            npBehaveConfigsPath = $"{UnityEngine.Application.dataPath}/Res/Config/Bytes";
             runPlatform = RunPlatform.Client;
 #elif SERVER
             npBehaveConfigsPath = "../../../../Config";
@@ -43,8 +44,9 @@ namespace UEngine.NP
                 jsonSerializerSettings.TypeNameHandling = TypeNameHandling.Auto;
                 jsonSerializerSettings.NullValueHandling = NullValueHandling.Ignore;
                 jsonSerializerSettings.DefaultValueHandling = DefaultValueHandling.Ignore;
-                
+                Debug.Log("11111");
                 NP_DataSupportorBase npDataSupportorBase = JsonConvert.DeserializeObject<NP_DataSupportorBase>(readAllBytes,jsonSerializerSettings);
+                Debug.Log("2222");
 
                 if (npDataSupportorBase.Platform == runPlatform)
                 {

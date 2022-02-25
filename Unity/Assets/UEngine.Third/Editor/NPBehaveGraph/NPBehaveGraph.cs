@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using GraphProcessor;
+using LitJson;
 using Newtonsoft.Json;
 using Sirenix.OdinInspector;
 using UEngine.NP;
@@ -70,31 +71,23 @@ public class NPBehaveGraph : BaseGraph
 
         using (var fileWriter = File.CreateText($"{SavePath}/{this.Name}.json"))
         {
-            var jsonSerializerSettings = new JsonSerializerSettings();
-            jsonSerializerSettings.TypeNameHandling = TypeNameHandling.Auto;
-            jsonSerializerSettings.NullValueHandling = NullValueHandling.Ignore;
-            jsonSerializerSettings.DefaultValueHandling = DefaultValueHandling.Ignore;
+            // var jsonSerializerSettings = new JsonSerializerSettings();
+            // jsonSerializerSettings.TypeNameHandling = TypeNameHandling.Auto;
+            // jsonSerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+            // jsonSerializerSettings.DefaultValueHandling = DefaultValueHandling.Ignore;
+            //
+            // var jsonSerializer = JsonSerializer.Create(jsonSerializerSettings);
+            // jsonSerializer.Serialize(fileWriter,this.NpDataSupportor);
 
-            var jsonSerializer = JsonSerializer.Create(jsonSerializerSettings);
-            jsonSerializer.Serialize(fileWriter,this.NpDataSupportor);
-
-
-            // using (var fileStream = File.Create($"{SavePath}/{this.Name}1.bytes"))
-            // {
-            //     var bsonWriter = new BsonWriter(fileStream);
-            //     jsonSerializer.Serialize(bsonWriter,this.NpDataSupportor);
-            // }
+            var json = JsonMapper.ToJson(this.NpDataSupportor);
             
-            
-            
-            
-            //BsonSerializer.Serialize(new BsonBinaryWriter(file), this.NpDataSupportor);
+            fileWriter.Write(json);
         }
 
         Debug.Log($"保存 {SavePath}/{this.Name}.json 成功");
         AssetDatabase.Refresh();
         var npBehaveConfigs =
-            AssetDatabase.LoadAssetAtPath<NPBehaveConfigs>("Assets/UEngine.HotFix/Config/Resources/NPBehaveConfigs.asset");
+            AssetDatabase.LoadAssetAtPath<NPBehaveConfigs>("Assets/Res/Config/Resources/NPBehaveConfigs.asset");
         var assetAtPath = AssetDatabase.LoadAssetAtPath<TextAsset>($"{SavePath}/{this.Name}.json");
         var assetPath = AssetDatabase.GetAssetPath(this);
         npBehaveConfigs.AddConfig(this.name, assetAtPath, assetPath);

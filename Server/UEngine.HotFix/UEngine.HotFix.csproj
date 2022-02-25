@@ -86,6 +86,45 @@
         </Reference>
     </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\Unity\Assets\UEngine.Core\Runtime\Telepathy\Client.cs">
+      <Link>Network\Telepathy\Client.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\UEngine.Core\Runtime\Telepathy\Common.cs">
+      <Link>Network\Telepathy\Common.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\UEngine.Core\Runtime\Telepathy\ConnectionState.cs">
+      <Link>Network\Telepathy\ConnectionState.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\UEngine.Core\Runtime\Telepathy\EventType.cs">
+      <Link>Network\Telepathy\EventType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\UEngine.Core\Runtime\Telepathy\Log.cs">
+      <Link>Network\Telepathy\Log.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\UEngine.Core\Runtime\Telepathy\MagnificentReceivePipe.cs">
+      <Link>Network\Telepathy\MagnificentReceivePipe.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\UEngine.Core\Runtime\Telepathy\MagnificentSendPipe.cs">
+      <Link>Network\Telepathy\MagnificentSendPipe.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\UEngine.Core\Runtime\Telepathy\NetworkStreamExtensions.cs">
+      <Link>Network\Telepathy\NetworkStreamExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\UEngine.Core\Runtime\Telepathy\Pool.cs">
+      <Link>Network\Telepathy\Pool.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\UEngine.Core\Runtime\Telepathy\Server.cs">
+      <Link>Network\Telepathy\Server.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\UEngine.Core\Runtime\Telepathy\ThreadFunctions.cs">
+      <Link>Network\Telepathy\ThreadFunctions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\UEngine.Core\Runtime\Telepathy\Utils.cs">
+      <Link>Network\Telepathy\Utils.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Unity\Assets\UEngine.HotFix\Network\Component\ServerListeningComponent.cs">
+      <Link>Network\Component\ServerListeningComponent.cs</Link>
+    </Compile>
     <Compile Include="..\..\Unity\Assets\UEngine.HotFix\NPBehave\ValueTypeDecideByCanvasData\VTD_EventId.cs">
       <Link>NPBehave\ValueTypeDecideByCanvasData\VTD_EventId.cs</Link>
     </Compile>
@@ -347,9 +386,6 @@
     <Compile Include="..\..\Unity\Assets\UEngine.HotFix\Network\System\NetworkTickSystem.cs">
       <Link>Network\System\NetworkTickSystem.cs</Link>
     </Compile>
-    <Compile Include="..\..\Unity\Assets\UEngine.HotFix\Network\Telepathy\ServerListeningComponent.cs">
-      <Link>Network\Telepathy\ServerListeningComponent.cs</Link>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\Unity\Assets\UEngine.HotFix\Features\Service\Impl\NetworkService.cs">
@@ -422,42 +458,6 @@
     </Compile>
     <Compile Include="..\..\Unity\Assets\UEngine.HotFix\Network\System\NetworkInitSystem.cs">
       <Link>Network\System\NetworkInitSystem.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Unity\Assets\UEngine.HotFix\Network\Telepathy\Client.cs">
-      <Link>Network\Telepathy\Client.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Unity\Assets\UEngine.HotFix\Network\Telepathy\Common.cs">
-      <Link>Network\Telepathy\Common.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Unity\Assets\UEngine.HotFix\Network\Telepathy\ConnectionState.cs">
-      <Link>Network\Telepathy\ConnectionState.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Unity\Assets\UEngine.HotFix\Network\Telepathy\EventType.cs">
-      <Link>Network\Telepathy\EventType.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Unity\Assets\UEngine.HotFix\Network\Telepathy\Log.cs">
-      <Link>Network\Telepathy\Log.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Unity\Assets\UEngine.HotFix\Network\Telepathy\MagnificentReceivePipe.cs">
-      <Link>Network\Telepathy\MagnificentReceivePipe.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Unity\Assets\UEngine.HotFix\Network\Telepathy\MagnificentSendPipe.cs">
-      <Link>Network\Telepathy\MagnificentSendPipe.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Unity\Assets\UEngine.HotFix\Network\Telepathy\NetworkStreamExtensions.cs">
-      <Link>Network\Telepathy\NetworkStreamExtensions.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Unity\Assets\UEngine.HotFix\Network\Telepathy\Pool.cs">
-      <Link>Network\Telepathy\Pool.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Unity\Assets\UEngine.HotFix\Network\Telepathy\Server.cs">
-      <Link>Network\Telepathy\Server.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Unity\Assets\UEngine.HotFix\Network\Telepathy\ThreadFunctions.cs">
-      <Link>Network\Telepathy\ThreadFunctions.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Unity\Assets\UEngine.HotFix\Network\Telepathy\Utils.cs">
-      <Link>Network\Telepathy\Utils.cs</Link>
     </Compile>
   </ItemGroup>
   <ItemGroup>

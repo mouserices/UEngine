@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 using Entitas;
 using UnityEngine;
 
-namespace UEngine.Net.System
+namespace UEngine.Net
 {
     public class NetworkInitSystem : IInitializeSystem
     {
@@ -75,7 +76,8 @@ namespace UEngine.Net.System
                     var messageResponseAttribute = attMessageResponses[0] as MessageResponseAttribute;
                     if (!request2Response.ContainsKey(type))
                     {
-                        request2Response.Add(type,messageResponseAttribute.ResponseType);
+                        // Debug.LogError($"{messageResponseAttribute.Type.GetType()}");
+                        // request2Response.Add(type,messageResponseAttribute.Type);
                     }
                 }
             }

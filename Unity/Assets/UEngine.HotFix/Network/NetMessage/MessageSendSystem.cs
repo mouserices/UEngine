@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using Entitas;
 using ProtoBuf;
+using UnityEngine;
 
 namespace UEngine.Net
 {
@@ -31,7 +32,6 @@ namespace UEngine.Net
                 var opCode = messageEntity.messageSend.OpCode;
                 var message = messageEntity.messageSend.Message;
                 var connectedID = messageEntity.messageSend.connectedID;
-
                 //package = opcode + msg size + message
                 MemoryStream sendStream = new MemoryStream();
                 _tempBytes.WriteTo(0, opCode);

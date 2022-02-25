@@ -1,13 +1,17 @@
 using System;
+using System.Reflection;
+using UnityEngine;
 
 namespace UEngine.Net
 {
     public class MessageResponseAttribute : Attribute
     {
-        public Type ResponseType;
+        public Type Type { get; }
+
         public MessageResponseAttribute(Type t)
         {
-            ResponseType = t;
+            //Debug.LogError($"22222222============ {t} {t.GetTypeInfo()}");
+            Type = t;
         }
     }
 }

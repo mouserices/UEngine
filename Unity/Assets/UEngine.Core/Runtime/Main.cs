@@ -108,7 +108,9 @@ public class Main : MonoBehaviour
         appdomain.DelegateManager.RegisterMethodDelegate<System.Collections.Generic.List<ILRuntime.Runtime.Intepreter.ILTypeInstance>>();
         appdomain.DelegateManager.RegisterFunctionDelegate<System.Reflection.MethodInfo, System.Boolean>();
         appdomain.DelegateManager.RegisterMethodDelegate<ArraySegment<byte>>();
-
+        
+        //Protobuf适配
+        ProtoBuf.PBType.RegisterILRuntimeCLRRedirection(appdomain);
     }
 
     void OnHotFixLoaded()
